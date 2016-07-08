@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - STMicroelectronics
+    name:
+        - stm32f038k6
+    core:
+        - cortex-m0
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - STM32F038K6
+            Vendor:
+                - STMicroelectronics
+            Cpu:
+                - IROM(0x08000000,0x8000) IRAM(0x20000000,0x1000) CPUTYPE("Cortex-M0") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:STM32F038K6$SVD/STM32F0x8.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - STM32F038K6
+            Vendor:
+                - STMicroelectronics
+            Cpu:
+                - IROM(0x08000000,0x8000) IRAM(0x20000000,0x1000) CPUTYPE("Cortex-M0") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:STM32F038K6$SVD/STM32F0x8.svd
+            RegisterFile:
+                - $$Device:STM32F038K6$Device/Include/stm32f0xx.h
+            PackID:
+                - Keil.STM32F0xx_DFP.1.5.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

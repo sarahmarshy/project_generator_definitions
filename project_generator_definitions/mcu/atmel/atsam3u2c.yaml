@@ -1,6 +1,6 @@
 mcu:
     vendor:
-        - atmel
+        - Atmel
     name:
         - atsam3u2c
     core:
@@ -9,14 +9,35 @@ tool_specific:
     uvision:
         TargetOption:
             Device:
-                - SAM3U2C
+                - ATSAM3U2C
             Vendor:
                 - Atmel
             Cpu:
-                - IRAM(0x20000000-0x20003FFF) IRAM2(0x20080000-0x20083FFF) IROM(0x00080000-0x0009FFFF) CLOCK(12000000) CPUTYPE("Cortex-M3")
-            FlashDriverDll:
-                - UL2CM3(-O902 -S0 -C0 -FO7 -FD20000000 -FC800 -FN1 -FF0ATSAM3U_128 -FS080000 -FL020000)
+                - IROM(0x00080000,0x000020000) IRAM(0x20000000,0x000004000) IRAM2(0x20080000,0x000004000) CPUTYPE("Cortex-M3") CLOCK(96000000) ELITTLE
             DeviceId:
-                - 4902
+                - None
             SFDFile:
-                - SFD\Atmel\SAM3U\SAM3U2C.sfr
+                - $$Device:ATSAM3U2C$SVD/SAM3U/ATSAM3U2C.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ATSAM3U2C
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00080000,0x000020000) IRAM(0x20000000,0x000004000) IRAM2(0x20080000,0x000004000) CPUTYPE("Cortex-M3") CLOCK(96000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAM3U2C$SVD/SAM3U/ATSAM3U2C.svd
+            RegisterFile:
+                - $$Device:ATSAM3U2C$Device/SAM3U/Include/sam3u.h
+            PackID:
+                - Keil.SAM3_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

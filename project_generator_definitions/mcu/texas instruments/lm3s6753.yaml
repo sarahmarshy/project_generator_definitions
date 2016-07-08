@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Texas Instruments
+    name:
+        - lm3s6753
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LM3S6753
+            Vendor:
+                - Texas Instruments
+            Cpu:
+                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00010000) CPUTYPE("Cortex-M3") CLOCK(50000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LM3S6753$SVD\lm3s6753.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LM3S6753
+            Vendor:
+                - Texas Instruments
+            Cpu:
+                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00010000) CPUTYPE("Cortex-M3") CLOCK(50000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LM3S6753$SVD\lm3s6753.svd
+            RegisterFile:
+                - $$Device:LM3S6753$Device\Include\lm3s6965.h
+            PackID:
+                - Keil.LM3S_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

@@ -1,29 +1,43 @@
 mcu:
     vendor:
-        - freescale
+        - Freescale
     name:
         - mkl05z32xxx4
     core:
-        - cortex-m0
+        - cortex-m0+
 tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - MKL05Z32xxx4
+            Vendor:
+                - Freescale
+            Cpu:
+                - IROM(0x00000000,0x8000) IRAM(0x1FFFFC00,0x1000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:MKL05Z32xxx4$SVD/MKL05Z4.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - MKL05Z32xxx4
+            Vendor:
+                - Freescale
+            Cpu:
+                - IROM(0x00000000,0x8000) IRAM(0x1FFFFC00,0x1000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:MKL05Z32xxx4$SVD/MKL05Z4.svd
+            RegisterFile:
+                - $$Device:MKL05Z32xxx4$Device/Include/MKL05Z4.h
+            PackID:
+                - Keil.Kinetis_KLxx_DFP.1.9.0.pack
     iar:
         OGChipSelectEditMenu:
           state:
-          - MKL05Z32xxx4 Freescale MKL05Z32xxx4
+          - None
         OGCoreOrChip:
           state:
           - 1
-    uvision:
-        TargetOption:
-            Cpu:
-            - IRAM(0x1FFFFC00-0x1FFFFFFF) IRAM2(0x20000000-0x20000BFF) IROM(0x0-0x07FFF) CLOCK(8000000) CPUTYPE("Cortex-M0+") ELITTLE
-            Device:
-            - MKL05Z32xxx4
-            DeviceId:
-            - 6544
-            FlashDriverDll:
-            - ULP2CM3(-O2510 -S0 -C0 -FO15 -FD20000000 -FC800 -FN1 -FF0MK_P32_48MHZ -FS00 -FL08000)
-            SFDFile:
-            - SFD\Freescale\Kinetis\MKL05Z4.sfr
-            Vendor:
-            - Freescale Semiconductor

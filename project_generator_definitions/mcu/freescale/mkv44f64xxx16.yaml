@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Freescale
+    name:
+        - mkv44f64xxx16
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - MKV44F64xxx16
+            Vendor:
+                - Freescale
+            Cpu:
+                - IROM(0x00000000,0x00010000) IRAM(0x1FFFE000,0x00004000) CPUTYPE("Cortex-M0+") FPU2 CLOCK(168000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:MKV44F64xxx16$SVD/MKV44F16.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - MKV44F64xxx16
+            Vendor:
+                - Freescale
+            Cpu:
+                - IROM(0x00000000,0x00010000) IRAM(0x1FFFE000,0x00004000) CPUTYPE("Cortex-M0+") FPU2 CLOCK(168000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:MKV44F64xxx16$SVD/MKV44F16.svd
+            RegisterFile:
+                - $$Device:MKV44F64xxx16$Device/Include/MKV46F16.h
+            PackID:
+                - Keil.Kinetis_KVxx_DFP.1.6.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

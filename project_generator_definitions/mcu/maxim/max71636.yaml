@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Maxim
+    name:
+        - max71636
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - MAX71636
+            Vendor:
+                - Maxim
+            Cpu:
+                - IROM(0x00000000,0x100000) IRAM(0x20000000,0x10000) IRAM2(0x00400000,0x10000) CPUTYPE("Cortex-M3") CLOCK(108000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - 
+    uvision5:
+        TargetOption:
+            Device:
+                - MAX71636
+            Vendor:
+                - Maxim
+            Cpu:
+                - IROM(0x00000000,0x100000) IRAM(0x20000000,0x10000) IRAM2(0x00400000,0x10000) CPUTYPE("Cortex-M3") CLOCK(108000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - 
+            RegisterFile:
+                - $$Device:MAX71636$Device\Include\max716xx.h
+            PackID:
+                - Keil.ZEUS_DFP.1.0.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

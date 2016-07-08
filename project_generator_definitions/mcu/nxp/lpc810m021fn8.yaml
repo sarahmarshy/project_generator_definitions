@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - NXP
+    name:
+        - lpc810m021fn8
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LPC810M021FN8
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x1000) IRAM(0x10000000,0x0400) CPUTYPE("Cortex-M0+") CLOCK(30000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC810M021FN8$SVD\LPC800.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LPC810M021FN8
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x1000) IRAM(0x10000000,0x0400) CPUTYPE("Cortex-M0+") CLOCK(30000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC810M021FN8$SVD\LPC800.svd
+            RegisterFile:
+                - $$Device:LPC810M021FN8$Device\Include\LPC8xx.h
+            PackID:
+                - Keil.LPC800_DFP.1.2.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

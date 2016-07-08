@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Freescale
+    name:
+        - mkl15z32xxx4
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - MKL15Z32xxx4
+            Vendor:
+                - Freescale
+            Cpu:
+                - IROM(0x00000000,0x8000) IRAM(0x1FFFFC00,0x1000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:MKL15Z32xxx4$SVD/MKL15Z4.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - MKL15Z32xxx4
+            Vendor:
+                - Freescale
+            Cpu:
+                - IROM(0x00000000,0x8000) IRAM(0x1FFFFC00,0x1000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:MKL15Z32xxx4$SVD/MKL15Z4.svd
+            RegisterFile:
+                - $$Device:MKL15Z32xxx4$Device/Include/MKL17Z4.h
+            PackID:
+                - Keil.Kinetis_KLxx_DFP.1.9.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

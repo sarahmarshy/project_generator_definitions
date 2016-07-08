@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - STMicroelectronics
+    name:
+        - stm32l051k8
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - STM32L051K8
+            Vendor:
+                - STMicroelectronics
+            Cpu:
+                - IROM(0x08000000,0x00010000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+") CLOCK(32000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:STM32L051K8$SVD/STM32L051x.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - STM32L051K8
+            Vendor:
+                - STMicroelectronics
+            Cpu:
+                - IROM(0x08000000,0x00010000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+") CLOCK(32000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:STM32L051K8$SVD/STM32L051x.svd
+            RegisterFile:
+                - $$Device:STM32L051K8$Device/Include/stm32l0xx.h
+            PackID:
+                - Keil.STM32L0xx_DFP.1.6.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

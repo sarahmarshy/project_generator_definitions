@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - NXP
+    name:
+        - lpc18s10
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LPC18S10
+            Vendor:
+                - NXP
+            Cpu:
+                - IRAM(0x10000000,0x10000) IRAM2(0x20000000,0x4000) CPUTYPE("Cortex-M3") CLOCK(180000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC18S10$SVD/LPC18xx.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LPC18S10
+            Vendor:
+                - NXP
+            Cpu:
+                - IRAM(0x10000000,0x10000) IRAM2(0x20000000,0x4000) CPUTYPE("Cortex-M3") CLOCK(180000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC18S10$SVD/LPC18xx.svd
+            RegisterFile:
+                - $$Device:LPC18S10$Device/Include/LPC18xx.h
+            PackID:
+                - Keil.LPC1800_DFP.2.6.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Analog Devices
+    name:
+        - adsp-cm407bswz-bf
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ADSP-CM407BSWZ-BF
+            Vendor:
+                - Analog Devices
+            Cpu:
+                - IROM(0x18000000,0x00200000) IRAM(0x20030000,0x00030000) CPUTYPE("Cortex-M4") FPU2 CLOCK(240000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ADSP-CM407BSWZ-BF$addon_mdk/SVD/CM40x.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ADSP-CM407BSWZ-BF
+            Vendor:
+                - Analog Devices
+            Cpu:
+                - IROM(0x18000000,0x00200000) IRAM(0x20030000,0x00030000) CPUTYPE("Cortex-M4") FPU2 CLOCK(240000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ADSP-CM407BSWZ-BF$addon_mdk/SVD/CM40x.svd
+            RegisterFile:
+                - $$Device:ADSP-CM407BSWZ-BF$inc/device.h
+            PackID:
+                - Keil.CM4xx_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

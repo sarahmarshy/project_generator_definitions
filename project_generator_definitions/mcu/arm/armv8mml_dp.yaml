@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - ARM
+    name:
+        - armv8mml_dp
+    core:
+        - cortex-m0
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ARMv8MML_DP
+            Vendor:
+                - ARM
+            Cpu:
+                - CPUTYPE("Cortex-M0") FPU2 CLOCK(10000000)
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ARMv8MML_DP$Device/ARM/SVD/ARMv8MML.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ARMv8MML_DP
+            Vendor:
+                - ARM
+            Cpu:
+                - CPUTYPE("Cortex-M0") FPU2 CLOCK(10000000)
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ARMv8MML_DP$Device/ARM/SVD/ARMv8MML.svd
+            RegisterFile:
+                - $$Device:ARMv8MML_DP$Device/ARM/ARMv8MML/Include/ARMv8MML_DP.h
+            PackID:
+                - ARM.CMSIS.5.0.0-Beta4.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

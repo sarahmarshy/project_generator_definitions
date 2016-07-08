@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Atmel
+    name:
+        - atsamda0g16a
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ATSAMDA0G16A
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAMDA0G16A$SVD\SAMDA0\ATSAMDA0G16A.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ATSAMDA0G16A
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAMDA0G16A$SVD\SAMDA0\ATSAMDA0G16A.svd
+            RegisterFile:
+                - $$Device:ATSAMDA0G16A$Device\SAMDA0\Include\samda0.h
+            PackID:
+                - Keil.SAMDA0_DFP.1.0.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

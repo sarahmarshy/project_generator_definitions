@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - NXP
+    name:
+        - lpc54101j512uk49
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LPC54101J512UK49
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x00080000) IRAM(0x02000000,0x00010000) IRAM2(0x02010000,0x00008000) CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC54101J512UK49$SVD/LPC5410x.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LPC54101J512UK49
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x00080000) IRAM(0x02000000,0x00010000) IRAM2(0x02010000,0x00008000) CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC54101J512UK49$SVD/LPC5410x.svd
+            RegisterFile:
+                - $$Device:LPC54101J512UK49$LPCOpen/lpc5410x/chip_5410x/inc/chip.h
+            PackID:
+                - Keil.LPC54000_DFP.2.0.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

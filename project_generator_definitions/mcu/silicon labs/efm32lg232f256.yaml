@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Silicon Labs
+    name:
+        - efm32lg232f256
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - EFM32LG232F256
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EFM32LG232F256$SVD/EFM32LG/EFM32LG232F256.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - EFM32LG232F256
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EFM32LG232F256$SVD/EFM32LG/EFM32LG232F256.svd
+            RegisterFile:
+                - $$Device:EFM32LG232F256$Device/EFM32LG/Include/em_device.h
+            PackID:
+                - Keil.EFM32LGxxx_DFP.1.4.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

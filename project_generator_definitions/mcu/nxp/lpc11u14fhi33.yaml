@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - NXP
+    name:
+        - lpc11u14fhi33/201
+    core:
+        - cortex-m0
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LPC11U14FHI33/201
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x8000) IRAM(0x10000000,0x1000) IRAM2(0x20004000,0x0800) CPUTYPE("Cortex-M0") CLOCK(50000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC11U14FHI33/201$SVD\LPC11Uxx.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LPC11U14FHI33/201
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x8000) IRAM(0x10000000,0x1000) IRAM2(0x20004000,0x0800) CPUTYPE("Cortex-M0") CLOCK(50000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC11U14FHI33/201$SVD\LPC11Uxx.svd
+            RegisterFile:
+                - $$Device:LPC11U14FHI33/201$Device\Include\LPC11Uxx\LPC11U6x.h
+            PackID:
+                - Keil.LPC1100_DFP.1.4.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

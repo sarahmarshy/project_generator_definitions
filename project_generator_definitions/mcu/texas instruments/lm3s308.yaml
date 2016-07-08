@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Texas Instruments
+    name:
+        - lm3s308
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LM3S308
+            Vendor:
+                - Texas Instruments
+            Cpu:
+                - IROM(0x00000000,0x00004000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M3") CLOCK(25000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LM3S308$SVD\lm3s308.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LM3S308
+            Vendor:
+                - Texas Instruments
+            Cpu:
+                - IROM(0x00000000,0x00004000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M3") CLOCK(25000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LM3S308$SVD\lm3s308.svd
+            RegisterFile:
+                - $$Device:LM3S308$Device\Include\lm3s328.h
+            PackID:
+                - Keil.LM3S_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

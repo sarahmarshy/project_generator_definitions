@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Texas Instruments
+    name:
+        - lm3s9dn6
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LM3S9DN6
+            Vendor:
+                - Texas Instruments
+            Cpu:
+                - IROM(0x00000000,0x00080000) IRAM(0x20000000,0x00018000) CPUTYPE("Cortex-M3") CLOCK(80000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LM3S9DN6$SVD\lm3s9dn6.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LM3S9DN6
+            Vendor:
+                - Texas Instruments
+            Cpu:
+                - IROM(0x00000000,0x00080000) IRAM(0x20000000,0x00018000) CPUTYPE("Cortex-M3") CLOCK(80000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LM3S9DN6$SVD\lm3s9dn6.svd
+            RegisterFile:
+                - $$Device:LM3S9DN6$Device\Include\lm3s9u96.h
+            PackID:
+                - Keil.LM3S_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

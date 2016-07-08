@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - STMicroelectronics
+    name:
+        - stm32l151rbxxa
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - STM32L151RBxxA
+            Vendor:
+                - STMicroelectronics
+            Cpu:
+                - IROM(0x08000000,0x20000) IRAM(0x20000000,0x8000) CPUTYPE("Cortex-M3") CLOCK(32000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:STM32L151RBxxA$SVD\STM32L15xxxA.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - STM32L151RBxxA
+            Vendor:
+                - STMicroelectronics
+            Cpu:
+                - IROM(0x08000000,0x20000) IRAM(0x20000000,0x8000) CPUTYPE("Cortex-M3") CLOCK(32000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:STM32L151RBxxA$SVD\STM32L15xxxA.svd
+            RegisterFile:
+                - $$Device:STM32L151RBxxA$Device\Include\STM32L1xx.h
+            PackID:
+                - Keil.STM32L1xx_DFP.1.0.2.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

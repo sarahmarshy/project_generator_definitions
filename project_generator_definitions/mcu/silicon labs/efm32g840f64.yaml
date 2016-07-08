@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Silicon Labs
+    name:
+        - efm32g840f64
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - EFM32G840F64
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00004000) CPUTYPE("Cortex-M3") CLOCK(32000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EFM32G840F64$SVD/EFM32G/EFM32G840F64.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - EFM32G840F64
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00004000) CPUTYPE("Cortex-M3") CLOCK(32000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EFM32G840F64$SVD/EFM32G/EFM32G840F64.svd
+            RegisterFile:
+                - $$Device:EFM32G840F64$Device/EFM32G/Include/em_device.h
+            PackID:
+                - Keil.EFM32Gxxx_DFP.1.2.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

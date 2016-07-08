@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - STMicroelectronics
+    name:
+        - stm32f103t6
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - STM32F103T6
+            Vendor:
+                - STMicroelectronics
+            Cpu:
+                - IROM(0x08000000,0x8000) IRAM(0x20000000,0x2800) CPUTYPE("Cortex-M3") CLOCK(72000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:STM32F103T6$SVD/STM32F103xx.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - STM32F103T6
+            Vendor:
+                - STMicroelectronics
+            Cpu:
+                - IROM(0x08000000,0x8000) IRAM(0x20000000,0x2800) CPUTYPE("Cortex-M3") CLOCK(72000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:STM32F103T6$SVD/STM32F103xx.svd
+            RegisterFile:
+                - $$Device:STM32F103T6$Device/Include/stm32f10x.h
+            PackID:
+                - Keil.STM32F1xx_DFP.2.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

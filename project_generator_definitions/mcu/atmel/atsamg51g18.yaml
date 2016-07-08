@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Atmel
+    name:
+        - atsamg51g18
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ATSAMG51G18
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00400000,0x40000) IRAM(0x20000000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAMG51G18$SVD\SAMG51\ATSAMG51G18.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ATSAMG51G18
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00400000,0x40000) IRAM(0x20000000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAMG51G18$SVD\SAMG51\ATSAMG51G18.svd
+            RegisterFile:
+                - $$Device:ATSAMG51G18$Device\Include\SAMG51\samg51.h
+            PackID:
+                - Keil.SAMG_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

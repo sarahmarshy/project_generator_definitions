@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Freescale
+    name:
+        - mk02fn64xxx10
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - MK02FN64xxx10
+            Vendor:
+                - Freescale
+            Cpu:
+                - IROM(0x00000000,0x10000) IRAM(0x20000000,0x02000) IRAM2(0x1FFFE000,0x02000) CPUTYPE("Cortex-M4") FPU2 CLOCK(100000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:MK02FN64xxx10$SVD\MK02F12810.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - MK02FN64xxx10
+            Vendor:
+                - Freescale
+            Cpu:
+                - IROM(0x00000000,0x10000) IRAM(0x20000000,0x02000) IRAM2(0x1FFFE000,0x02000) CPUTYPE("Cortex-M4") FPU2 CLOCK(100000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:MK02FN64xxx10$SVD\MK02F12810.svd
+            RegisterFile:
+                - $$Device:MK02FN64xxx10$Device\Include\MK02F12810.h
+            PackID:
+                - Keil.Kinetis_K00_DFP.1.0.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

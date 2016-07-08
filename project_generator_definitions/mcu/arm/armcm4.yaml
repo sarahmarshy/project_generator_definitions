@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - ARM
+    name:
+        - armcm4
+    core:
+        - cortex-m0
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ARMCM4
+            Vendor:
+                - ARM
+            Cpu:
+                - CPUTYPE("Cortex-M0") CLOCK(10000000)
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ARMCM4$Device/ARM/SVD/ARMCM4.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ARMCM4
+            Vendor:
+                - ARM
+            Cpu:
+                - CPUTYPE("Cortex-M0") CLOCK(10000000)
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ARMCM4$Device/ARM/SVD/ARMCM4.svd
+            RegisterFile:
+                - $$Device:ARMCM4$Device/ARM/ARMCM4/Include/ARMCM4_FP.h
+            PackID:
+                - ARM.CMSIS.5.0.0-Beta4.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

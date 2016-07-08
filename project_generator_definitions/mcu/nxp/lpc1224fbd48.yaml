@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - NXP
+    name:
+        - lpc1224fbd48/121
+    core:
+        - cortex-m0
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LPC1224FBD48/121
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0xC000) IRAM(0x10000000,0x1000) CPUTYPE("Cortex-M0") CLOCK(45000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC1224FBD48/121$SVD\LPC122x.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LPC1224FBD48/121
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0xC000) IRAM(0x10000000,0x1000) CPUTYPE("Cortex-M0") CLOCK(45000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC1224FBD48/121$SVD\LPC122x.svd
+            RegisterFile:
+                - $$Device:LPC1224FBD48/121$Device\Include\LPC12xx\LPC122x.h
+            PackID:
+                - Keil.LPC1200_DFP.1.0.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

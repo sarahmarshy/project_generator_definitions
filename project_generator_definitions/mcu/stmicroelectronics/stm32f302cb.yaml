@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - STMicroelectronics
+    name:
+        - stm32f302cb
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - STM32F302CB
+            Vendor:
+                - STMicroelectronics
+            Cpu:
+                - IROM(0x08000000,0x00020000) IRAM(0x20000000,0x00006000) CPUTYPE("Cortex-M4") FPU2 CLOCK(72000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:STM32F302CB$SVD\STM32F30x.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - STM32F302CB
+            Vendor:
+                - STMicroelectronics
+            Cpu:
+                - IROM(0x08000000,0x00020000) IRAM(0x20000000,0x00006000) CPUTYPE("Cortex-M4") FPU2 CLOCK(72000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:STM32F302CB$SVD\STM32F30x.svd
+            RegisterFile:
+                - $$Device:STM32F302CB$Device\Include\stm32f3xx.h
+            PackID:
+                - Keil.STM32F3xx_DFP.1.3.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

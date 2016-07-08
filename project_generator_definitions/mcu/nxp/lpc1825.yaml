@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - NXP
+    name:
+        - lpc1825
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LPC1825
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x1A000000,0x60000) IRAM(0x10000000,0x8000) IRAM2(0x20000000,0x10000) CPUTYPE("Cortex-M3") CLOCK(180000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC1825$SVD/LPC18xx.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LPC1825
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x1A000000,0x60000) IRAM(0x10000000,0x8000) IRAM2(0x20000000,0x10000) CPUTYPE("Cortex-M3") CLOCK(180000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC1825$SVD/LPC18xx.svd
+            RegisterFile:
+                - $$Device:LPC1825$Device/Include/LPC18xx.h
+            PackID:
+                - Keil.LPC1800_DFP.2.6.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

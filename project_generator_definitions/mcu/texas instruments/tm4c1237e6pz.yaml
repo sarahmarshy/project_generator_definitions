@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Texas Instruments
+    name:
+        - tm4c1237e6pz
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - TM4C1237E6PZ
+            Vendor:
+                - Texas Instruments
+            Cpu:
+                - IROM(0x00000000,0x020000) IRAM(0x20000000,0x008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(80000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:TM4C1237E6PZ$SVD/TM4C123/TM4C1237E6PZ.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - TM4C1237E6PZ
+            Vendor:
+                - Texas Instruments
+            Cpu:
+                - IROM(0x00000000,0x020000) IRAM(0x20000000,0x008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(80000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:TM4C1237E6PZ$SVD/TM4C123/TM4C1237E6PZ.svd
+            RegisterFile:
+                - $$Device:TM4C1237E6PZ$Device/Include/TM4C123/TM4C123.h
+            PackID:
+                - Keil.TM4C_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

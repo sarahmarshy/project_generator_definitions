@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Atmel
+    name:
+        - atsam4lc2c
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ATSAM4LC2C
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00000000,0x20000) IRAM(0x20000000,0x8000) CPUTYPE("Cortex-M4") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAM4LC2C$SVD\SAM4L\ATSAM4LC2C.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ATSAM4LC2C
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00000000,0x20000) IRAM(0x20000000,0x8000) CPUTYPE("Cortex-M4") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAM4LC2C$SVD\SAM4L\ATSAM4LC2C.svd
+            RegisterFile:
+                - $$Device:ATSAM4LC2C$Device\Include\SAM4L\sam4l.h
+            PackID:
+                - Keil.SAM4_DFP.1.4.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Analog Devices
+    name:
+        - aducm360
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ADuCM360
+            Vendor:
+                - Analog Devices
+            Cpu:
+                - CPUTYPE("Cortex-M3") CLOCK(16000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ADuCM360$SVD\ADuCM360.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ADuCM360
+            Vendor:
+                - Analog Devices
+            Cpu:
+                - CPUTYPE("Cortex-M3") CLOCK(16000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ADuCM360$SVD\ADuCM360.svd
+            RegisterFile:
+                - $$Device:ADuCM360$Device\Include\ADuCM361.h
+            PackID:
+                - AnalogDevices.ADuCM36x_DFP.1.0.1.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

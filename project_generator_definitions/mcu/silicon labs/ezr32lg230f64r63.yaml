@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Silicon Labs
+    name:
+        - ezr32lg230f64r63
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - EZR32LG230F64R63
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EZR32LG230F64R63$SVD/EZR32LG/EZR32LG230F64R63.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - EZR32LG230F64R63
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EZR32LG230F64R63$SVD/EZR32LG/EZR32LG230F64R63.svd
+            RegisterFile:
+                - $$Device:EZR32LG230F64R63$Device/EZR32LG/Include/em_device.h
+            PackID:
+                - Keil.EZR32LG_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

@@ -24,10 +24,13 @@ from .tools import UvisionDefinition, UvisionDefinition5, IARDefinitions, CoIDEd
 from .target.targets import PROGENDEF_TARGETS
 
 def _load_record(file):
-    project_file = open(file)
-    config = yaml.load(project_file)
-    project_file.close()
-    return config
+    try:
+        project_file = open(file)
+        config = yaml.load(project_file)
+        project_file.close()
+        return config
+    except:
+        return None
 
 class ProGenMcus:
 

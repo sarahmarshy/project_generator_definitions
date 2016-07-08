@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Renesas
+    name:
+        - r-in32m4-cl2
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - R-IN32M4-CL2
+            Vendor:
+                - Renesas
+            Cpu:
+                - IRAM(0x20000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(100000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:R-IN32M4-CL2$SVD/RIN32M4_CL2.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - R-IN32M4-CL2
+            Vendor:
+                - Renesas
+            Cpu:
+                - IRAM(0x20000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(100000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:R-IN32M4-CL2$SVD/RIN32M4_CL2.svd
+            RegisterFile:
+                - $$Device:R-IN32M4-CL2$Device/Include/RIN32M4.h
+            PackID:
+                - Keil.R-IN32M4_DFP.1.0.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

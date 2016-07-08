@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Freescale
+    name:
+        - mk65fn2m0xxx18
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - MK65FN2M0xxx18
+            Vendor:
+                - Freescale
+            Cpu:
+                - IROM(0x00000000,0x200000) IRAM(0x20000000,0x30000) IRAM2(0x1FFF0000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(180000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:MK65FN2M0xxx18$SVD\MK65F18.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - MK65FN2M0xxx18
+            Vendor:
+                - Freescale
+            Cpu:
+                - IROM(0x00000000,0x200000) IRAM(0x20000000,0x30000) IRAM2(0x1FFF0000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(180000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:MK65FN2M0xxx18$SVD\MK65F18.svd
+            RegisterFile:
+                - $$Device:MK65FN2M0xxx18$Device\Include\MK66F18.h
+            PackID:
+                - Keil.Kinetis_K60_DFP.1.4.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

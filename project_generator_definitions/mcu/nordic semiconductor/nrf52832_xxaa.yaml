@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Nordic Semiconductor
+    name:
+        - nrf52832_xxaa
+    core:
+        - cortex-m0
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - nRF52832_xxAA
+            Vendor:
+                - Nordic Semiconductor
+            Cpu:
+                - IROM(0x00000000,0x80000) IRAM(0x20000000,0x10000) CPUTYPE("Cortex-M0") FPU2 CLOCK(64000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:nRF52832_xxAA$SVD\nrf52.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - nRF52832_xxAA
+            Vendor:
+                - Nordic Semiconductor
+            Cpu:
+                - IROM(0x00000000,0x80000) IRAM(0x20000000,0x10000) CPUTYPE("Cortex-M0") FPU2 CLOCK(64000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:nRF52832_xxAA$SVD\nrf52.svd
+            RegisterFile:
+                - $$Device:nRF52832_xxAA$Device\Include\nrf.h
+            PackID:
+                - NordicSemiconductor.nRF_DeviceFamilyPack.8.6.1.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - NXP
+    name:
+        - lpc1519jbd100
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LPC1519JBD100
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x40000) IRAM(0x02000000,0x9000) CPUTYPE("Cortex-M3") CLOCK(75000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC1519JBD100$SVD/LPC15xx.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LPC1519JBD100
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x40000) IRAM(0x02000000,0x9000) CPUTYPE("Cortex-M3") CLOCK(75000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC1519JBD100$SVD/LPC15xx.svd
+            RegisterFile:
+                - $$Device:LPC1519JBD100$LPCOpen/software/lpc_core/lpc_chip/chip_15xx/chip.h
+            PackID:
+                - Keil.LPC1500_DFP.1.2.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

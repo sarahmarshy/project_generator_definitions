@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - NXP
+    name:
+        - lpc1347fhn33
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LPC1347FHN33
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x10000) IRAM(0x10000000,0x2000) IRAM2(0x20000000,0x0800) CPUTYPE("Cortex-M3") CLOCK(72000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC1347FHN33$SVD\LPC13Uxx.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LPC1347FHN33
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x10000) IRAM(0x10000000,0x2000) IRAM2(0x20000000,0x0800) CPUTYPE("Cortex-M3") CLOCK(72000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC1347FHN33$SVD\LPC13Uxx.svd
+            RegisterFile:
+                - $$Device:LPC1347FHN33$Device\Include\LPC13Uxx\LPC13Uxx.h
+            PackID:
+                - Keil.LPC1300_DFP.1.0.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

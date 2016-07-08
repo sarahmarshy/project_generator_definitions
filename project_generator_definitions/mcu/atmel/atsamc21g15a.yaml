@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Atmel
+    name:
+        - atsamc21g15a
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ATSAMC21G15A
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00000000,0x08000) IRAM(0x20000000,0x01000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAMC21G15A$SVD\SAMC21\ATSAMC21G15A.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ATSAMC21G15A
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00000000,0x08000) IRAM(0x20000000,0x01000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAMC21G15A$SVD\SAMC21\ATSAMC21G15A.svd
+            RegisterFile:
+                - $$Device:ATSAMC21G15A$Device\SAMC21\Include\samc21.h
+            PackID:
+                - Keil.SAM-C_DFP.1.0.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

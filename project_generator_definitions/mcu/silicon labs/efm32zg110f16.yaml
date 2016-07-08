@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Silicon Labs
+    name:
+        - efm32zg110f16
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - EFM32ZG110F16
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00004000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+") CLOCK(24000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EFM32ZG110F16$SVD/EFM32ZG/EFM32ZG110F16.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - EFM32ZG110F16
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00004000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+") CLOCK(24000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EFM32ZG110F16$SVD/EFM32ZG/EFM32ZG110F16.svd
+            RegisterFile:
+                - $$Device:EFM32ZG110F16$Device/EFM32ZG/Include/em_device.h
+            PackID:
+                - Keil.EFM32ZGxxx_DFP.1.2.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

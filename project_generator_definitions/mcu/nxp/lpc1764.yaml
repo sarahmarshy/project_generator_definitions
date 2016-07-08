@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - NXP
+    name:
+        - lpc1764
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LPC1764
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x20000) IRAM(0x10000000,0x4000) IRAM2(0x2007C000,0x4000) CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC1764$SVD/LPC176x5x.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LPC1764
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x20000) IRAM(0x10000000,0x4000) IRAM2(0x2007C000,0x4000) CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC1764$SVD/LPC176x5x.svd
+            RegisterFile:
+                - $$Device:LPC1764$Device/Include/LPC17xx.h
+            PackID:
+                - Keil.LPC1700_DFP.2.2.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Silicon Labs
+    name:
+        - ezr32wg330f128r69
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - EZR32WG330F128R69
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EZR32WG330F128R69$SVD/EZR32WG/EZR32WG330F128R69.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - EZR32WG330F128R69
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EZR32WG330F128R69$SVD/EZR32WG/EZR32WG330F128R69.svd
+            RegisterFile:
+                - $$Device:EZR32WG330F128R69$Device/EZR32WG/Include/em_device.h
+            PackID:
+                - Keil.EZR32WG_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

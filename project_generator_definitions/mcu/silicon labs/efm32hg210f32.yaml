@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Silicon Labs
+    name:
+        - efm32hg210f32
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - EFM32HG210F32
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00008000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+") CLOCK(24000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EFM32HG210F32$SVD/EFM32HG/EFM32HG210F32.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - EFM32HG210F32
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00008000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+") CLOCK(24000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EFM32HG210F32$SVD/EFM32HG/EFM32HG210F32.svd
+            RegisterFile:
+                - $$Device:EFM32HG210F32$Device/EFM32HG/Include/em_device.h
+            PackID:
+                - Keil.EFM32HGxxx_DFP.1.2.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

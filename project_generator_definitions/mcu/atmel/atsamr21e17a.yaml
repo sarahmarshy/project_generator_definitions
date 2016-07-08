@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Atmel
+    name:
+        - atsamr21e17a
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ATSAMR21E17A
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00004000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAMR21E17A$SVD\SAMR21\ATSAMR21E17A.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ATSAMR21E17A
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00004000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAMR21E17A$SVD\SAMR21\ATSAMR21E17A.svd
+            RegisterFile:
+                - $$Device:ATSAMR21E17A$Device\SAMR21\Include\samr21.h
+            PackID:
+                - Keil.SAMR21_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

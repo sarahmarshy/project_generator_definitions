@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Freescale
+    name:
+        - mwpr1516xxx
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - MWPR1516xxx
+            Vendor:
+                - Freescale
+            Cpu:
+                - IROM(0x00000000,0x4000) IRAM(0x1FFFFC00,0x1000) CPUTYPE("Cortex-M0+") CLOCK(24000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:MWPR1516xxx$SVD\MWPR1516.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - MWPR1516xxx
+            Vendor:
+                - Freescale
+            Cpu:
+                - IROM(0x00000000,0x4000) IRAM(0x1FFFFC00,0x1000) CPUTYPE("Cortex-M0+") CLOCK(24000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:MWPR1516xxx$SVD\MWPR1516.svd
+            RegisterFile:
+                - $$Device:MWPR1516xxx$Device\Include\MWPR1516.h
+            PackID:
+                - Keil.Kinetis_KWPR1516_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

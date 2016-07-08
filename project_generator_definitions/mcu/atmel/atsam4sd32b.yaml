@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Atmel
+    name:
+        - atsam4sd32b
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ATSAM4SD32B
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00400000,0x100000) IRAM(0x20000000,0x28000) CPUTYPE("Cortex-M4") CLOCK(120000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAM4SD32B$SVD\SAM4S\ATSAM4SD32B.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ATSAM4SD32B
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00400000,0x100000) IRAM(0x20000000,0x28000) CPUTYPE("Cortex-M4") CLOCK(120000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAM4SD32B$SVD\SAM4S\ATSAM4SD32B.svd
+            RegisterFile:
+                - $$Device:ATSAM4SD32B$Device\Include\SAM4S\sam4s.h
+            PackID:
+                - Keil.SAM4_DFP.1.4.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

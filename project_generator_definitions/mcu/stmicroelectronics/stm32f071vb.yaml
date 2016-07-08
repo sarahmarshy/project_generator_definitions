@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - STMicroelectronics
+    name:
+        - stm32f071vb
+    core:
+        - cortex-m0
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - STM32F071VB
+            Vendor:
+                - STMicroelectronics
+            Cpu:
+                - IROM(0x08000000,0x20000) IRAM(0x20000000,0x4000) CPUTYPE("Cortex-M0") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:STM32F071VB$SVD/STM32F0x1.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - STM32F071VB
+            Vendor:
+                - STMicroelectronics
+            Cpu:
+                - IROM(0x08000000,0x20000) IRAM(0x20000000,0x4000) CPUTYPE("Cortex-M0") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:STM32F071VB$SVD/STM32F0x1.svd
+            RegisterFile:
+                - $$Device:STM32F071VB$Device/Include/stm32f0xx.h
+            PackID:
+                - Keil.STM32F0xx_DFP.1.5.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

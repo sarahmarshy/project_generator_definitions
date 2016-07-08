@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Atmel
+    name:
+        - atsamg53n19
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ATSAMG53N19
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00400000,0x80000) IRAM(0x20000000,0x18000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAMG53N19$SVD\SAMG53\ATSAMG53N19.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ATSAMG53N19
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00400000,0x80000) IRAM(0x20000000,0x18000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAMG53N19$SVD\SAMG53\ATSAMG53N19.svd
+            RegisterFile:
+                - $$Device:ATSAMG53N19$Device\Include\SAMG53\samg53.h
+            PackID:
+                - Keil.SAMG_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

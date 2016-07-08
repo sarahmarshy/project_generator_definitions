@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Atmel
+    name:
+        - atsam4cms8c
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ATSAM4CMS8C
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00000000,0x4000) IRAM(0x20100000,0x2000) CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAM4CMS8C$SVD\SAM4CM\ATSAM4CMS8C_0.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ATSAM4CMS8C
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00000000,0x4000) IRAM(0x20100000,0x2000) CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAM4CMS8C$SVD\SAM4CM\ATSAM4CMS8C_0.svd
+            RegisterFile:
+                - $$Device:ATSAM4CMS8C$Device\SAM4CM\Include\sam4cm.h
+            PackID:
+                - Keil.SAM4_DFP.1.4.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

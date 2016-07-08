@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Silicon Labs
+    name:
+        - efm32jg1b200f256gm48
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - EFM32JG1B200F256GM48
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(38400000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EFM32JG1B200F256GM48$SVD/EFM32JG1B/EFM32JG1B200F256GM48.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - EFM32JG1B200F256GM48
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(38400000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EFM32JG1B200F256GM48$SVD/EFM32JG1B/EFM32JG1B200F256GM48.svd
+            RegisterFile:
+                - $$Device:EFM32JG1B200F256GM48$Device/EFM32JG1B/Include/em_device.h
+            PackID:
+                - Keil.EFM32JG1B_DFP.1.0.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

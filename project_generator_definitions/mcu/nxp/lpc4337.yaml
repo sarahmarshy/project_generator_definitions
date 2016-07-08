@@ -1,6 +1,6 @@
 mcu:
     vendor:
-        - nxp
+        - NXP
     name:
         - lpc4337
     core:
@@ -13,10 +13,31 @@ tool_specific:
             Vendor:
                 - NXP
             Cpu:
-                - IRAM(0x10000000-0x10007FFF) IRAM2(0x20000000-0x2000FFFF) IROM(0x1A000000-0x1A07FFFF) IROM2(0x1B000000-0x1B07FFFF) CLOCK(12000000) CPUTYPE("Cortex-M4") FPU2
-            FlashDriverDll:
-                - UL2CM3(-O975 -S0 -C0 -FO7 -FD10000000 -FC800 -FN2 -FF0LPC18xx43xx_512_BA -FS01A000000 -FL080000 -FF1LPC18xx43xx_512_BB -FS11B000000 -FL180000)
+                - IROM(0x1A000000,0x80000) IRAM(0x10000000,0x8000) IRAM2(0x20000000,0x10000) CPUTYPE("Cortex-M4") CLOCK(204000000) ELITTLE
             DeviceId:
-                - 7312
+                - None
             SFDFile:
-                - SFD\NXP\LPC43xx\LPC43xx.SFR
+                - $$Device:LPC4337$SVD/LPC43xx.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LPC4337
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x1A000000,0x80000) IRAM(0x10000000,0x8000) IRAM2(0x20000000,0x10000) CPUTYPE("Cortex-M4") CLOCK(204000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC4337$SVD/LPC43xx.svd
+            RegisterFile:
+                - $$Device:LPC4337$Device/Include/LPC43xx.h
+            PackID:
+                - Keil.LPC4300_DFP.2.6.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - NXP
+    name:
+        - lpc4313
+    core:
+        - cortex-m4
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LPC4313
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x1A000000,0x40000) IRAM(0x10000000,0x8000) IRAM2(0x20000000,0x4000) CPUTYPE("Cortex-M4") CLOCK(204000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC4313$SVD/LPC43xx.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LPC4313
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x1A000000,0x40000) IRAM(0x10000000,0x8000) IRAM2(0x20000000,0x4000) CPUTYPE("Cortex-M4") CLOCK(204000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC4313$SVD/LPC43xx.svd
+            RegisterFile:
+                - $$Device:LPC4313$Device/Include/LPC43xx.h
+            PackID:
+                - Keil.LPC4300_DFP.2.6.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

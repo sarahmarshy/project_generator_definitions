@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Silicon Labs
+    name:
+        - ezr32hg220f32r69
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - EZR32HG220F32R69
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00008000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+") CLOCK(24000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EZR32HG220F32R69$SVD/EZR32HG/EZR32HG220F32R69.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - EZR32HG220F32R69
+            Vendor:
+                - Silicon Labs
+            Cpu:
+                - IROM(0x00000000,0x00008000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+") CLOCK(24000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:EZR32HG220F32R69$SVD/EZR32HG/EZR32HG220F32R69.svd
+            RegisterFile:
+                - $$Device:EZR32HG220F32R69$Device/EZR32HG/Include/em_device.h
+            PackID:
+                - Keil.EZR32HG_DFP.1.0.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

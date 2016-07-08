@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Atmel
+    name:
+        - atsam3sd8c
+    core:
+        - cortex-m3
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ATSAM3SD8C
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00400000,0x40000) IRAM(0x20000000,0x10000) CPUTYPE("Cortex-M3") CLOCK(64000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAM3SD8C$SVD/SAM3SD8/ATSAM3SD8C.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ATSAM3SD8C
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00400000,0x40000) IRAM(0x20000000,0x10000) CPUTYPE("Cortex-M3") CLOCK(64000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAM3SD8C$SVD/SAM3SD8/ATSAM3SD8C.svd
+            RegisterFile:
+                - $$Device:ATSAM3SD8C$Device/SAM3SD8/Include/sam3sd8.h
+            PackID:
+                - Keil.SAM3_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

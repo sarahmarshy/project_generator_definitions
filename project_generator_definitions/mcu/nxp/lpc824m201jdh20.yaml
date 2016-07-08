@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - NXP
+    name:
+        - lpc824m201jdh20
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - LPC824M201JDH20
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x8000) IRAM(0x10000000,0x2000) CPUTYPE("Cortex-M0+") CLOCK(30000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC824M201JDH20$SVD\LPC82x.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - LPC824M201JDH20
+            Vendor:
+                - NXP
+            Cpu:
+                - IROM(0x00000000,0x8000) IRAM(0x10000000,0x2000) CPUTYPE("Cortex-M0+") CLOCK(30000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:LPC824M201JDH20$SVD\LPC82x.svd
+            RegisterFile:
+                - $$Device:LPC824M201JDH20$Device\Include\LPC82x.h
+            PackID:
+                - Keil.LPC800_DFP.1.2.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1

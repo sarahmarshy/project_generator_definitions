@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - Atmel
+    name:
+        - atsamd20e15
+    core:
+        - cortex-m0+
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - ATSAMD20E15
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00000000,0x00008000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAMD20E15$SVD\SAMD20\ATSAMD20E15.svd
+    uvision5:
+        TargetOption:
+            Device:
+                - ATSAMD20E15
+            Vendor:
+                - Atmel
+            Cpu:
+                - IROM(0x00000000,0x00008000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+            DeviceId:
+                - None
+            SFDFile:
+                - $$Device:ATSAMD20E15$SVD\SAMD20\ATSAMD20E15.svd
+            RegisterFile:
+                - $$Device:ATSAMD20E15$Device\SAMD20\Include\samd20.h
+            PackID:
+                - Keil.SAMD20_DFP.1.1.0.pack
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1
