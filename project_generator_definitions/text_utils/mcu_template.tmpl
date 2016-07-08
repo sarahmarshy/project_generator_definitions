@@ -1,0 +1,43 @@
+mcu:
+    vendor:
+        - {{vendor}}
+    name:
+        - {{device.lower()}}
+    core:
+        - {{core.lower()}}
+tool_specific:
+    uvision:
+        TargetOption:
+            Device:
+                - {{device}}
+            Vendor:
+                - {{vendor}}
+            Cpu:
+                - {{cpu_string}}
+            DeviceId:
+                - None
+            SFDFile:
+                - {{debug}}
+    uvision5:
+        TargetOption:
+            Device:
+                - {{device}}
+            Vendor:
+                - {{vendor}}
+            Cpu:
+                - {{cpu_string}}
+            DeviceId:
+                - None
+            SFDFile:
+                - {{debug}}
+            RegisterFile:
+                - {{compile['header']}}
+            PackID:
+                - {{pack_file}}
+    iar:
+        OGChipSelectEditMenu:
+          state:
+          - None
+        OGCoreOrChip:
+          state:
+          - 1
