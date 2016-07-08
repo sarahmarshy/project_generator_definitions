@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:LPC1104UK$Device\Include\LPC11xx\LPC11xx.h
             PackID:
                 - Keil.LPC1100_DFP.1.4.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

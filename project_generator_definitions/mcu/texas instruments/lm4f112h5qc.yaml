@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:LM4F112H5QC$Device\Include\LM4F132H5QD.h
             PackID:
                 - Keil.LM4F_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:EFM32GG280F1024$Device/EFM32GG/Include/em_device.h
             PackID:
                 - Keil.EFM32GGxxx_DFP.2.3.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

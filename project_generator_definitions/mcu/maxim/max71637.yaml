@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MAX71637$Device\Include\max716xx.h
             PackID:
                 - Keil.ZEUS_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

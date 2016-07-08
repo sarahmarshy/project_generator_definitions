@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ATSAMG55G19$Device\Include\SAMG55\samg55.h
             PackID:
                 - Keil.SAMG_DFP.1.1.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:TM4C1297NCZAD$Device/Include/TM4C129/TM4C129.h
             PackID:
                 - Keil.TM4C_DFP.1.1.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

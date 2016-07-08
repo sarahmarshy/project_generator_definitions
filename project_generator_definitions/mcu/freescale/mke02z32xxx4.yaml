@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MKE02Z32xxx4$Device/Include/MKE02Z4.h
             PackID:
                 - Keil.Kinetis_KExx_DFP.1.4.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

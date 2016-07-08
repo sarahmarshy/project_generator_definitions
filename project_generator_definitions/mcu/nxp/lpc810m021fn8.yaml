@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:LPC810M021FN8$Device\Include\LPC8xx.h
             PackID:
                 - Keil.LPC800_DFP.1.2.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

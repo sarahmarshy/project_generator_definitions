@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:LPC1313FBD48/01$Device\Include\LPC13xx\LPC13xx.h
             PackID:
                 - Keil.LPC1300_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

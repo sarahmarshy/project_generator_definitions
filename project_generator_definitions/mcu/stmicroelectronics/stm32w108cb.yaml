@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:STM32W108CB$Device\Include\stm32w108xx.h
             PackID:
                 - Keil.STM32W1xx_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

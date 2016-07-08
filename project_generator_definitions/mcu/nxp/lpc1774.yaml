@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:LPC1774$Device/Include/LPC177x_8x.h
             PackID:
                 - Keil.LPC1700_DFP.2.2.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

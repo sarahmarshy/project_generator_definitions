@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MKV10Z64xxx7$Device/Include/MKV11Z7.h
             PackID:
                 - Keil.Kinetis_KVxx_DFP.1.6.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

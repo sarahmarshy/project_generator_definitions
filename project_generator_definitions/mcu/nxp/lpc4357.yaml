@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:LPC4357$Device/Include/LPC43xx.h
             PackID:
                 - Keil.LPC4300_DFP.2.6.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

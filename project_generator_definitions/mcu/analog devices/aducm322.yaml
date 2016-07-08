@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ADuCM322$ADuCM322\common\ADuCM322.h
             PackID:
                 - AnalogDevices.ADuCM320_DFP.1.1.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

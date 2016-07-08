@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ADSP-CM403BSWZ-EF$inc/device.h
             PackID:
                 - Keil.CM4xx_DFP.1.1.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

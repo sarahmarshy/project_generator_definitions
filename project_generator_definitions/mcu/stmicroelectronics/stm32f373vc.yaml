@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:STM32F373VC$Device\Include\stm32f3xx.h
             PackID:
                 - Keil.STM32F3xx_DFP.1.3.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

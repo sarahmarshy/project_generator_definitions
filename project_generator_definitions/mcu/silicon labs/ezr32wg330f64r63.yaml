@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:EZR32WG330F64R63$Device/EZR32WG/Include/em_device.h
             PackID:
                 - Keil.EZR32WG_DFP.1.1.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

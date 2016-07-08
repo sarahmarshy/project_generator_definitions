@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:STM32L052C6$Device/Include/stm32l0xx.h
             PackID:
                 - Keil.STM32L0xx_DFP.1.6.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

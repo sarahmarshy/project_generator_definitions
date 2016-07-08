@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:LPC1825$Device/Include/LPC18xx.h
             PackID:
                 - Keil.LPC1800_DFP.2.6.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ARMCM0P$Device/ARM/ARMCM0plus/Include/ARMCM0plus.h
             PackID:
                 - ARM.CMSIS.5.0.0-Beta4.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

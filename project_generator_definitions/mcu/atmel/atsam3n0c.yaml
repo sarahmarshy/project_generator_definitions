@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ATSAM3N0C$Device/SAM3N/Include/sam3n.h
             PackID:
                 - Keil.SAM3_DFP.1.1.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

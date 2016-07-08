@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MKW21D512xxx5$Device/Include/MKW24D5.h
             PackID:
                 - Keil.Kinetis_KWxx_DFP.1.4.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

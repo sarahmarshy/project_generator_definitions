@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:LPC4072FET80$Device/Include/LPC407x_8x_177x_8x.h
             PackID:
                 - Keil.LPC4000_DFP.2.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

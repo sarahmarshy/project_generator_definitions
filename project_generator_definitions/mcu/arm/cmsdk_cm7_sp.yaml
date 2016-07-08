@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:CMSDK_CM7_SP$Device/CMSDK_CM7/Include/CMSDK_CM7_DP.h
             PackID:
                 - Keil.V2M-MPS2_CMx_BSP.1.3.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

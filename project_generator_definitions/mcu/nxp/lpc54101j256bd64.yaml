@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:LPC54101J256BD64$LPCOpen/lpc5410x/chip_5410x/inc/chip.h
             PackID:
                 - Keil.LPC54000_DFP.2.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

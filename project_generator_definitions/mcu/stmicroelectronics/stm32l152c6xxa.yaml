@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:STM32L152C6xxA$Device\Include\STM32L1xx.h
             PackID:
                 - Keil.STM32L1xx_DFP.1.0.2.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

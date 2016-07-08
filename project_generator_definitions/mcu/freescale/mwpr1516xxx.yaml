@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MWPR1516xxx$Device\Include\MWPR1516.h
             PackID:
                 - Keil.Kinetis_KWPR1516_DFP.1.1.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

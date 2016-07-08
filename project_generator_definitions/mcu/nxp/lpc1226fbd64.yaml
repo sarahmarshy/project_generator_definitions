@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:LPC1226FBD64/301$Device\Include\LPC12xx\LPC122x.h
             PackID:
                 - Keil.LPC1200_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

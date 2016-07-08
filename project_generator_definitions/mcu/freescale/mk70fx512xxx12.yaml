@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MK70FX512xxx12$Device\Include\MK70F15.h
             PackID:
                 - Keil.Kinetis_K70_DFP.1.0.1.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:LPC1519JBD100$LPCOpen/software/lpc_core/lpc_chip/chip_15xx/chip.h
             PackID:
                 - Keil.LPC1500_DFP.1.2.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

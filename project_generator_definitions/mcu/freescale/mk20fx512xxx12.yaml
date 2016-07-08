@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MK20FX512xxx12$Device\Include\MK26F18.h
             PackID:
                 - Keil.Kinetis_K20_DFP.1.3.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

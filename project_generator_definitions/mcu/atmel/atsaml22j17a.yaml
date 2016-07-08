@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ATSAML22J17A$Device\SAML22\Include\saml22.h
             PackID:
                 - Keil.SAM-L_DFP.1.2.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

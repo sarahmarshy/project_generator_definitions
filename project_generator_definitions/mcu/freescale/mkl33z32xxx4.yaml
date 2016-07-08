@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MKL33Z32xxx4$Device/Include/MKL36Z4.h
             PackID:
                 - Keil.Kinetis_KLxx_DFP.1.9.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

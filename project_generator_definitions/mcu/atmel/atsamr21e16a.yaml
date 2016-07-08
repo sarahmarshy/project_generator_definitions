@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ATSAMR21E16A$Device\SAMR21\Include\samr21.h
             PackID:
                 - Keil.SAMR21_DFP.1.1.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

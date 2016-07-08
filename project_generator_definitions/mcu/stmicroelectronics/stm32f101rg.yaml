@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:STM32F101RG$Device/Include/stm32f10x.h
             PackID:
                 - Keil.STM32F1xx_DFP.2.1.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

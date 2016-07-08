@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MK80FN256xxx15$Device\Include\MK82F25615.h
             PackID:
                 - Keil.Kinetis_K80_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

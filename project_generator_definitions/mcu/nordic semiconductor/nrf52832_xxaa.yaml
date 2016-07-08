@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:nRF52832_xxAA$Device\Include\nrf.h
             PackID:
                 - NordicSemiconductor.nRF_DeviceFamilyPack.8.6.1.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

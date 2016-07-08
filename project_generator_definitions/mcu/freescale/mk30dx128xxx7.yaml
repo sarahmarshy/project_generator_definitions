@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MK30DX128xxx7$Device\Include\MK30D10.h
             PackID:
                 - Keil.Kinetis_K30_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:EFM32PG1B100F256GM32$Device/EFM32PG1B/Include/em_device.h
             PackID:
                 - Keil.EFM32PG1B_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

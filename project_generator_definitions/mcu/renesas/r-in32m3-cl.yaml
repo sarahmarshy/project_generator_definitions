@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:R-IN32M3-CL$Device/Include/RIN32M3.h
             PackID:
                 - Keil.R-IN32M3_DFP.1.3.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

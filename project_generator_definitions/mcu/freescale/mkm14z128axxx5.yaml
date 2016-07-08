@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MKM14Z128Axxx5$Device\Include\MKM14ZA5.h
             PackID:
                 - Keil.Kinetis_KMxx_DFP.1.2.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

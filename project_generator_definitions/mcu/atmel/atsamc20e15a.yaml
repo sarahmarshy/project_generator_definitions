@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ATSAMC20E15A$Device\SAMC20\Include\samc20.h
             PackID:
                 - Keil.SAM-C_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

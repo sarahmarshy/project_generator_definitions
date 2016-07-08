@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MK10DX64xxx5$Device\Include\MK11DA5.h
             PackID:
                 - Keil.Kinetis_K10_DFP.1.1.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

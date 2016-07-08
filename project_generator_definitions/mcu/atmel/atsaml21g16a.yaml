@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ATSAML21G16A$Device\SAML21\Include\saml21.h
             PackID:
                 - Keil.SAM-L_DFP.1.2.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

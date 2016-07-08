@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ATSAM4CP16B$Device\Include\SAM4CP\sam4cp.h
             PackID:
                 - Keil.SAM4_DFP.1.4.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

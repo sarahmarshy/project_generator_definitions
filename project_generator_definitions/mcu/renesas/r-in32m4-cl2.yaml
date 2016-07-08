@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:R-IN32M4-CL2$Device/Include/RIN32M4.h
             PackID:
                 - Keil.R-IN32M4_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

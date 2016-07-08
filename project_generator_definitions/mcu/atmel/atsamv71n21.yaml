@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ATSAMV71N21$SAMV71/include/sam.h
             PackID:
                 - Keil.SAM-V_DFP.2.3.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

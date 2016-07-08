@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MK60FN1M0xxx15$Device\Include\MK66F18.h
             PackID:
                 - Keil.Kinetis_K60_DFP.1.4.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

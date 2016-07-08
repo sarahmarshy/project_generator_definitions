@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ADuCM360$Device\Include\ADuCM361.h
             PackID:
                 - AnalogDevices.ADuCM36x_DFP.1.0.1.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

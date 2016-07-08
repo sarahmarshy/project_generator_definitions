@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:MK02FN128xxx10$Device\Include\MK02F12810.h
             PackID:
                 - Keil.Kinetis_K00_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

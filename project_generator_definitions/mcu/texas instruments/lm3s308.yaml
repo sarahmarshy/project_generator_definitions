@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:LM3S308$Device\Include\lm3s328.h
             PackID:
                 - Keil.LM3S_DFP.1.1.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

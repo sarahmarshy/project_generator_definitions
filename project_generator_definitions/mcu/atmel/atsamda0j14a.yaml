@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ATSAMDA0J14A$Device\SAMDA0\Include\samda0.h
             PackID:
                 - Keil.SAMDA0_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1

@@ -1,43 +1,45 @@
 mcu:
-    vendor:
-        - NXP
-    name:
-        - lpc4088fbd208
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - lpc4088fbd208
+  vendor:
+  - NXP
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - LPC4088FBD208
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x80000) IRAM(0x10000000,0x10000) IRAM2(0x20000000,0x8000) CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC4088FBD208$SVD/LPC408x_7x.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - LPC4088FBD208
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x80000) IRAM(0x10000000,0x10000) IRAM2(0x20000000,0x8000) CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC4088FBD208$SVD/LPC408x_7x.svd
-            RegisterFile:
-                - $$Device:LPC4088FBD208$Device/Include/LPC407x_8x_177x_8x.h
-            PackID:
-                - Keil.LPC4000_DFP.2.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1
+  iar:
+    OGChipSelectEditMenu:
+      state:
+      - LPC4088 NXP LPC4088
+    OGCoreOrChip:
+      state:
+      - 1
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x80000) IRAM(0x10000000,0x10000) IRAM2(0x20000000,0x8000)
+        CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
+      Device:
+      - LPC4088FBD208
+      DeviceId:
+      - None
+      SFDFile:
+      - $$Device:LPC4088FBD208$SVD/LPC408x_7x.svd
+      Vendor:
+      - NXP
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x80000) IRAM(0x10000000,0x10000) IRAM2(0x20000000,0x8000)
+        CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
+      Device:
+      - LPC4088FBD208
+      DeviceId:
+      - None
+      PackID:
+      - Keil.LPC4000_DFP.2.0.0.pack
+      RegisterFile:
+      - $$Device:LPC4088FBD208$Device/Include/LPC407x_8x_177x_8x.h
+      SFDFile:
+      - $$Device:LPC4088FBD208$SVD/LPC408x_7x.svd
+      Vendor:
+      - NXP

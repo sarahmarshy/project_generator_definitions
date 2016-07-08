@@ -1,43 +1,45 @@
 mcu:
-    vendor:
-        - NXP
-    name:
-        - lpc1768
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - lpc1768
+  vendor:
+  - NXP
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - LPC1768
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x80000) IRAM(0x10000000,0x8000) IRAM2(0x2007C000,0x8000) CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC1768$SVD/LPC176x5x.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - LPC1768
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x80000) IRAM(0x10000000,0x8000) IRAM2(0x2007C000,0x8000) CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC1768$SVD/LPC176x5x.svd
-            RegisterFile:
-                - $$Device:LPC1768$Device/Include/LPC17xx.h
-            PackID:
-                - Keil.LPC1700_DFP.2.2.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1
+  iar:
+    OGChipSelectEditMenu:
+      state:
+      - LPC1768 NXP LPC1768
+    OGCoreOrChip:
+      state:
+      - 1
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x80000) IRAM(0x10000000,0x8000) IRAM2(0x2007C000,0x8000)
+        CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
+      Device:
+      - LPC1768
+      DeviceId:
+      - None
+      SFDFile:
+      - $$Device:LPC1768$SVD/LPC176x5x.svd
+      Vendor:
+      - NXP
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x80000) IRAM(0x10000000,0x8000) IRAM2(0x2007C000,0x8000)
+        CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
+      Device:
+      - LPC1768
+      DeviceId:
+      - None
+      PackID:
+      - Keil.LPC1700_DFP.2.2.0.pack
+      RegisterFile:
+      - $$Device:LPC1768$Device/Include/LPC17xx.h
+      SFDFile:
+      - $$Device:LPC1768$SVD/LPC176x5x.svd
+      Vendor:
+      - NXP

@@ -34,10 +34,3 @@ tool_specific:
                 - $$Device:ATSAMD09D14A$Device\SAMD09\Include\samd09.h
             PackID:
                 - Keil.SAMD09_DFP.1.0.0.pack
-    iar:
-        OGChipSelectEditMenu:
-          state:
-          - None
-        OGCoreOrChip:
-          state:
-          - 1
