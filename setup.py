@@ -40,7 +40,8 @@ setup(
     packages=find_packages(),
     install_requires = [
         'pyYAML',
-        'xmltodict'
+        'xmltodict',
+        'ArmPackManager'
     ],
     include_package_data = True,
 )

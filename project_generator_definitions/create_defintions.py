@@ -1,11 +1,12 @@
 import os
 import sys
+import json
+import logging
+import requests
 
 from jinja2 import FileSystemLoader
 from jinja2.environment import Environment
-import requests, bs4
-import json
-import logging
+import bs4
 
 from ArmPackManager import Cache
 
