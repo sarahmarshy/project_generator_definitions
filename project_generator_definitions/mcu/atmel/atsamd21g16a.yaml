@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Atmel
-    name:
-        - atsamd21g16a
-    core:
-        - cortex-m0+
+  core:
+  - cortex-m0+
+  name:
+  - atsamd21g16a
+  vendor:
+  - Atmel
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - ATSAMD21G16A
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAMD21G16A$SVD\SAMD21\ATSAMD21G16A.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - ATSAMD21G16A
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAMD21G16A$SVD\SAMD21\ATSAMD21G16A.svd
-            RegisterFile:
-                - $$Device:ATSAMD21G16A$Device\SAMD21\Include\samd21.h
-            PackID:
-                - Keil.SAMD21_DFP.1.2.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+")
+        CLOCK(48000000) ELITTLE
+      Device:
+      - ATSAMD21G16A
+      DeviceId: []
+      SFDFile:
+      - $$Device:ATSAMD21G16A$SVD\SAMD21\ATSAMD21G16A.svd
+      Vendor:
+      - Atmel
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+")
+        CLOCK(48000000) ELITTLE
+      Device:
+      - ATSAMD21G16A
+      DeviceId: []
+      PackID:
+      - Keil.SAMD21_DFP.1.2.0.pack
+      RegisterFile:
+      - $$Device:ATSAMD21G16A$Device\SAMD21\Include\samd21.h
+      SFDFile:
+      - $$Device:ATSAMD21G16A$SVD\SAMD21\ATSAMD21G16A.svd
+      Vendor:
+      - Atmel

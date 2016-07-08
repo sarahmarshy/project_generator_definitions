@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Silicon Labs
-    name:
-        - efm32gg900f512
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - efm32gg900f512
+  vendor:
+  - Silicon Labs
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - EFM32GG900F512
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00080000) IRAM(0x20000000,0x00020000) CPUTYPE("Cortex-M3") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32GG900F512$SVD/EFM32GG/EFM32GG900F512.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - EFM32GG900F512
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00080000) IRAM(0x20000000,0x00020000) CPUTYPE("Cortex-M3") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32GG900F512$SVD/EFM32GG/EFM32GG900F512.svd
-            RegisterFile:
-                - $$Device:EFM32GG900F512$Device/EFM32GG/Include/em_device.h
-            PackID:
-                - Keil.EFM32GGxxx_DFP.2.3.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00080000) IRAM(0x20000000,0x00020000) CPUTYPE("Cortex-M3")
+        CLOCK(48000000) ELITTLE
+      Device:
+      - EFM32GG900F512
+      DeviceId: []
+      SFDFile:
+      - $$Device:EFM32GG900F512$SVD/EFM32GG/EFM32GG900F512.svd
+      Vendor:
+      - Silicon Labs
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00080000) IRAM(0x20000000,0x00020000) CPUTYPE("Cortex-M3")
+        CLOCK(48000000) ELITTLE
+      Device:
+      - EFM32GG900F512
+      DeviceId: []
+      PackID:
+      - Keil.EFM32GGxxx_DFP.2.3.0.pack
+      RegisterFile:
+      - $$Device:EFM32GG900F512$Device/EFM32GG/Include/em_device.h
+      SFDFile:
+      - $$Device:EFM32GG900F512$SVD/EFM32GG/EFM32GG900F512.svd
+      Vendor:
+      - Silicon Labs

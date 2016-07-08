@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - STMicroelectronics
-    name:
-        - stm32f302rd
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - stm32f302rd
+  vendor:
+  - STMicroelectronics
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - STM32F302RD
-            Vendor:
-                - STMicroelectronics
-            Cpu:
-                - IROM(0x08000000,0x00060000) IRAM(0x20000000,0x00010000) CPUTYPE("Cortex-M4") FPU2 CLOCK(72000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:STM32F302RD$SVD\STM32F303xE.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - STM32F302RD
-            Vendor:
-                - STMicroelectronics
-            Cpu:
-                - IROM(0x08000000,0x00060000) IRAM(0x20000000,0x00010000) CPUTYPE("Cortex-M4") FPU2 CLOCK(72000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:STM32F302RD$SVD\STM32F303xE.svd
-            RegisterFile:
-                - $$Device:STM32F302RD$Device\Include\stm32f3xx.h
-            PackID:
-                - Keil.STM32F3xx_DFP.1.3.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x08000000,0x00060000) IRAM(0x20000000,0x00010000) CPUTYPE("Cortex-M4")
+        FPU2 CLOCK(72000000) ELITTLE
+      Device:
+      - STM32F302RD
+      DeviceId: []
+      SFDFile:
+      - $$Device:STM32F302RD$SVD\STM32F303xE.svd
+      Vendor:
+      - STMicroelectronics
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x08000000,0x00060000) IRAM(0x20000000,0x00010000) CPUTYPE("Cortex-M4")
+        FPU2 CLOCK(72000000) ELITTLE
+      Device:
+      - STM32F302RD
+      DeviceId: []
+      PackID:
+      - Keil.STM32F3xx_DFP.1.3.0.pack
+      RegisterFile:
+      - $$Device:STM32F302RD$Device\Include\stm32f3xx.h
+      SFDFile:
+      - $$Device:STM32F302RD$SVD\STM32F303xE.svd
+      Vendor:
+      - STMicroelectronics

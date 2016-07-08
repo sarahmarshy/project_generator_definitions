@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Texas Instruments
-    name:
-        - lm3s5p3b
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - lm3s5p3b
+  vendor:
+  - Texas Instruments
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - LM3S5P3B
-            Vendor:
-                - Texas Instruments
-            Cpu:
-                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00006000) CPUTYPE("Cortex-M3") CLOCK(80000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LM3S5P3B$SVD\lm3s5632.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - LM3S5P3B
-            Vendor:
-                - Texas Instruments
-            Cpu:
-                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00006000) CPUTYPE("Cortex-M3") CLOCK(80000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LM3S5P3B$SVD\lm3s5632.svd
-            RegisterFile:
-                - $$Device:LM3S5P3B$Device\Include\lm3s5y36.h
-            PackID:
-                - Keil.LM3S_DFP.1.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00006000) CPUTYPE("Cortex-M3")
+        CLOCK(80000000) ELITTLE
+      Device:
+      - LM3S5P3B
+      DeviceId: []
+      SFDFile:
+      - $$Device:LM3S5P3B$SVD\lm3s5632.svd
+      Vendor:
+      - Texas Instruments
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00006000) CPUTYPE("Cortex-M3")
+        CLOCK(80000000) ELITTLE
+      Device:
+      - LM3S5P3B
+      DeviceId: []
+      PackID:
+      - Keil.LM3S_DFP.1.1.0.pack
+      RegisterFile:
+      - $$Device:LM3S5P3B$Device\Include\lm3s5y36.h
+      SFDFile:
+      - $$Device:LM3S5P3B$SVD\lm3s5632.svd
+      Vendor:
+      - Texas Instruments

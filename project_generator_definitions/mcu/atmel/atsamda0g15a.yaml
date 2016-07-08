@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Atmel
-    name:
-        - atsamda0g15a
-    core:
-        - cortex-m0+
+  core:
+  - cortex-m0+
+  name:
+  - atsamda0g15a
+  vendor:
+  - Atmel
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - ATSAMDA0G15A
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00000000,0x00008000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAMDA0G15A$SVD\SAMDA0\ATSAMDA0G15A.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - ATSAMDA0G15A
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00000000,0x00008000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAMDA0G15A$SVD\SAMDA0\ATSAMDA0G15A.svd
-            RegisterFile:
-                - $$Device:ATSAMDA0G15A$Device\SAMDA0\Include\samda0.h
-            PackID:
-                - Keil.SAMDA0_DFP.1.0.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00008000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+")
+        CLOCK(48000000) ELITTLE
+      Device:
+      - ATSAMDA0G15A
+      DeviceId: []
+      SFDFile:
+      - $$Device:ATSAMDA0G15A$SVD\SAMDA0\ATSAMDA0G15A.svd
+      Vendor:
+      - Atmel
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00008000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+")
+        CLOCK(48000000) ELITTLE
+      Device:
+      - ATSAMDA0G15A
+      DeviceId: []
+      PackID:
+      - Keil.SAMDA0_DFP.1.0.0.pack
+      RegisterFile:
+      - $$Device:ATSAMDA0G15A$Device\SAMDA0\Include\samda0.h
+      SFDFile:
+      - $$Device:ATSAMDA0G15A$SVD\SAMDA0\ATSAMDA0G15A.svd
+      Vendor:
+      - Atmel

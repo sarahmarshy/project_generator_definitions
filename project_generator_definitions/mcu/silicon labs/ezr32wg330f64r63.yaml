@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Silicon Labs
-    name:
-        - ezr32wg330f64r63
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - ezr32wg330f64r63
+  vendor:
+  - Silicon Labs
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - EZR32WG330F64R63
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EZR32WG330F64R63$SVD/EZR32WG/EZR32WG330F64R63.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - EZR32WG330F64R63
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EZR32WG330F64R63$SVD/EZR32WG/EZR32WG330F64R63.svd
-            RegisterFile:
-                - $$Device:EZR32WG330F64R63$Device/EZR32WG/Include/em_device.h
-            PackID:
-                - Keil.EZR32WG_DFP.1.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4")
+        FPU2 CLOCK(48000000) ELITTLE
+      Device:
+      - EZR32WG330F64R63
+      DeviceId: []
+      SFDFile:
+      - $$Device:EZR32WG330F64R63$SVD/EZR32WG/EZR32WG330F64R63.svd
+      Vendor:
+      - Silicon Labs
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4")
+        FPU2 CLOCK(48000000) ELITTLE
+      Device:
+      - EZR32WG330F64R63
+      DeviceId: []
+      PackID:
+      - Keil.EZR32WG_DFP.1.1.0.pack
+      RegisterFile:
+      - $$Device:EZR32WG330F64R63$Device/EZR32WG/Include/em_device.h
+      SFDFile:
+      - $$Device:EZR32WG330F64R63$SVD/EZR32WG/EZR32WG330F64R63.svd
+      Vendor:
+      - Silicon Labs

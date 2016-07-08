@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Silicon Labs
-    name:
-        - efm32jg1b200f128gm48
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - efm32jg1b200f128gm48
+  vendor:
+  - Silicon Labs
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - EFM32JG1B200F128GM48
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(38400000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32JG1B200F128GM48$SVD/EFM32JG1B/EFM32JG1B200F128GM48.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - EFM32JG1B200F128GM48
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(38400000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32JG1B200F128GM48$SVD/EFM32JG1B/EFM32JG1B200F128GM48.svd
-            RegisterFile:
-                - $$Device:EFM32JG1B200F128GM48$Device/EFM32JG1B/Include/em_device.h
-            PackID:
-                - Keil.EFM32JG1B_DFP.1.0.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3")
+        CLOCK(38400000) ELITTLE
+      Device:
+      - EFM32JG1B200F128GM48
+      DeviceId: []
+      SFDFile:
+      - $$Device:EFM32JG1B200F128GM48$SVD/EFM32JG1B/EFM32JG1B200F128GM48.svd
+      Vendor:
+      - Silicon Labs
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3")
+        CLOCK(38400000) ELITTLE
+      Device:
+      - EFM32JG1B200F128GM48
+      DeviceId: []
+      PackID:
+      - Keil.EFM32JG1B_DFP.1.0.0.pack
+      RegisterFile:
+      - $$Device:EFM32JG1B200F128GM48$Device/EFM32JG1B/Include/em_device.h
+      SFDFile:
+      - $$Device:EFM32JG1B200F128GM48$SVD/EFM32JG1B/EFM32JG1B200F128GM48.svd
+      Vendor:
+      - Silicon Labs

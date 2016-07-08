@@ -1,36 +1,34 @@
 mcu:
-    vendor:
-        - ARM
-    name:
-        - armcm7
-    core:
-        - cortex-m0
+  core:
+  - cortex-m0
+  name:
+  - armcm7
+  vendor:
+  - ARM
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - ARMCM7
-            Vendor:
-                - ARM
-            Cpu:
-                - CPUTYPE("Cortex-M0") CLOCK(10000000)
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ARMCM7$Device/ARM/SVD/ARMCM7.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - ARMCM7
-            Vendor:
-                - ARM
-            Cpu:
-                - CPUTYPE("Cortex-M0") CLOCK(10000000)
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ARMCM7$Device/ARM/SVD/ARMCM7.svd
-            RegisterFile:
-                - $$Device:ARMCM7$Device/ARM/ARMCM7/Include/ARMCM7_DP.h
-            PackID:
-                - ARM.CMSIS.5.0.0-Beta4.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - CPUTYPE("Cortex-M0") CLOCK(10000000)
+      Device:
+      - ARMCM7
+      DeviceId: []
+      SFDFile:
+      - $$Device:ARMCM7$Device/ARM/SVD/ARMCM7.svd
+      Vendor:
+      - ARM
+  uvision5:
+    TargetOption:
+      Cpu:
+      - CPUTYPE("Cortex-M0") CLOCK(10000000)
+      Device:
+      - ARMCM7
+      DeviceId: []
+      PackID:
+      - ARM.CMSIS.5.0.0-Beta4.pack
+      RegisterFile:
+      - $$Device:ARMCM7$Device/ARM/ARMCM7/Include/ARMCM7_DP.h
+      SFDFile:
+      - $$Device:ARMCM7$Device/ARM/SVD/ARMCM7.svd
+      Vendor:
+      - ARM

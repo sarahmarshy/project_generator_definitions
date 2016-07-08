@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - NXP
-    name:
-        - lpc54113j128bd64
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - lpc54113j128bd64
+  vendor:
+  - NXP
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - LPC54113J128BD64
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00020000) IRAM2(0x20020000,0x00008000) CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC54113J128BD64$SVD/LPC5411x.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - LPC54113J128BD64
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00020000) IRAM2(0x20020000,0x00008000) CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC54113J128BD64$SVD/LPC5411x.svd
-            RegisterFile:
-                - $$Device:LPC54113J128BD64$LPCOpen/lpc5411x/chip_5411x/inc/chip.h
-            PackID:
-                - Keil.LPC54000_DFP.2.0.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00020000) IRAM2(0x20020000,0x00008000)
+        CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
+      Device:
+      - LPC54113J128BD64
+      DeviceId: []
+      SFDFile:
+      - $$Device:LPC54113J128BD64$SVD/LPC5411x.svd
+      Vendor:
+      - NXP
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00020000) IRAM2(0x20020000,0x00008000)
+        CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
+      Device:
+      - LPC54113J128BD64
+      DeviceId: []
+      PackID:
+      - Keil.LPC54000_DFP.2.0.0.pack
+      RegisterFile:
+      - $$Device:LPC54113J128BD64$LPCOpen/lpc5411x/chip_5411x/inc/chip.h
+      SFDFile:
+      - $$Device:LPC54113J128BD64$SVD/LPC5411x.svd
+      Vendor:
+      - NXP

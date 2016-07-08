@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Silicon Labs
-    name:
-        - efm32g890f128
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - efm32g890f128
+  vendor:
+  - Silicon Labs
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - EFM32G890F128
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00004000) CPUTYPE("Cortex-M3") CLOCK(32000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32G890F128$SVD/EFM32G/EFM32G890F128.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - EFM32G890F128
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00004000) CPUTYPE("Cortex-M3") CLOCK(32000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32G890F128$SVD/EFM32G/EFM32G890F128.svd
-            RegisterFile:
-                - $$Device:EFM32G890F128$Device/EFM32G/Include/em_device.h
-            PackID:
-                - Keil.EFM32Gxxx_DFP.1.2.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00004000) CPUTYPE("Cortex-M3")
+        CLOCK(32000000) ELITTLE
+      Device:
+      - EFM32G890F128
+      DeviceId: []
+      SFDFile:
+      - $$Device:EFM32G890F128$SVD/EFM32G/EFM32G890F128.svd
+      Vendor:
+      - Silicon Labs
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00004000) CPUTYPE("Cortex-M3")
+        CLOCK(32000000) ELITTLE
+      Device:
+      - EFM32G890F128
+      DeviceId: []
+      PackID:
+      - Keil.EFM32Gxxx_DFP.1.2.0.pack
+      RegisterFile:
+      - $$Device:EFM32G890F128$Device/EFM32G/Include/em_device.h
+      SFDFile:
+      - $$Device:EFM32G890F128$SVD/EFM32G/EFM32G890F128.svd
+      Vendor:
+      - Silicon Labs

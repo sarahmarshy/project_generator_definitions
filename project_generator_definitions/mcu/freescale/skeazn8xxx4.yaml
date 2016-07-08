@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Freescale
-    name:
-        - skeazn8xxx4
-    core:
-        - cortex-m0+
+  core:
+  - cortex-m0+
+  name:
+  - skeazn8xxx4
+  vendor:
+  - Freescale
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - SKEAZN8xxx4
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x2000) IRAM(0x1FFFFF00,0x400) CPUTYPE("Cortex-M0+") CLOCK(20000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:SKEAZN8xxx4$SVD\SKEAZN84.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - SKEAZN8xxx4
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x2000) IRAM(0x1FFFFF00,0x400) CPUTYPE("Cortex-M0+") CLOCK(20000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:SKEAZN8xxx4$SVD\SKEAZN84.svd
-            RegisterFile:
-                - $$Device:SKEAZN8xxx4$Device\Include\SKEAZN642.h
-            PackID:
-                - Keil.Kinetis_KEAxx_DFP.1.2.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x2000) IRAM(0x1FFFFF00,0x400) CPUTYPE("Cortex-M0+") CLOCK(20000000)
+        ELITTLE
+      Device:
+      - SKEAZN8xxx4
+      DeviceId: []
+      SFDFile:
+      - $$Device:SKEAZN8xxx4$SVD\SKEAZN84.svd
+      Vendor:
+      - Freescale
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x2000) IRAM(0x1FFFFF00,0x400) CPUTYPE("Cortex-M0+") CLOCK(20000000)
+        ELITTLE
+      Device:
+      - SKEAZN8xxx4
+      DeviceId: []
+      PackID:
+      - Keil.Kinetis_KEAxx_DFP.1.2.0.pack
+      RegisterFile:
+      - $$Device:SKEAZN8xxx4$Device\Include\SKEAZN642.h
+      SFDFile:
+      - $$Device:SKEAZN8xxx4$SVD\SKEAZN84.svd
+      Vendor:
+      - Freescale

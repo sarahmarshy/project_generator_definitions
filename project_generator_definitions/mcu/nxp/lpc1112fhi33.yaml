@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - NXP
-    name:
-        - lpc1112fhi33/203
-    core:
-        - cortex-m0
+  core:
+  - cortex-m0
+  name:
+  - lpc1112fhi33/202
+  vendor:
+  - NXP
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - LPC1112FHI33/203
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x4000) IRAM(0x10000000,0x1000) CPUTYPE("Cortex-M0") CLOCK(50000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC1112FHI33/203$SVD\LPC111x.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - LPC1112FHI33/203
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x4000) IRAM(0x10000000,0x1000) CPUTYPE("Cortex-M0") CLOCK(50000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC1112FHI33/203$SVD\LPC111x.svd
-            RegisterFile:
-                - $$Device:LPC1112FHI33/203$Device\Include\LPC11xx\LPC11xx.h
-            PackID:
-                - Keil.LPC1100_DFP.1.4.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x4000) IRAM(0x10000000,0x1000) CPUTYPE("Cortex-M0") CLOCK(50000000)
+        ELITTLE
+      Device:
+      - LPC1112FHI33/202
+      DeviceId: []
+      SFDFile:
+      - $$Device:LPC1112FHI33/202$SVD\LPC111x.svd
+      Vendor:
+      - NXP
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x4000) IRAM(0x10000000,0x1000) CPUTYPE("Cortex-M0") CLOCK(50000000)
+        ELITTLE
+      Device:
+      - LPC1112FHI33/202
+      DeviceId: []
+      PackID:
+      - Keil.LPC1100_DFP.1.4.0.pack
+      RegisterFile:
+      - $$Device:LPC1112FHI33/202$Device\Include\LPC11xx\LPC11xx.h
+      SFDFile:
+      - $$Device:LPC1112FHI33/202$SVD\LPC111x.svd
+      Vendor:
+      - NXP

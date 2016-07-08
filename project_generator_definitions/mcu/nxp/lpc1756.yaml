@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - NXP
-    name:
-        - lpc1756
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - lpc1756
+  vendor:
+  - NXP
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - LPC1756
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x40000) IRAM(0x10000000,0x4000) IRAM2(0x2007C000,0x4000) CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC1756$SVD/LPC176x5x.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - LPC1756
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x40000) IRAM(0x10000000,0x4000) IRAM2(0x2007C000,0x4000) CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC1756$SVD/LPC176x5x.svd
-            RegisterFile:
-                - $$Device:LPC1756$Device/Include/LPC17xx.h
-            PackID:
-                - Keil.LPC1700_DFP.2.2.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x40000) IRAM(0x10000000,0x4000) IRAM2(0x2007C000,0x4000)
+        CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
+      Device:
+      - LPC1756
+      DeviceId: []
+      SFDFile:
+      - $$Device:LPC1756$SVD/LPC176x5x.svd
+      Vendor:
+      - NXP
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x40000) IRAM(0x10000000,0x4000) IRAM2(0x2007C000,0x4000)
+        CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
+      Device:
+      - LPC1756
+      DeviceId: []
+      PackID:
+      - Keil.LPC1700_DFP.2.2.0.pack
+      RegisterFile:
+      - $$Device:LPC1756$Device/Include/LPC17xx.h
+      SFDFile:
+      - $$Device:LPC1756$SVD/LPC176x5x.svd
+      Vendor:
+      - NXP

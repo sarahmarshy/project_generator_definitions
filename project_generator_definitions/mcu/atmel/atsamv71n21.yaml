@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Atmel
-    name:
-        - atsamv71n21
-    core:
-        - cortex-m7
+  core:
+  - cortex-m7
+  name:
+  - atsamv71n21
+  vendor:
+  - Atmel
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - ATSAMV71N21
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00400000,0x00200000) IRAM(0x20400000,0x00060000) CPUTYPE("Cortex-M7") FPU2 CLOCK(300000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAMV71N21$svd/ATSAMV71N21.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - ATSAMV71N21
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00400000,0x00200000) IRAM(0x20400000,0x00060000) CPUTYPE("Cortex-M7") FPU2 CLOCK(300000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAMV71N21$svd/ATSAMV71N21.svd
-            RegisterFile:
-                - $$Device:ATSAMV71N21$SAMV71/include/sam.h
-            PackID:
-                - Keil.SAM-V_DFP.2.3.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00400000,0x00200000) IRAM(0x20400000,0x00060000) CPUTYPE("Cortex-M7")
+        FPU2 CLOCK(300000000) ELITTLE
+      Device:
+      - ATSAMV71N21
+      DeviceId: []
+      SFDFile:
+      - $$Device:ATSAMV71N21$svd/ATSAMV71N21.svd
+      Vendor:
+      - Atmel
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00400000,0x00200000) IRAM(0x20400000,0x00060000) CPUTYPE("Cortex-M7")
+        FPU2 CLOCK(300000000) ELITTLE
+      Device:
+      - ATSAMV71N21
+      DeviceId: []
+      PackID:
+      - Keil.SAM-V_DFP.2.3.0.pack
+      RegisterFile:
+      - $$Device:ATSAMV71N21$SAMV71/include/sam.h
+      SFDFile:
+      - $$Device:ATSAMV71N21$svd/ATSAMV71N21.svd
+      Vendor:
+      - Atmel

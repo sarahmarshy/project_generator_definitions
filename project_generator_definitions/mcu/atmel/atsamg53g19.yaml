@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Atmel
-    name:
-        - atsamg53g19
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - atsamg53g19
+  vendor:
+  - Atmel
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - ATSAMG53G19
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00400000,0x80000) IRAM(0x20000000,0x18000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAMG53G19$SVD\SAMG53\ATSAMG53G19.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - ATSAMG53G19
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00400000,0x80000) IRAM(0x20000000,0x18000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAMG53G19$SVD\SAMG53\ATSAMG53G19.svd
-            RegisterFile:
-                - $$Device:ATSAMG53G19$Device\Include\SAMG53\samg53.h
-            PackID:
-                - Keil.SAMG_DFP.1.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00400000,0x80000) IRAM(0x20000000,0x18000) CPUTYPE("Cortex-M4") FPU2
+        CLOCK(48000000) ELITTLE
+      Device:
+      - ATSAMG53G19
+      DeviceId: []
+      SFDFile:
+      - $$Device:ATSAMG53G19$SVD\SAMG53\ATSAMG53G19.svd
+      Vendor:
+      - Atmel
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00400000,0x80000) IRAM(0x20000000,0x18000) CPUTYPE("Cortex-M4") FPU2
+        CLOCK(48000000) ELITTLE
+      Device:
+      - ATSAMG53G19
+      DeviceId: []
+      PackID:
+      - Keil.SAMG_DFP.1.1.0.pack
+      RegisterFile:
+      - $$Device:ATSAMG53G19$Device\Include\SAMG53\samg53.h
+      SFDFile:
+      - $$Device:ATSAMG53G19$SVD\SAMG53\ATSAMG53G19.svd
+      Vendor:
+      - Atmel

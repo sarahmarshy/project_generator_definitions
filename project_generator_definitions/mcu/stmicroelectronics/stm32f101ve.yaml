@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - STMicroelectronics
-    name:
-        - stm32f101ve
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - stm32f101ve
+  vendor:
+  - STMicroelectronics
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - STM32F101VE
-            Vendor:
-                - STMicroelectronics
-            Cpu:
-                - IROM(0x08000000,0x80000) IRAM(0x20000000,0xC000) CPUTYPE("Cortex-M3") CLOCK(36000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:STM32F101VE$SVD/STM32F101xx.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - STM32F101VE
-            Vendor:
-                - STMicroelectronics
-            Cpu:
-                - IROM(0x08000000,0x80000) IRAM(0x20000000,0xC000) CPUTYPE("Cortex-M3") CLOCK(36000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:STM32F101VE$SVD/STM32F101xx.svd
-            RegisterFile:
-                - $$Device:STM32F101VE$Device/Include/stm32f10x.h
-            PackID:
-                - Keil.STM32F1xx_DFP.2.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x08000000,0x80000) IRAM(0x20000000,0xC000) CPUTYPE("Cortex-M3") CLOCK(36000000)
+        ELITTLE
+      Device:
+      - STM32F101VE
+      DeviceId: []
+      SFDFile:
+      - $$Device:STM32F101VE$SVD/STM32F101xx.svd
+      Vendor:
+      - STMicroelectronics
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x08000000,0x80000) IRAM(0x20000000,0xC000) CPUTYPE("Cortex-M3") CLOCK(36000000)
+        ELITTLE
+      Device:
+      - STM32F101VE
+      DeviceId: []
+      PackID:
+      - Keil.STM32F1xx_DFP.2.1.0.pack
+      RegisterFile:
+      - $$Device:STM32F101VE$Device/Include/stm32f10x.h
+      SFDFile:
+      - $$Device:STM32F101VE$SVD/STM32F101xx.svd
+      Vendor:
+      - STMicroelectronics

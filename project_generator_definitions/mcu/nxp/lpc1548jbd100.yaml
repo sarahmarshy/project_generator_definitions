@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - NXP
-    name:
-        - lpc1548jbd100
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - lpc1548jbd100
+  vendor:
+  - NXP
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - LPC1548JBD100
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x20000) IRAM(0x02000000,0x5000) CPUTYPE("Cortex-M3") CLOCK(75000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC1548JBD100$SVD/LPC15xx.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - LPC1548JBD100
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x20000) IRAM(0x02000000,0x5000) CPUTYPE("Cortex-M3") CLOCK(75000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC1548JBD100$SVD/LPC15xx.svd
-            RegisterFile:
-                - $$Device:LPC1548JBD100$LPCOpen/software/lpc_core/lpc_chip/chip_15xx/chip.h
-            PackID:
-                - Keil.LPC1500_DFP.1.2.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x20000) IRAM(0x02000000,0x5000) CPUTYPE("Cortex-M3") CLOCK(75000000)
+        ELITTLE
+      Device:
+      - LPC1548JBD100
+      DeviceId: []
+      SFDFile:
+      - $$Device:LPC1548JBD100$SVD/LPC15xx.svd
+      Vendor:
+      - NXP
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x20000) IRAM(0x02000000,0x5000) CPUTYPE("Cortex-M3") CLOCK(75000000)
+        ELITTLE
+      Device:
+      - LPC1548JBD100
+      DeviceId: []
+      PackID:
+      - Keil.LPC1500_DFP.1.2.0.pack
+      RegisterFile:
+      - $$Device:LPC1548JBD100$LPCOpen/software/lpc_core/lpc_chip/chip_15xx/chip.h
+      SFDFile:
+      - $$Device:LPC1548JBD100$SVD/LPC15xx.svd
+      Vendor:
+      - NXP

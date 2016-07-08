@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - STMicroelectronics
-    name:
-        - stm32l021g4
-    core:
-        - cortex-m0+
+  core:
+  - cortex-m0+
+  name:
+  - stm32l021g4
+  vendor:
+  - STMicroelectronics
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - STM32L021G4
-            Vendor:
-                - STMicroelectronics
-            Cpu:
-                - IROM(0x08000000,0x00004000) IRAM(0x20000000,0x00000800) CPUTYPE("Cortex-M0+") CLOCK(32000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:STM32L021G4$SVD/STM32L0x1.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - STM32L021G4
-            Vendor:
-                - STMicroelectronics
-            Cpu:
-                - IROM(0x08000000,0x00004000) IRAM(0x20000000,0x00000800) CPUTYPE("Cortex-M0+") CLOCK(32000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:STM32L021G4$SVD/STM32L0x1.svd
-            RegisterFile:
-                - $$Device:STM32L021G4$Device/Include/stm32l0xx.h
-            PackID:
-                - Keil.STM32L0xx_DFP.1.6.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x08000000,0x00004000) IRAM(0x20000000,0x00000800) CPUTYPE("Cortex-M0+")
+        CLOCK(32000000) ELITTLE
+      Device:
+      - STM32L021G4
+      DeviceId: []
+      SFDFile:
+      - $$Device:STM32L021G4$SVD/STM32L0x1.svd
+      Vendor:
+      - STMicroelectronics
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x08000000,0x00004000) IRAM(0x20000000,0x00000800) CPUTYPE("Cortex-M0+")
+        CLOCK(32000000) ELITTLE
+      Device:
+      - STM32L021G4
+      DeviceId: []
+      PackID:
+      - Keil.STM32L0xx_DFP.1.6.0.pack
+      RegisterFile:
+      - $$Device:STM32L021G4$Device/Include/stm32l0xx.h
+      SFDFile:
+      - $$Device:STM32L021G4$SVD/STM32L0x1.svd
+      Vendor:
+      - STMicroelectronics

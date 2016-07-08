@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Texas Instruments
-    name:
-        - lm4f212e5qc
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - lm4f212e5qc
+  vendor:
+  - Texas Instruments
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - LM4F212E5QC
-            Vendor:
-                - Texas Instruments
-            Cpu:
-                - IROM(0x00000000,0x20000) IRAM(0x10000000,0x8000) CPUTYPE("Cortex-M4") FPU2 CLOCK(80000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LM4F212E5QC$SVD\LM4F212E5QC.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - LM4F212E5QC
-            Vendor:
-                - Texas Instruments
-            Cpu:
-                - IROM(0x00000000,0x20000) IRAM(0x10000000,0x8000) CPUTYPE("Cortex-M4") FPU2 CLOCK(80000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LM4F212E5QC$SVD\LM4F212E5QC.svd
-            RegisterFile:
-                - $$Device:LM4F212E5QC$Device\Include\LM4F232H5BB.h
-            PackID:
-                - Keil.LM4F_DFP.1.0.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x20000) IRAM(0x10000000,0x8000) CPUTYPE("Cortex-M4") FPU2
+        CLOCK(80000000) ELITTLE
+      Device:
+      - LM4F212E5QC
+      DeviceId: []
+      SFDFile:
+      - $$Device:LM4F212E5QC$SVD\LM4F212E5QC.svd
+      Vendor:
+      - Texas Instruments
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x20000) IRAM(0x10000000,0x8000) CPUTYPE("Cortex-M4") FPU2
+        CLOCK(80000000) ELITTLE
+      Device:
+      - LM4F212E5QC
+      DeviceId: []
+      PackID:
+      - Keil.LM4F_DFP.1.0.0.pack
+      RegisterFile:
+      - $$Device:LM4F212E5QC$Device\Include\LM4F232H5BB.h
+      SFDFile:
+      - $$Device:LM4F212E5QC$SVD\LM4F212E5QC.svd
+      Vendor:
+      - Texas Instruments

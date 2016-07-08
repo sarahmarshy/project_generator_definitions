@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - NXP
-    name:
-        - lpc810m021fn8
-    core:
-        - cortex-m0+
+  core:
+  - cortex-m0+
+  name:
+  - lpc810m021fn8
+  vendor:
+  - NXP
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - LPC810M021FN8
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x1000) IRAM(0x10000000,0x0400) CPUTYPE("Cortex-M0+") CLOCK(30000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC810M021FN8$SVD\LPC800.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - LPC810M021FN8
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x1000) IRAM(0x10000000,0x0400) CPUTYPE("Cortex-M0+") CLOCK(30000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC810M021FN8$SVD\LPC800.svd
-            RegisterFile:
-                - $$Device:LPC810M021FN8$Device\Include\LPC8xx.h
-            PackID:
-                - Keil.LPC800_DFP.1.2.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x1000) IRAM(0x10000000,0x0400) CPUTYPE("Cortex-M0+") CLOCK(30000000)
+        ELITTLE
+      Device:
+      - LPC810M021FN8
+      DeviceId: []
+      SFDFile:
+      - $$Device:LPC810M021FN8$SVD\LPC800.svd
+      Vendor:
+      - NXP
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x1000) IRAM(0x10000000,0x0400) CPUTYPE("Cortex-M0+") CLOCK(30000000)
+        ELITTLE
+      Device:
+      - LPC810M021FN8
+      DeviceId: []
+      PackID:
+      - Keil.LPC800_DFP.1.2.0.pack
+      RegisterFile:
+      - $$Device:LPC810M021FN8$Device\Include\LPC8xx.h
+      SFDFile:
+      - $$Device:LPC810M021FN8$SVD\LPC800.svd
+      Vendor:
+      - NXP

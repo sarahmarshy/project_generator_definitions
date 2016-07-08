@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - STMicroelectronics
-    name:
-        - stm32f051c6
-    core:
-        - cortex-m0
+  core:
+  - cortex-m0
+  name:
+  - stm32f051c6
+  vendor:
+  - STMicroelectronics
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - STM32F051C6
-            Vendor:
-                - STMicroelectronics
-            Cpu:
-                - IROM(0x08000000,0x8000) IRAM(0x20000000,0x2000) CPUTYPE("Cortex-M0") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:STM32F051C6$SVD/STM32F0x1.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - STM32F051C6
-            Vendor:
-                - STMicroelectronics
-            Cpu:
-                - IROM(0x08000000,0x8000) IRAM(0x20000000,0x2000) CPUTYPE("Cortex-M0") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:STM32F051C6$SVD/STM32F0x1.svd
-            RegisterFile:
-                - $$Device:STM32F051C6$Device/Include/stm32f0xx.h
-            PackID:
-                - Keil.STM32F0xx_DFP.1.5.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x08000000,0x8000) IRAM(0x20000000,0x2000) CPUTYPE("Cortex-M0") CLOCK(48000000)
+        ELITTLE
+      Device:
+      - STM32F051C6
+      DeviceId: []
+      SFDFile:
+      - $$Device:STM32F051C6$SVD/STM32F0x1.svd
+      Vendor:
+      - STMicroelectronics
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x08000000,0x8000) IRAM(0x20000000,0x2000) CPUTYPE("Cortex-M0") CLOCK(48000000)
+        ELITTLE
+      Device:
+      - STM32F051C6
+      DeviceId: []
+      PackID:
+      - Keil.STM32F0xx_DFP.1.5.0.pack
+      RegisterFile:
+      - $$Device:STM32F051C6$Device/Include/stm32f0xx.h
+      SFDFile:
+      - $$Device:STM32F051C6$SVD/STM32F0x1.svd
+      Vendor:
+      - STMicroelectronics

@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Freescale
-    name:
-        - mk30dn512xxx10
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - mk30dn512xxx10
+  vendor:
+  - Freescale
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - MK30DN512xxx10
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x80000) IRAM(0x20000000,0x10000) IRAM2(0x1FFF0000,0x10000) CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MK30DN512xxx10$SVD\MK30D10.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - MK30DN512xxx10
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x80000) IRAM(0x20000000,0x10000) IRAM2(0x1FFF0000,0x10000) CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MK30DN512xxx10$SVD\MK30D10.svd
-            RegisterFile:
-                - $$Device:MK30DN512xxx10$Device\Include\MK30D10.h
-            PackID:
-                - Keil.Kinetis_K30_DFP.1.0.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x80000) IRAM(0x20000000,0x10000) IRAM2(0x1FFF0000,0x10000)
+        CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
+      Device:
+      - MK30DN512xxx10
+      DeviceId: []
+      SFDFile:
+      - $$Device:MK30DN512xxx10$SVD\MK30D10.svd
+      Vendor:
+      - Freescale
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x80000) IRAM(0x20000000,0x10000) IRAM2(0x1FFF0000,0x10000)
+        CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
+      Device:
+      - MK30DN512xxx10
+      DeviceId: []
+      PackID:
+      - Keil.Kinetis_K30_DFP.1.0.0.pack
+      RegisterFile:
+      - $$Device:MK30DN512xxx10$Device\Include\MK30D10.h
+      SFDFile:
+      - $$Device:MK30DN512xxx10$SVD\MK30D10.svd
+      Vendor:
+      - Freescale

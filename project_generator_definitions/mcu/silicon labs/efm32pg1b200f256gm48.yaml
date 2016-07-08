@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Silicon Labs
-    name:
-        - efm32pg1b200f256gm48
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - efm32pg1b200f256gm48
+  vendor:
+  - Silicon Labs
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - EFM32PG1B200F256GM48
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(38400000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32PG1B200F256GM48$SVD/EFM32PG1B/EFM32PG1B200F256GM48.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - EFM32PG1B200F256GM48
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(38400000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32PG1B200F256GM48$SVD/EFM32PG1B/EFM32PG1B200F256GM48.svd
-            RegisterFile:
-                - $$Device:EFM32PG1B200F256GM48$Device/EFM32PG1B/Include/em_device.h
-            PackID:
-                - Keil.EFM32PG1B_DFP.1.0.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4")
+        FPU2 CLOCK(38400000) ELITTLE
+      Device:
+      - EFM32PG1B200F256GM48
+      DeviceId: []
+      SFDFile:
+      - $$Device:EFM32PG1B200F256GM48$SVD/EFM32PG1B/EFM32PG1B200F256GM48.svd
+      Vendor:
+      - Silicon Labs
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4")
+        FPU2 CLOCK(38400000) ELITTLE
+      Device:
+      - EFM32PG1B200F256GM48
+      DeviceId: []
+      PackID:
+      - Keil.EFM32PG1B_DFP.1.0.0.pack
+      RegisterFile:
+      - $$Device:EFM32PG1B200F256GM48$Device/EFM32PG1B/Include/em_device.h
+      SFDFile:
+      - $$Device:EFM32PG1B200F256GM48$SVD/EFM32PG1B/EFM32PG1B200F256GM48.svd
+      Vendor:
+      - Silicon Labs

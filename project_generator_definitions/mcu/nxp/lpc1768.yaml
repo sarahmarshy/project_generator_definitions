@@ -20,8 +20,7 @@ tool_specific:
         CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
       Device:
       - LPC1768
-      DeviceId:
-      - None
+      DeviceId: []
       SFDFile:
       - $$Device:LPC1768$SVD/LPC176x5x.svd
       Vendor:
@@ -33,8 +32,7 @@ tool_specific:
         CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
       Device:
       - LPC1768
-      DeviceId:
-      - None
+      DeviceId: []
       PackID:
       - Keil.LPC1700_DFP.2.2.0.pack
       RegisterFile:

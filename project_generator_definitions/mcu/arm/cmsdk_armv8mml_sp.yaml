@@ -1,36 +1,34 @@
 mcu:
-    vendor:
-        - ARM
-    name:
-        - cmsdk_armv8mml_sp
-    core:
-        - cortex-m0
+  core:
+  - cortex-m0
+  name:
+  - cmsdk_armv8mml_sp
+  vendor:
+  - ARM
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - CMSDK_ARMv8MML_SP
-            Vendor:
-                - ARM
-            Cpu:
-                - CPUTYPE("Cortex-M0") FPU2 CLOCK(25000000)
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:CMSDK_ARMv8MML_SP$SVD/ARM_v8MBL.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - CMSDK_ARMv8MML_SP
-            Vendor:
-                - ARM
-            Cpu:
-                - CPUTYPE("Cortex-M0") FPU2 CLOCK(25000000)
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:CMSDK_ARMv8MML_SP$SVD/ARM_v8MBL.svd
-            RegisterFile:
-                - $$Device:CMSDK_ARMv8MML_SP$Device/CMSDK_ARMv8MML/Include/CMSDK_ARMv8MML_DP.h
-            PackID:
-                - Keil.V2M-MPS2_CMx_BSP.1.3.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - CPUTYPE("Cortex-M0") FPU2 CLOCK(25000000)
+      Device:
+      - CMSDK_ARMv8MML_SP
+      DeviceId: []
+      SFDFile:
+      - $$Device:CMSDK_ARMv8MML_SP$SVD/ARM_v8MBL.svd
+      Vendor:
+      - ARM
+  uvision5:
+    TargetOption:
+      Cpu:
+      - CPUTYPE("Cortex-M0") FPU2 CLOCK(25000000)
+      Device:
+      - CMSDK_ARMv8MML_SP
+      DeviceId: []
+      PackID:
+      - Keil.V2M-MPS2_CMx_BSP.1.3.0.pack
+      RegisterFile:
+      - $$Device:CMSDK_ARMv8MML_SP$Device/CMSDK_ARMv8MML/Include/CMSDK_ARMv8MML_DP.h
+      SFDFile:
+      - $$Device:CMSDK_ARMv8MML_SP$SVD/ARM_v8MBL.svd
+      Vendor:
+      - ARM

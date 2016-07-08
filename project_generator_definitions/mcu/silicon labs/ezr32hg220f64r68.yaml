@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Silicon Labs
-    name:
-        - ezr32hg220f64r68
-    core:
-        - cortex-m0+
+  core:
+  - cortex-m0+
+  name:
+  - ezr32hg220f64r68
+  vendor:
+  - Silicon Labs
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - EZR32HG220F64R68
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+") CLOCK(24000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EZR32HG220F64R68$SVD/EZR32HG/EZR32HG220F64R68.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - EZR32HG220F64R68
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+") CLOCK(24000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EZR32HG220F64R68$SVD/EZR32HG/EZR32HG220F64R68.svd
-            RegisterFile:
-                - $$Device:EZR32HG220F64R68$Device/EZR32HG/Include/em_device.h
-            PackID:
-                - Keil.EZR32HG_DFP.1.0.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+")
+        CLOCK(24000000) ELITTLE
+      Device:
+      - EZR32HG220F64R68
+      DeviceId: []
+      SFDFile:
+      - $$Device:EZR32HG220F64R68$SVD/EZR32HG/EZR32HG220F64R68.svd
+      Vendor:
+      - Silicon Labs
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00010000) IRAM(0x20000000,0x00002000) CPUTYPE("Cortex-M0+")
+        CLOCK(24000000) ELITTLE
+      Device:
+      - EZR32HG220F64R68
+      DeviceId: []
+      PackID:
+      - Keil.EZR32HG_DFP.1.0.0.pack
+      RegisterFile:
+      - $$Device:EZR32HG220F64R68$Device/EZR32HG/Include/em_device.h
+      SFDFile:
+      - $$Device:EZR32HG220F64R68$SVD/EZR32HG/EZR32HG220F64R68.svd
+      Vendor:
+      - Silicon Labs

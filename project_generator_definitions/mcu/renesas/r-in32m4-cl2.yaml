@@ -1,36 +1,34 @@
 mcu:
-    vendor:
-        - Renesas
-    name:
-        - r-in32m4-cl2
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - r-in32m4-cl2
+  vendor:
+  - Renesas
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - R-IN32M4-CL2
-            Vendor:
-                - Renesas
-            Cpu:
-                - IRAM(0x20000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:R-IN32M4-CL2$SVD/RIN32M4_CL2.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - R-IN32M4-CL2
-            Vendor:
-                - Renesas
-            Cpu:
-                - IRAM(0x20000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:R-IN32M4-CL2$SVD/RIN32M4_CL2.svd
-            RegisterFile:
-                - $$Device:R-IN32M4-CL2$Device/Include/RIN32M4.h
-            PackID:
-                - Keil.R-IN32M4_DFP.1.0.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IRAM(0x20000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(100000000) ELITTLE
+      Device:
+      - R-IN32M4-CL2
+      DeviceId: []
+      SFDFile:
+      - $$Device:R-IN32M4-CL2$SVD/RIN32M4_CL2.svd
+      Vendor:
+      - Renesas
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IRAM(0x20000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(100000000) ELITTLE
+      Device:
+      - R-IN32M4-CL2
+      DeviceId: []
+      PackID:
+      - Keil.R-IN32M4_DFP.1.0.0.pack
+      RegisterFile:
+      - $$Device:R-IN32M4-CL2$Device/Include/RIN32M4.h
+      SFDFile:
+      - $$Device:R-IN32M4-CL2$SVD/RIN32M4_CL2.svd
+      Vendor:
+      - Renesas

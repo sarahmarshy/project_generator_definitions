@@ -3,15 +3,52 @@ import sys
 import json
 import logging
 import requests
+import shutil
 
-from jinja2 import FileSystemLoader
-from jinja2.environment import Environment
+import yaml
 import bs4
 
 from ArmPackManager import Cache
 
 currdir = os.path.dirname(__file__)
 text_utils = os.path.join(currdir, 'text_utils')
+
+
+
+class MCUdef(dict):
+    def __init__(self, info):
+        for k,v in info.items():
+            if type(v) is not dict:
+                info[k] = str(v)
+        self.__dict = {'mcu':
+                 {'core': [info['core'].lower()],
+                  'vendor': [info['vendor']],
+                  'name': [info['device'].lower()]},
+             'tool_specific': {'uvision':
+                                   {'TargetOption': {'SFDFile': [info['debug']],
+                                                     'Vendor': [info['vendor']],
+                                                     'DeviceId': [],
+                                                     'Device': [info['device']],
+                                                     'Cpu': [info['cpu_string']]
+                                                     }
+                                    },
+                               'uvision5':
+                                   {'TargetOption': {'SFDFile': [info['debug']],
+                                                     'Vendor': [info['vendor']],
+                                                     'DeviceId': [],
+                                                     'Device': [info['device']],
+                                                     'Cpu': [info['cpu_string']],
+                                                     'PackID' :[info['pack_file']],
+                                                     'RegisterFile':[info['compile']['header']]
+                                                     }
+                                    }
+                               }
+             }
+
+    @property
+    def mcu_info(self):
+        return self.__dict
+
 
 class MissingInfo(Exception):
     def __init__(self, device, key_error, url):
@@ -59,13 +96,15 @@ class PackScrape():
             os.makedirs(dest_path)
         output = os.path.join(dest_path, output.split("/")[0].lower()+'.yaml')
 
-        """ Fills data to the project template, using jinja2. """
-        env = Environment()
-        env.loader = FileSystemLoader(text_utils)
-        template = env.get_template('mcu_template.tmpl')
-        target_text = template.render(data)
+        mcu_def = MCUdef(data)
+        mcu_info = mcu_def.mcu_info
 
-        open(output, "w").write(target_text)
+        if os.path.exists(output):
+            with open(output, 'rt') as f:
+                old_yaml = yaml.load(f)
+                mcu_info.update(old_yaml)
+
+        open(output, "w").write(yaml.dump(mcu_def.mcu_info,default_flow_style=False))
 
     def format_info(self, part):
         info = self.cache.index[part]
@@ -150,9 +189,5 @@ class PackScrape():
             for a in cl.select('li > a'):
                 partners.append(a.get('title'))
         return partners
-
-
-
-
 
 

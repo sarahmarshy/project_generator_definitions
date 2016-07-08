@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - NXP
-    name:
-        - lpc4350
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - lpc4350
+  vendor:
+  - NXP
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - LPC4350
-            Vendor:
-                - NXP
-            Cpu:
-                - IRAM(0x10000000,0x20000) IRAM2(0x20000000,0x10000) CPUTYPE("Cortex-M4") CLOCK(204000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC4350$SVD/LPC43xx.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - LPC4350
-            Vendor:
-                - NXP
-            Cpu:
-                - IRAM(0x10000000,0x20000) IRAM2(0x20000000,0x10000) CPUTYPE("Cortex-M4") CLOCK(204000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC4350$SVD/LPC43xx.svd
-            RegisterFile:
-                - $$Device:LPC4350$Device/Include/LPC43xx.h
-            PackID:
-                - Keil.LPC4300_DFP.2.6.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IRAM(0x10000000,0x20000) IRAM2(0x20000000,0x10000) CPUTYPE("Cortex-M4") CLOCK(204000000)
+        ELITTLE
+      Device:
+      - LPC4350
+      DeviceId: []
+      SFDFile:
+      - $$Device:LPC4350$SVD/LPC43xx.svd
+      Vendor:
+      - NXP
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IRAM(0x10000000,0x20000) IRAM2(0x20000000,0x10000) CPUTYPE("Cortex-M4") CLOCK(204000000)
+        ELITTLE
+      Device:
+      - LPC4350
+      DeviceId: []
+      PackID:
+      - Keil.LPC4300_DFP.2.6.0.pack
+      RegisterFile:
+      - $$Device:LPC4350$Device/Include/LPC43xx.h
+      SFDFile:
+      - $$Device:LPC4350$SVD/LPC43xx.svd
+      Vendor:
+      - NXP

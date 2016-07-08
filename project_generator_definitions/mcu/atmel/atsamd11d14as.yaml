@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Atmel
-    name:
-        - atsamd11d14as
-    core:
-        - cortex-m0+
+  core:
+  - cortex-m0+
+  name:
+  - atsamd11d14as
+  vendor:
+  - Atmel
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - ATSAMD11D14AS
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00000000,0x00004000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAMD11D14AS$SVD\SAMD11\ATSAMD11D14AS.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - ATSAMD11D14AS
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00000000,0x00004000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAMD11D14AS$SVD\SAMD11\ATSAMD11D14AS.svd
-            RegisterFile:
-                - $$Device:ATSAMD11D14AS$Device\SAMD11\Include\samd11.h
-            PackID:
-                - Keil.SAMD11_DFP.1.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00004000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+")
+        CLOCK(48000000) ELITTLE
+      Device:
+      - ATSAMD11D14AS
+      DeviceId: []
+      SFDFile:
+      - $$Device:ATSAMD11D14AS$SVD\SAMD11\ATSAMD11D14AS.svd
+      Vendor:
+      - Atmel
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00004000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M0+")
+        CLOCK(48000000) ELITTLE
+      Device:
+      - ATSAMD11D14AS
+      DeviceId: []
+      PackID:
+      - Keil.SAMD11_DFP.1.1.0.pack
+      RegisterFile:
+      - $$Device:ATSAMD11D14AS$Device\SAMD11\Include\samd11.h
+      SFDFile:
+      - $$Device:ATSAMD11D14AS$SVD\SAMD11\ATSAMD11D14AS.svd
+      Vendor:
+      - Atmel

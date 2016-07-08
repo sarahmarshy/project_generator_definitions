@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Freescale
-    name:
-        - mkw22d512xxx5
-    core:
-        - cortex-m0+
+  core:
+  - cortex-m0+
+  name:
+  - mkw22d512xxx5
+  vendor:
+  - Freescale
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - MKW22D512xxx5
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x00080000) IRAM(0x1FFF8000,0x00010000) CPUTYPE("Cortex-M0+") CLOCK(50000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MKW22D512xxx5$SVD/MKW22D5.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - MKW22D512xxx5
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x00080000) IRAM(0x1FFF8000,0x00010000) CPUTYPE("Cortex-M0+") CLOCK(50000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MKW22D512xxx5$SVD/MKW22D5.svd
-            RegisterFile:
-                - $$Device:MKW22D512xxx5$Device/Include/MKW24D5.h
-            PackID:
-                - Keil.Kinetis_KWxx_DFP.1.4.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00080000) IRAM(0x1FFF8000,0x00010000) CPUTYPE("Cortex-M0+")
+        CLOCK(50000000) ELITTLE
+      Device:
+      - MKW22D512xxx5
+      DeviceId: []
+      SFDFile:
+      - $$Device:MKW22D512xxx5$SVD/MKW22D5.svd
+      Vendor:
+      - Freescale
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00080000) IRAM(0x1FFF8000,0x00010000) CPUTYPE("Cortex-M0+")
+        CLOCK(50000000) ELITTLE
+      Device:
+      - MKW22D512xxx5
+      DeviceId: []
+      PackID:
+      - Keil.Kinetis_KWxx_DFP.1.4.0.pack
+      RegisterFile:
+      - $$Device:MKW22D512xxx5$Device/Include/MKW24D5.h
+      SFDFile:
+      - $$Device:MKW22D512xxx5$SVD/MKW22D5.svd
+      Vendor:
+      - Freescale

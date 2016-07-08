@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Atmel
-    name:
-        - atsam3x8h
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - atsam3x8h
+  vendor:
+  - Atmel
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - ATSAM3X8H
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00080000,0x00040000) IRAM(0x20000000,0x00010000) IRAM2(0x20080000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(84000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAM3X8H$SVD/SAM3XA/ATSAM3X8H.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - ATSAM3X8H
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00080000,0x00040000) IRAM(0x20000000,0x00010000) IRAM2(0x20080000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(84000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAM3X8H$SVD/SAM3XA/ATSAM3X8H.svd
-            RegisterFile:
-                - $$Device:ATSAM3X8H$Device/SAM3XA/Include/sam3xa.h
-            PackID:
-                - Keil.SAM3_DFP.1.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00080000,0x00040000) IRAM(0x20000000,0x00010000) IRAM2(0x20080000,0x00008000)
+        CPUTYPE("Cortex-M3") CLOCK(84000000) ELITTLE
+      Device:
+      - ATSAM3X8H
+      DeviceId: []
+      SFDFile:
+      - $$Device:ATSAM3X8H$SVD/SAM3XA/ATSAM3X8H.svd
+      Vendor:
+      - Atmel
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00080000,0x00040000) IRAM(0x20000000,0x00010000) IRAM2(0x20080000,0x00008000)
+        CPUTYPE("Cortex-M3") CLOCK(84000000) ELITTLE
+      Device:
+      - ATSAM3X8H
+      DeviceId: []
+      PackID:
+      - Keil.SAM3_DFP.1.1.0.pack
+      RegisterFile:
+      - $$Device:ATSAM3X8H$Device/SAM3XA/Include/sam3xa.h
+      SFDFile:
+      - $$Device:ATSAM3X8H$SVD/SAM3XA/ATSAM3X8H.svd
+      Vendor:
+      - Atmel

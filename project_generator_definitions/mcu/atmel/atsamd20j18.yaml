@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Atmel
-    name:
-        - atsamd20j18
-    core:
-        - cortex-m0+
+  core:
+  - cortex-m0+
+  name:
+  - atsamd20j18
+  vendor:
+  - Atmel
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - ATSAMD20J18
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAMD20J18$SVD\SAMD20\ATSAMD20J18.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - ATSAMD20J18
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAMD20J18$SVD\SAMD20\ATSAMD20J18.svd
-            RegisterFile:
-                - $$Device:ATSAMD20J18$Device\SAMD20\Include\samd20.h
-            PackID:
-                - Keil.SAMD20_DFP.1.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M0+")
+        CLOCK(48000000) ELITTLE
+      Device:
+      - ATSAMD20J18
+      DeviceId: []
+      SFDFile:
+      - $$Device:ATSAMD20J18$SVD\SAMD20\ATSAMD20J18.svd
+      Vendor:
+      - Atmel
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M0+")
+        CLOCK(48000000) ELITTLE
+      Device:
+      - ATSAMD20J18
+      DeviceId: []
+      PackID:
+      - Keil.SAMD20_DFP.1.1.0.pack
+      RegisterFile:
+      - $$Device:ATSAMD20J18$Device\SAMD20\Include\samd20.h
+      SFDFile:
+      - $$Device:ATSAMD20J18$SVD\SAMD20\ATSAMD20J18.svd
+      Vendor:
+      - Atmel

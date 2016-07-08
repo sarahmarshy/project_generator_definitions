@@ -1,36 +1,34 @@
 mcu:
-    vendor:
-        - Analog Devices
-    name:
-        - aducm361
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - aducm361
+  vendor:
+  - Analog Devices
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - ADuCM361
-            Vendor:
-                - Analog Devices
-            Cpu:
-                - CPUTYPE("Cortex-M3") CLOCK(16000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ADuCM361$SVD\ADuCM361.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - ADuCM361
-            Vendor:
-                - Analog Devices
-            Cpu:
-                - CPUTYPE("Cortex-M3") CLOCK(16000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ADuCM361$SVD\ADuCM361.svd
-            RegisterFile:
-                - $$Device:ADuCM361$Device\Include\ADuCM361.h
-            PackID:
-                - AnalogDevices.ADuCM36x_DFP.1.0.1.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - CPUTYPE("Cortex-M3") CLOCK(16000000) ELITTLE
+      Device:
+      - ADuCM361
+      DeviceId: []
+      SFDFile:
+      - $$Device:ADuCM361$SVD\ADuCM361.svd
+      Vendor:
+      - Analog Devices
+  uvision5:
+    TargetOption:
+      Cpu:
+      - CPUTYPE("Cortex-M3") CLOCK(16000000) ELITTLE
+      Device:
+      - ADuCM361
+      DeviceId: []
+      PackID:
+      - AnalogDevices.ADuCM36x_DFP.1.0.1.pack
+      RegisterFile:
+      - $$Device:ADuCM361$Device\Include\ADuCM361.h
+      SFDFile:
+      - $$Device:ADuCM361$SVD\ADuCM361.svd
+      Vendor:
+      - Analog Devices

@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Maxim
-    name:
-        - max71616
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - max71616
+  vendor:
+  - Maxim
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - MAX71616
-            Vendor:
-                - Maxim
-            Cpu:
-                - IROM(0x00000000,0x80000) IRAM(0x20000000,0x10000) IRAM2(0x00400000,0x10000) CPUTYPE("Cortex-M3") CLOCK(108000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - 
-    uvision5:
-        TargetOption:
-            Device:
-                - MAX71616
-            Vendor:
-                - Maxim
-            Cpu:
-                - IROM(0x00000000,0x80000) IRAM(0x20000000,0x10000) IRAM2(0x00400000,0x10000) CPUTYPE("Cortex-M3") CLOCK(108000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - 
-            RegisterFile:
-                - $$Device:MAX71616$Device\Include\max716xx.h
-            PackID:
-                - Keil.ZEUS_DFP.1.0.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x80000) IRAM(0x20000000,0x10000) IRAM2(0x00400000,0x10000)
+        CPUTYPE("Cortex-M3") CLOCK(108000000) ELITTLE
+      Device:
+      - MAX71616
+      DeviceId: []
+      SFDFile:
+      - ''
+      Vendor:
+      - Maxim
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x80000) IRAM(0x20000000,0x10000) IRAM2(0x00400000,0x10000)
+        CPUTYPE("Cortex-M3") CLOCK(108000000) ELITTLE
+      Device:
+      - MAX71616
+      DeviceId: []
+      PackID:
+      - Keil.ZEUS_DFP.1.0.0.pack
+      RegisterFile:
+      - $$Device:MAX71616$Device\Include\max716xx.h
+      SFDFile:
+      - ''
+      Vendor:
+      - Maxim

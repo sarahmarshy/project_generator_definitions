@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Freescale
-    name:
-        - mk66fn2m0xxx18
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - mk66fn2m0xxx18
+  vendor:
+  - Freescale
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - MK66FN2M0xxx18
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x200000) IRAM(0x20000000,0x30000) IRAM2(0x1FFF0000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(180000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MK66FN2M0xxx18$SVD\MK66F18.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - MK66FN2M0xxx18
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x200000) IRAM(0x20000000,0x30000) IRAM2(0x1FFF0000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(180000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MK66FN2M0xxx18$SVD\MK66F18.svd
-            RegisterFile:
-                - $$Device:MK66FN2M0xxx18$Device\Include\MK66F18.h
-            PackID:
-                - Keil.Kinetis_K60_DFP.1.4.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x200000) IRAM(0x20000000,0x30000) IRAM2(0x1FFF0000,0x10000)
+        CPUTYPE("Cortex-M4") FPU2 CLOCK(180000000) ELITTLE
+      Device:
+      - MK66FN2M0xxx18
+      DeviceId: []
+      SFDFile:
+      - $$Device:MK66FN2M0xxx18$SVD\MK66F18.svd
+      Vendor:
+      - Freescale
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x200000) IRAM(0x20000000,0x30000) IRAM2(0x1FFF0000,0x10000)
+        CPUTYPE("Cortex-M4") FPU2 CLOCK(180000000) ELITTLE
+      Device:
+      - MK66FN2M0xxx18
+      DeviceId: []
+      PackID:
+      - Keil.Kinetis_K60_DFP.1.4.0.pack
+      RegisterFile:
+      - $$Device:MK66FN2M0xxx18$Device\Include\MK66F18.h
+      SFDFile:
+      - $$Device:MK66FN2M0xxx18$SVD\MK66F18.svd
+      Vendor:
+      - Freescale

@@ -20,8 +20,7 @@ tool_specific:
         ELITTLE
       Device:
       - MKL46Z256xxx4
-      DeviceId:
-      - None
+      DeviceId: []
       SFDFile:
       - $$Device:MKL46Z256xxx4$SVD/MKL46Z4.svd
       Vendor:
@@ -33,8 +32,7 @@ tool_specific:
         ELITTLE
       Device:
       - MKL46Z256xxx4
-      DeviceId:
-      - None
+      DeviceId: []
       PackID:
       - Keil.Kinetis_KLxx_DFP.1.9.0.pack
       RegisterFile:

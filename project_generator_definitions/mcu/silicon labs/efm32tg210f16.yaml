@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Silicon Labs
-    name:
-        - efm32tg210f16
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - efm32tg210f16
+  vendor:
+  - Silicon Labs
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - EFM32TG210F16
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00004000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M3") CLOCK(32000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32TG210F16$SVD/EFM32TG/EFM32TG210F16.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - EFM32TG210F16
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00004000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M3") CLOCK(32000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32TG210F16$SVD/EFM32TG/EFM32TG210F16.svd
-            RegisterFile:
-                - $$Device:EFM32TG210F16$Device/EFM32TG/Include/em_device.h
-            PackID:
-                - Keil.EFM32TGxxx_DFP.1.2.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00004000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M3")
+        CLOCK(32000000) ELITTLE
+      Device:
+      - EFM32TG210F16
+      DeviceId: []
+      SFDFile:
+      - $$Device:EFM32TG210F16$SVD/EFM32TG/EFM32TG210F16.svd
+      Vendor:
+      - Silicon Labs
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00004000) IRAM(0x20000000,0x00001000) CPUTYPE("Cortex-M3")
+        CLOCK(32000000) ELITTLE
+      Device:
+      - EFM32TG210F16
+      DeviceId: []
+      PackID:
+      - Keil.EFM32TGxxx_DFP.1.2.0.pack
+      RegisterFile:
+      - $$Device:EFM32TG210F16$Device/EFM32TG/Include/em_device.h
+      SFDFile:
+      - $$Device:EFM32TG210F16$SVD/EFM32TG/EFM32TG210F16.svd
+      Vendor:
+      - Silicon Labs

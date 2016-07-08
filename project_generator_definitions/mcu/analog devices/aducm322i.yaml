@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Analog Devices
-    name:
-        - aducm322i
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - aducm322i
+  vendor:
+  - Analog Devices
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - ADuCM322i
-            Vendor:
-                - Analog Devices
-            Cpu:
-                - IROM(0x00000000,0x40000) IRAM(0x20000000,0x8000) CPUTYPE("Cortex-M3") CLOCK(80000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ADuCM322i$SVD\ADuCM322.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - ADuCM322i
-            Vendor:
-                - Analog Devices
-            Cpu:
-                - IROM(0x00000000,0x40000) IRAM(0x20000000,0x8000) CPUTYPE("Cortex-M3") CLOCK(80000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ADuCM322i$SVD\ADuCM322.svd
-            RegisterFile:
-                - $$Device:ADuCM322i$ADuCM322\common\ADuCM322.h
-            PackID:
-                - AnalogDevices.ADuCM320_DFP.1.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x40000) IRAM(0x20000000,0x8000) CPUTYPE("Cortex-M3") CLOCK(80000000)
+        ELITTLE
+      Device:
+      - ADuCM322i
+      DeviceId: []
+      SFDFile:
+      - $$Device:ADuCM322i$SVD\ADuCM322.svd
+      Vendor:
+      - Analog Devices
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x40000) IRAM(0x20000000,0x8000) CPUTYPE("Cortex-M3") CLOCK(80000000)
+        ELITTLE
+      Device:
+      - ADuCM322i
+      DeviceId: []
+      PackID:
+      - AnalogDevices.ADuCM320_DFP.1.1.0.pack
+      RegisterFile:
+      - $$Device:ADuCM322i$ADuCM322\common\ADuCM322.h
+      SFDFile:
+      - $$Device:ADuCM322i$SVD\ADuCM322.svd
+      Vendor:
+      - Analog Devices

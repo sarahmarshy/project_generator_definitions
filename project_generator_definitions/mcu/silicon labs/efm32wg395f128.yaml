@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Silicon Labs
-    name:
-        - efm32wg395f128
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - efm32wg395f128
+  vendor:
+  - Silicon Labs
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - EFM32WG395F128
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32WG395F128$SVD/EFM32WG/EFM32WG395F128.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - EFM32WG395F128
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32WG395F128$SVD/EFM32WG/EFM32WG395F128.svd
-            RegisterFile:
-                - $$Device:EFM32WG395F128$Device/EFM32WG/Include/em_device.h
-            PackID:
-                - Keil.EFM32WGxxx_DFP.1.3.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4")
+        FPU2 CLOCK(48000000) ELITTLE
+      Device:
+      - EFM32WG395F128
+      DeviceId: []
+      SFDFile:
+      - $$Device:EFM32WG395F128$SVD/EFM32WG/EFM32WG395F128.svd
+      Vendor:
+      - Silicon Labs
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00020000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4")
+        FPU2 CLOCK(48000000) ELITTLE
+      Device:
+      - EFM32WG395F128
+      DeviceId: []
+      PackID:
+      - Keil.EFM32WGxxx_DFP.1.3.0.pack
+      RegisterFile:
+      - $$Device:EFM32WG395F128$Device/EFM32WG/Include/em_device.h
+      SFDFile:
+      - $$Device:EFM32WG395F128$SVD/EFM32WG/EFM32WG395F128.svd
+      Vendor:
+      - Silicon Labs

@@ -21,7 +21,6 @@ def run(args):
     p = PackScrape(args.cache, args.partners)
     p.dump_files()
 
-
 def setup(subparser):
     subparser.add_argument(
         '-c', action='store_true', dest='cache', help='Cache pack files')

@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Freescale
-    name:
-        - mk63fn1m0xxx12
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - mk63fn1m0xxx12
+  vendor:
+  - Freescale
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - MK63FN1M0xxx12
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x100000) IRAM(0x20000000,0x30000) IRAM2(0x1FFF0000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MK63FN1M0xxx12$SVD\MK63F12.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - MK63FN1M0xxx12
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x100000) IRAM(0x20000000,0x30000) IRAM2(0x1FFF0000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MK63FN1M0xxx12$SVD\MK63F12.svd
-            RegisterFile:
-                - $$Device:MK63FN1M0xxx12$Device\Include\MK66F18.h
-            PackID:
-                - Keil.Kinetis_K60_DFP.1.4.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x100000) IRAM(0x20000000,0x30000) IRAM2(0x1FFF0000,0x10000)
+        CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
+      Device:
+      - MK63FN1M0xxx12
+      DeviceId: []
+      SFDFile:
+      - $$Device:MK63FN1M0xxx12$SVD\MK63F12.svd
+      Vendor:
+      - Freescale
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x100000) IRAM(0x20000000,0x30000) IRAM2(0x1FFF0000,0x10000)
+        CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
+      Device:
+      - MK63FN1M0xxx12
+      DeviceId: []
+      PackID:
+      - Keil.Kinetis_K60_DFP.1.4.0.pack
+      RegisterFile:
+      - $$Device:MK63FN1M0xxx12$Device\Include\MK66F18.h
+      SFDFile:
+      - $$Device:MK63FN1M0xxx12$SVD\MK63F12.svd
+      Vendor:
+      - Freescale

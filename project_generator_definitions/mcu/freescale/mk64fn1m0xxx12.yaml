@@ -20,8 +20,7 @@ tool_specific:
         CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
       Device:
       - MK64FN1M0xxx12
-      DeviceId:
-      - None
+      DeviceId: []
       SFDFile:
       - $$Device:MK64FN1M0xxx12$SVD\MK64F12.svd
       Vendor:
@@ -33,8 +32,7 @@ tool_specific:
         CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
       Device:
       - MK64FN1M0xxx12
-      DeviceId:
-      - None
+      DeviceId: []
       PackID:
       - Keil.Kinetis_K60_DFP.1.4.0.pack
       RegisterFile:

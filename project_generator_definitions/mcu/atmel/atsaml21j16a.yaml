@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Atmel
-    name:
-        - atsaml21j16a
-    core:
-        - cortex-m0+
+  core:
+  - cortex-m0+
+  name:
+  - atsaml21j16a
+  vendor:
+  - Atmel
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - ATSAML21J16A
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00000000,0x10000) IRAM(0x20000000,0x02000) IRAM2(0x30000000,0x01000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAML21J16A$SVD\SAML21\ATSAML21J16A.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - ATSAML21J16A
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00000000,0x10000) IRAM(0x20000000,0x02000) IRAM2(0x30000000,0x01000) CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAML21J16A$SVD\SAML21\ATSAML21J16A.svd
-            RegisterFile:
-                - $$Device:ATSAML21J16A$Device\SAML21\Include\saml21.h
-            PackID:
-                - Keil.SAM-L_DFP.1.2.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x10000) IRAM(0x20000000,0x02000) IRAM2(0x30000000,0x01000)
+        CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+      Device:
+      - ATSAML21J16A
+      DeviceId: []
+      SFDFile:
+      - $$Device:ATSAML21J16A$SVD\SAML21\ATSAML21J16A.svd
+      Vendor:
+      - Atmel
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x10000) IRAM(0x20000000,0x02000) IRAM2(0x30000000,0x01000)
+        CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
+      Device:
+      - ATSAML21J16A
+      DeviceId: []
+      PackID:
+      - Keil.SAM-L_DFP.1.2.0.pack
+      RegisterFile:
+      - $$Device:ATSAML21J16A$Device\SAML21\Include\saml21.h
+      SFDFile:
+      - $$Device:ATSAML21J16A$SVD\SAML21\ATSAML21J16A.svd
+      Vendor:
+      - Atmel

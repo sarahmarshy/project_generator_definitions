@@ -20,8 +20,7 @@ tool_specific:
         ELITTLE
       Device:
       - nRF51822_xxAA
-      DeviceId:
-      - None
+      DeviceId: []
       SFDFile:
       - $$Device:nRF51822_xxAA$SVD\nrf51.svd
       Vendor:
@@ -33,8 +32,7 @@ tool_specific:
         ELITTLE
       Device:
       - nRF51822_xxAA
-      DeviceId:
-      - None
+      DeviceId: []
       PackID:
       - NordicSemiconductor.nRF_DeviceFamilyPack.8.6.1.pack
       RegisterFile:

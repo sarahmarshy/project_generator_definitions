@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Freescale
-    name:
-        - mkv11z64xxx7
-    core:
-        - cortex-m0+
+  core:
+  - cortex-m0+
+  name:
+  - mkv11z64xxx7
+  vendor:
+  - Freescale
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - MKV11Z64xxx7
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x10000) IRAM(0x1FFFF000,0x4000) CPUTYPE("Cortex-M0+") CLOCK(75000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MKV11Z64xxx7$SVD/MKV11Z7.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - MKV11Z64xxx7
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x10000) IRAM(0x1FFFF000,0x4000) CPUTYPE("Cortex-M0+") CLOCK(75000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MKV11Z64xxx7$SVD/MKV11Z7.svd
-            RegisterFile:
-                - $$Device:MKV11Z64xxx7$Device/Include/MKV11Z7.h
-            PackID:
-                - Keil.Kinetis_KVxx_DFP.1.6.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x10000) IRAM(0x1FFFF000,0x4000) CPUTYPE("Cortex-M0+") CLOCK(75000000)
+        ELITTLE
+      Device:
+      - MKV11Z64xxx7
+      DeviceId: []
+      SFDFile:
+      - $$Device:MKV11Z64xxx7$SVD/MKV11Z7.svd
+      Vendor:
+      - Freescale
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x10000) IRAM(0x1FFFF000,0x4000) CPUTYPE("Cortex-M0+") CLOCK(75000000)
+        ELITTLE
+      Device:
+      - MKV11Z64xxx7
+      DeviceId: []
+      PackID:
+      - Keil.Kinetis_KVxx_DFP.1.6.0.pack
+      RegisterFile:
+      - $$Device:MKV11Z64xxx7$Device/Include/MKV11Z7.h
+      SFDFile:
+      - $$Device:MKV11Z64xxx7$SVD/MKV11Z7.svd
+      Vendor:
+      - Freescale

@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Freescale
-    name:
-        - mk51dx256xxx7
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - mk51dx256xxx7
+  vendor:
+  - Freescale
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - MK51DX256xxx7
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) IRAM2(0x1FFF8000,0x00008000) CPUTYPE("Cortex-M4") CLOCK(72000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MK51DX256xxx7$SVD\MK51D7.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - MK51DX256xxx7
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) IRAM2(0x1FFF8000,0x00008000) CPUTYPE("Cortex-M4") CLOCK(72000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MK51DX256xxx7$SVD\MK51D7.svd
-            RegisterFile:
-                - $$Device:MK51DX256xxx7$Device\Include\MK53D10.h
-            PackID:
-                - Keil.Kinetis_K50_DFP.1.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) IRAM2(0x1FFF8000,0x00008000)
+        CPUTYPE("Cortex-M4") CLOCK(72000000) ELITTLE
+      Device:
+      - MK51DX256xxx7
+      DeviceId: []
+      SFDFile:
+      - $$Device:MK51DX256xxx7$SVD\MK51D7.svd
+      Vendor:
+      - Freescale
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) IRAM2(0x1FFF8000,0x00008000)
+        CPUTYPE("Cortex-M4") CLOCK(72000000) ELITTLE
+      Device:
+      - MK51DX256xxx7
+      DeviceId: []
+      PackID:
+      - Keil.Kinetis_K50_DFP.1.1.0.pack
+      RegisterFile:
+      - $$Device:MK51DX256xxx7$Device\Include\MK53D10.h
+      SFDFile:
+      - $$Device:MK51DX256xxx7$SVD\MK51D7.svd
+      Vendor:
+      - Freescale

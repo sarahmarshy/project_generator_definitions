@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - STMicroelectronics
-    name:
-        - stm32w108cz
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - stm32w108cz
+  vendor:
+  - STMicroelectronics
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - STM32W108CZ
-            Vendor:
-                - STMicroelectronics
-            Cpu:
-                - IROM(0x08000000,0x30000) IRAM(0x20000000,0x3000) CPUTYPE("Cortex-M3") CLOCK(24000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:STM32W108CZ$SVD\STM32W108.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - STM32W108CZ
-            Vendor:
-                - STMicroelectronics
-            Cpu:
-                - IROM(0x08000000,0x30000) IRAM(0x20000000,0x3000) CPUTYPE("Cortex-M3") CLOCK(24000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:STM32W108CZ$SVD\STM32W108.svd
-            RegisterFile:
-                - $$Device:STM32W108CZ$Device\Include\stm32w108xx.h
-            PackID:
-                - Keil.STM32W1xx_DFP.1.0.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x08000000,0x30000) IRAM(0x20000000,0x3000) CPUTYPE("Cortex-M3") CLOCK(24000000)
+        ELITTLE
+      Device:
+      - STM32W108CZ
+      DeviceId: []
+      SFDFile:
+      - $$Device:STM32W108CZ$SVD\STM32W108.svd
+      Vendor:
+      - STMicroelectronics
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x08000000,0x30000) IRAM(0x20000000,0x3000) CPUTYPE("Cortex-M3") CLOCK(24000000)
+        ELITTLE
+      Device:
+      - STM32W108CZ
+      DeviceId: []
+      PackID:
+      - Keil.STM32W1xx_DFP.1.0.0.pack
+      RegisterFile:
+      - $$Device:STM32W108CZ$Device\Include\stm32w108xx.h
+      SFDFile:
+      - $$Device:STM32W108CZ$SVD\STM32W108.svd
+      Vendor:
+      - STMicroelectronics

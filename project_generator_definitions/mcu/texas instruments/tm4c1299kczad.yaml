@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Texas Instruments
-    name:
-        - tm4c1299kczad
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - tm4c1299kczad
+  vendor:
+  - Texas Instruments
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - TM4C1299KCZAD
-            Vendor:
-                - Texas Instruments
-            Cpu:
-                - IROM(0x00000000,0x080000) IRAM(0x20000000,0x040000) CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:TM4C1299KCZAD$SVD/TM4C129/TM4C1299KCZAD.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - TM4C1299KCZAD
-            Vendor:
-                - Texas Instruments
-            Cpu:
-                - IROM(0x00000000,0x080000) IRAM(0x20000000,0x040000) CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:TM4C1299KCZAD$SVD/TM4C129/TM4C1299KCZAD.svd
-            RegisterFile:
-                - $$Device:TM4C1299KCZAD$Device/Include/TM4C129/TM4C129.h
-            PackID:
-                - Keil.TM4C_DFP.1.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x080000) IRAM(0x20000000,0x040000) CPUTYPE("Cortex-M4") FPU2
+        CLOCK(120000000) ELITTLE
+      Device:
+      - TM4C1299KCZAD
+      DeviceId: []
+      SFDFile:
+      - $$Device:TM4C1299KCZAD$SVD/TM4C129/TM4C1299KCZAD.svd
+      Vendor:
+      - Texas Instruments
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x080000) IRAM(0x20000000,0x040000) CPUTYPE("Cortex-M4") FPU2
+        CLOCK(120000000) ELITTLE
+      Device:
+      - TM4C1299KCZAD
+      DeviceId: []
+      PackID:
+      - Keil.TM4C_DFP.1.1.0.pack
+      RegisterFile:
+      - $$Device:TM4C1299KCZAD$Device/Include/TM4C129/TM4C129.h
+      SFDFile:
+      - $$Device:TM4C1299KCZAD$SVD/TM4C129/TM4C1299KCZAD.svd
+      Vendor:
+      - Texas Instruments

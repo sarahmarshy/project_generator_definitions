@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Texas Instruments
-    name:
-        - tm4c123bh6pz
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - tm4c123bh6pz
+  vendor:
+  - Texas Instruments
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - TM4C123BH6PZ
-            Vendor:
-                - Texas Instruments
-            Cpu:
-                - IROM(0x00000000,0x040000) IRAM(0x20000000,0x008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(80000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:TM4C123BH6PZ$SVD/TM4C123/TM4C123BH6PZ.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - TM4C123BH6PZ
-            Vendor:
-                - Texas Instruments
-            Cpu:
-                - IROM(0x00000000,0x040000) IRAM(0x20000000,0x008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(80000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:TM4C123BH6PZ$SVD/TM4C123/TM4C123BH6PZ.svd
-            RegisterFile:
-                - $$Device:TM4C123BH6PZ$Device/Include/TM4C123/TM4C123.h
-            PackID:
-                - Keil.TM4C_DFP.1.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x040000) IRAM(0x20000000,0x008000) CPUTYPE("Cortex-M4") FPU2
+        CLOCK(80000000) ELITTLE
+      Device:
+      - TM4C123BH6PZ
+      DeviceId: []
+      SFDFile:
+      - $$Device:TM4C123BH6PZ$SVD/TM4C123/TM4C123BH6PZ.svd
+      Vendor:
+      - Texas Instruments
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x040000) IRAM(0x20000000,0x008000) CPUTYPE("Cortex-M4") FPU2
+        CLOCK(80000000) ELITTLE
+      Device:
+      - TM4C123BH6PZ
+      DeviceId: []
+      PackID:
+      - Keil.TM4C_DFP.1.1.0.pack
+      RegisterFile:
+      - $$Device:TM4C123BH6PZ$Device/Include/TM4C123/TM4C123.h
+      SFDFile:
+      - $$Device:TM4C123BH6PZ$SVD/TM4C123/TM4C123BH6PZ.svd
+      Vendor:
+      - Texas Instruments

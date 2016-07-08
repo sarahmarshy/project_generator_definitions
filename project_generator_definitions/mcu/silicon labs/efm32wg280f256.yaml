@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Silicon Labs
-    name:
-        - efm32wg280f256
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - efm32wg280f256
+  vendor:
+  - Silicon Labs
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - EFM32WG280F256
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32WG280F256$SVD/EFM32WG/EFM32WG280F256.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - EFM32WG280F256
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4") FPU2 CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EFM32WG280F256$SVD/EFM32WG/EFM32WG280F256.svd
-            RegisterFile:
-                - $$Device:EFM32WG280F256$Device/EFM32WG/Include/em_device.h
-            PackID:
-                - Keil.EFM32WGxxx_DFP.1.3.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4")
+        FPU2 CLOCK(48000000) ELITTLE
+      Device:
+      - EFM32WG280F256
+      DeviceId: []
+      SFDFile:
+      - $$Device:EFM32WG280F256$SVD/EFM32WG/EFM32WG280F256.svd
+      Vendor:
+      - Silicon Labs
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M4")
+        FPU2 CLOCK(48000000) ELITTLE
+      Device:
+      - EFM32WG280F256
+      DeviceId: []
+      PackID:
+      - Keil.EFM32WGxxx_DFP.1.3.0.pack
+      RegisterFile:
+      - $$Device:EFM32WG280F256$Device/EFM32WG/Include/em_device.h
+      SFDFile:
+      - $$Device:EFM32WG280F256$SVD/EFM32WG/EFM32WG280F256.svd
+      Vendor:
+      - Silicon Labs

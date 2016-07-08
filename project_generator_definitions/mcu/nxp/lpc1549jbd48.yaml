@@ -20,8 +20,7 @@ tool_specific:
         ELITTLE
       Device:
       - LPC1549JBD48
-      DeviceId:
-      - None
+      DeviceId: []
       SFDFile:
       - $$Device:LPC1549JBD48$SVD/LPC15xx.svd
       Vendor:
@@ -33,8 +32,7 @@ tool_specific:
         ELITTLE
       Device:
       - LPC1549JBD48
-      DeviceId:
-      - None
+      DeviceId: []
       PackID:
       - Keil.LPC1500_DFP.1.2.0.pack
       RegisterFile:

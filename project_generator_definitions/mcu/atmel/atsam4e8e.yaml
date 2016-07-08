@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Atmel
-    name:
-        - atsam4e8e
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - atsam4e8e
+  vendor:
+  - Atmel
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - ATSAM4E8E
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00400000,0x80000) IRAM(0x20000000,0x20000) CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAM4E8E$SVD\SAM4E\ATSAM4E8E.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - ATSAM4E8E
-            Vendor:
-                - Atmel
-            Cpu:
-                - IROM(0x00400000,0x80000) IRAM(0x20000000,0x20000) CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:ATSAM4E8E$SVD\SAM4E\ATSAM4E8E.svd
-            RegisterFile:
-                - $$Device:ATSAM4E8E$Device\Include\SAM4E\sam4e.h
-            PackID:
-                - Keil.SAM4_DFP.1.4.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00400000,0x80000) IRAM(0x20000000,0x20000) CPUTYPE("Cortex-M4") FPU2
+        CLOCK(120000000) ELITTLE
+      Device:
+      - ATSAM4E8E
+      DeviceId: []
+      SFDFile:
+      - $$Device:ATSAM4E8E$SVD\SAM4E\ATSAM4E8E.svd
+      Vendor:
+      - Atmel
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00400000,0x80000) IRAM(0x20000000,0x20000) CPUTYPE("Cortex-M4") FPU2
+        CLOCK(120000000) ELITTLE
+      Device:
+      - ATSAM4E8E
+      DeviceId: []
+      PackID:
+      - Keil.SAM4_DFP.1.4.0.pack
+      RegisterFile:
+      - $$Device:ATSAM4E8E$Device\Include\SAM4E\sam4e.h
+      SFDFile:
+      - $$Device:ATSAM4E8E$SVD\SAM4E\ATSAM4E8E.svd
+      Vendor:
+      - Atmel

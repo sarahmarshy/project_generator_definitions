@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Freescale
-    name:
-        - mk53dx256xxx10
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - mk53dx256xxx10
+  vendor:
+  - Freescale
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - MK53DX256xxx10
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) IRAM2(0x1FFF8000,0x00008000) CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MK53DX256xxx10$SVD\MK53D10.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - MK53DX256xxx10
-            Vendor:
-                - Freescale
-            Cpu:
-                - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) IRAM2(0x1FFF8000,0x00008000) CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:MK53DX256xxx10$SVD\MK53D10.svd
-            RegisterFile:
-                - $$Device:MK53DX256xxx10$Device\Include\MK53D10.h
-            PackID:
-                - Keil.Kinetis_K50_DFP.1.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) IRAM2(0x1FFF8000,0x00008000)
+        CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
+      Device:
+      - MK53DX256xxx10
+      DeviceId: []
+      SFDFile:
+      - $$Device:MK53DX256xxx10$SVD\MK53D10.svd
+      Vendor:
+      - Freescale
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) IRAM2(0x1FFF8000,0x00008000)
+        CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
+      Device:
+      - MK53DX256xxx10
+      DeviceId: []
+      PackID:
+      - Keil.Kinetis_K50_DFP.1.1.0.pack
+      RegisterFile:
+      - $$Device:MK53DX256xxx10$Device\Include\MK53D10.h
+      SFDFile:
+      - $$Device:MK53DX256xxx10$SVD\MK53D10.svd
+      Vendor:
+      - Freescale

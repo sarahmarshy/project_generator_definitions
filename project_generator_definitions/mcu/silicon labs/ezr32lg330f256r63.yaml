@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - Silicon Labs
-    name:
-        - ezr32lg330f256r63
-    core:
-        - cortex-m3
+  core:
+  - cortex-m3
+  name:
+  - ezr32lg330f256r63
+  vendor:
+  - Silicon Labs
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - EZR32LG330F256R63
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EZR32LG330F256R63$SVD/EZR32LG/EZR32LG330F256R63.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - EZR32LG330F256R63
-            Vendor:
-                - Silicon Labs
-            Cpu:
-                - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(48000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:EZR32LG330F256R63$SVD/EZR32LG/EZR32LG330F256R63.svd
-            RegisterFile:
-                - $$Device:EZR32LG330F256R63$Device/EZR32LG/Include/em_device.h
-            PackID:
-                - Keil.EZR32LG_DFP.1.1.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3")
+        CLOCK(48000000) ELITTLE
+      Device:
+      - EZR32LG330F256R63
+      DeviceId: []
+      SFDFile:
+      - $$Device:EZR32LG330F256R63$SVD/EZR32LG/EZR32LG330F256R63.svd
+      Vendor:
+      - Silicon Labs
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) CPUTYPE("Cortex-M3")
+        CLOCK(48000000) ELITTLE
+      Device:
+      - EZR32LG330F256R63
+      DeviceId: []
+      PackID:
+      - Keil.EZR32LG_DFP.1.1.0.pack
+      RegisterFile:
+      - $$Device:EZR32LG330F256R63$Device/EZR32LG/Include/em_device.h
+      SFDFile:
+      - $$Device:EZR32LG330F256R63$SVD/EZR32LG/EZR32LG330F256R63.svd
+      Vendor:
+      - Silicon Labs

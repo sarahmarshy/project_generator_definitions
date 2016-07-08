@@ -1,36 +1,36 @@
 mcu:
-    vendor:
-        - NXP
-    name:
-        - lpc54101j512uk49
-    core:
-        - cortex-m4
+  core:
+  - cortex-m4
+  name:
+  - lpc54101j512uk49
+  vendor:
+  - NXP
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - LPC54101J512UK49
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x00080000) IRAM(0x02000000,0x00010000) IRAM2(0x02010000,0x00008000) CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC54101J512UK49$SVD/LPC5410x.svd
-    uvision5:
-        TargetOption:
-            Device:
-                - LPC54101J512UK49
-            Vendor:
-                - NXP
-            Cpu:
-                - IROM(0x00000000,0x00080000) IRAM(0x02000000,0x00010000) IRAM2(0x02010000,0x00008000) CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
-            DeviceId:
-                - None
-            SFDFile:
-                - $$Device:LPC54101J512UK49$SVD/LPC5410x.svd
-            RegisterFile:
-                - $$Device:LPC54101J512UK49$LPCOpen/lpc5410x/chip_5410x/inc/chip.h
-            PackID:
-                - Keil.LPC54000_DFP.2.0.0.pack
+  uvision:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00080000) IRAM(0x02000000,0x00010000) IRAM2(0x02010000,0x00008000)
+        CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
+      Device:
+      - LPC54101J512UK49
+      DeviceId: []
+      SFDFile:
+      - $$Device:LPC54101J512UK49$SVD/LPC5410x.svd
+      Vendor:
+      - NXP
+  uvision5:
+    TargetOption:
+      Cpu:
+      - IROM(0x00000000,0x00080000) IRAM(0x02000000,0x00010000) IRAM2(0x02010000,0x00008000)
+        CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
+      Device:
+      - LPC54101J512UK49
+      DeviceId: []
+      PackID:
+      - Keil.LPC54000_DFP.2.0.0.pack
+      RegisterFile:
+      - $$Device:LPC54101J512UK49$LPCOpen/lpc5410x/chip_5410x/inc/chip.h
+      SFDFile:
+      - $$Device:LPC54101J512UK49$SVD/LPC5410x.svd
+      Vendor:
+      - NXP
