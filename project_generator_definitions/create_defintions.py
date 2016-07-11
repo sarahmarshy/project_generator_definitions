@@ -3,7 +3,6 @@ import sys
 import json
 import logging
 import requests
-import shutil
 
 import yaml
 import bs4
@@ -12,7 +11,6 @@ from ArmPackManager import Cache
 
 currdir = os.path.dirname(__file__)
 text_utils = os.path.join(currdir, 'text_utils')
-
 
 
 class MCUdef(dict):
@@ -104,7 +102,7 @@ class PackScrape():
                 old_yaml = yaml.load(f)
                 mcu_info.update(old_yaml)
 
-        open(output, "w").write(yaml.dump(mcu_def.mcu_info,default_flow_style=False))
+        open(output, "w").write(yaml.dump(mcu_info,default_flow_style=False))
 
     def format_info(self, part):
         info = self.cache.index[part]
