@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - mk61fn1m0xxx15
+  - MK61FN1M0xxx15
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M4") FPU2 CLOCK(150000000) ELITTLE
       Device:
       - MK61FN1M0xxx15
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MK61FN1M0xxx15$SVD\MK61F15.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M4") FPU2 CLOCK(150000000) ELITTLE
       Device:
       - MK61FN1M0xxx15
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_K60_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MK61FN1M0xxx15$Device\Include\MK66F18.h
       SFDFile:

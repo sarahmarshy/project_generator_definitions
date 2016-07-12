@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - mkv30f128xxx10
+  - MKV30F128xxx10
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(100000000) ELITTLE
       Device:
       - MKV30F128xxx10
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MKV30F128xxx10$SVD/MKV30F12810.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(100000000) ELITTLE
       Device:
       - MKV30F128xxx10
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KVxx_DFP.1.6.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MKV30F128xxx10$Device/Include/MKV31F51212.h
       SFDFile:

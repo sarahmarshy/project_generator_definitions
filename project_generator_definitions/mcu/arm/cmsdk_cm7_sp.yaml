@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0
+  - Cortex-M0
   name:
-  - cmsdk_cm7_sp
+  - CMSDK_CM7_SP
   vendor:
   - ARM
 tool_specific:
@@ -12,7 +12,8 @@ tool_specific:
       - CPUTYPE("Cortex-M0") FPU2 CLOCK(25000000) ELITTLE
       Device:
       - CMSDK_CM7_SP
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:CMSDK_CM7_SP$SVD/ARM_v8MBL.svd
       Vendor:
@@ -23,9 +24,12 @@ tool_specific:
       - CPUTYPE("Cortex-M0") FPU2 CLOCK(25000000) ELITTLE
       Device:
       - CMSDK_CM7_SP
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.V2M-MPS2_CMx_BSP.1.3.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:CMSDK_CM7_SP$Device/CMSDK_CM7/Include/CMSDK_CM7_DP.h
       SFDFile:

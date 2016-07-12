@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0
+  - Cortex-M0
   name:
-  - lpc11a14fhn33/301
+  - LPC11A14FHN33/301
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - LPC11A14FHN33/301
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC11A14FHN33/301$SVD\LPC11Axx.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - LPC11A14FHN33/301
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC1100_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC11A14FHN33/301$Device\Include\LPC11Axx\LPC11Axx.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - lm3s1f16
+  - LM3S1F16
   vendor:
   - Texas Instruments
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(80000000) ELITTLE
       Device:
       - LM3S1F16
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LM3S1F16$SVD\lm3s1f16.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(80000000) ELITTLE
       Device:
       - LM3S1F16
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LM3S_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LM3S1F16$Device\Include\lm3s1z16.h
       SFDFile:

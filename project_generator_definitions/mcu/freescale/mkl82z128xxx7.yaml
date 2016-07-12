@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - mkl82z128xxx7
+  - MKL82Z128xxx7
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - MKL82Z128xxx7
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MKL82Z128xxx7$SVD/MKL82Z7.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - MKL82Z128xxx7
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KLxx_DFP.1.9.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MKL82Z128xxx7$Device/Include/MKL82Z7.h
       SFDFile:

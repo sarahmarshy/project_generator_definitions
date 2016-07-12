@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - mkl28z512xxx7
+  - MKL28Z512xxx7
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - MKL28Z512xxx7
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MKL28Z512xxx7$SVD/MKL28Z7.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - MKL28Z512xxx7
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KLxx_DFP.1.9.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MKL28Z512xxx7$Device/Include/MKL28Z7.h
       SFDFile:

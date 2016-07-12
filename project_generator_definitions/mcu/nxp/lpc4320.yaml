@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - lpc4320
+  - LPC4320
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - LPC4320
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC4320$SVD/LPC43xx.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - LPC4320
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC4300_DFP.2.6.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC4320$Device/Include/LPC43xx.h
       SFDFile:

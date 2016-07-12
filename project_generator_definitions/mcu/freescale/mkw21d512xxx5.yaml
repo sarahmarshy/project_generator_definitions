@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - mkw21d512xxx5
+  - MKW21D512xxx5
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(50000000) ELITTLE
       Device:
       - MKW21D512xxx5
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MKW21D512xxx5$SVD/MKW21D5.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(50000000) ELITTLE
       Device:
       - MKW21D512xxx5
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KWxx_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MKW21D512xxx5$Device/Include/MKW24D5.h
       SFDFile:

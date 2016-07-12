@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - ezr32lg230f128r68
+  - EZR32LG230F128R68
   vendor:
   - Silicon Labs
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - EZR32LG230F128R68
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:EZR32LG230F128R68$SVD/EZR32LG/EZR32LG230F128R68.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - EZR32LG230F128R68
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.EZR32LG_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:EZR32LG230F128R68$Device/EZR32LG/Include/em_device.h
       SFDFile:

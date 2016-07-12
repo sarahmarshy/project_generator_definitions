@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0
+  - Cortex-M0
   name:
-  - lpc1112fdh20/102
+  - LPC1112FDH20/102
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - LPC1112FDH20/102
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC1112FDH20/102$SVD\LPC111x.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - LPC1112FDH20/102
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC1100_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC1112FDH20/102$Device\Include\LPC11xx\LPC11xx.h
       SFDFile:

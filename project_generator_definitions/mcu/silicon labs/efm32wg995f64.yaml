@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - efm32wg995f64
+  - EFM32WG995F64
   vendor:
   - Silicon Labs
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         FPU2 CLOCK(48000000) ELITTLE
       Device:
       - EFM32WG995F64
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:EFM32WG995F64$SVD/EFM32WG/EFM32WG995F64.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         FPU2 CLOCK(48000000) ELITTLE
       Device:
       - EFM32WG995F64
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.EFM32WGxxx_DFP.1.3.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:EFM32WG995F64$Device/EFM32WG/Include/em_device.h
       SFDFile:

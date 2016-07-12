@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - atsamd21g18au
+  - ATSAMD21G18AU
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAMD21G18AU
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAMD21G18AU$SVD\SAMD21\ATSAMD21G18AU.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAMD21G18AU
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAMD21_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAMD21G18AU$Device\SAMD21\Include\samd21.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - lpc18s30
+  - LPC18S30
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - LPC18S30
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC18S30$SVD/LPC18xx.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - LPC18S30
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC1800_DFP.2.6.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC18S30$Device/Include/LPC18xx.h
       SFDFile:

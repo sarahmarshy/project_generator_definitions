@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - mk20dn64xxx5
+  - MK20DN64xxx5
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M4") CLOCK(50000000) ELITTLE
       Device:
       - MK20DN64xxx5
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MK20DN64xxx5$SVD\MK20D5.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M4") CLOCK(50000000) ELITTLE
       Device:
       - MK20DN64xxx5
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_K20_DFP.1.3.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MK20DN64xxx5$Device\Include\MK26F18.h
       SFDFile:

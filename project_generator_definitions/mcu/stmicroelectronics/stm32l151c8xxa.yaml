@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - stm32l151c8xxa
+  - STM32L151C8xxA
   vendor:
   - STMicroelectronics
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - STM32L151C8xxA
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:STM32L151C8xxA$SVD\STM32L15xxxA.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - STM32L151C8xxA
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.STM32L1xx_DFP.1.0.2.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:STM32L151C8xxA$Device\Include\STM32L1xx.h
       SFDFile:

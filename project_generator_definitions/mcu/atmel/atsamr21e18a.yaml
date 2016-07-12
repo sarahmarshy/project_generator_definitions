@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - atsamr21e18a
+  - ATSAMR21E18A
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAMR21E18A
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAMR21E18A$SVD\SAMR21\ATSAMR21E18A.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAMR21E18A
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAMR21_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAMR21E18A$Device\SAMR21\Include\samr21.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0
+  - Cortex-M0
   name:
-  - lpc11u67jbd100
+  - LPC11U67JBD100
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M0") CLOCK(50000000) ELITTLE
       Device:
       - LPC11U67JBD100
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC11U67JBD100$SVD\LPC11U6x.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M0") CLOCK(50000000) ELITTLE
       Device:
       - LPC11U67JBD100
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC1100_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC11U67JBD100$Device\Include\LPC11Uxx\LPC11U6x.h
       SFDFile:

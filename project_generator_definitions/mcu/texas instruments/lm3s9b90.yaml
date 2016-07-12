@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - lm3s9b90
+  - LM3S9B90
   vendor:
   - Texas Instruments
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(80000000) ELITTLE
       Device:
       - LM3S9B90
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LM3S9B90$SVD\lm3s9b90.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(80000000) ELITTLE
       Device:
       - LM3S9B90
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LM3S_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LM3S9B90$Device\Include\lm3s9u96.h
       SFDFile:

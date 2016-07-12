@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - mkv44f256xxx16
+  - MKV44F256xxx16
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         FPU2 CLOCK(168000000) ELITTLE
       Device:
       - MKV44F256xxx16
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MKV44F256xxx16$SVD/MKV44F16.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         FPU2 CLOCK(168000000) ELITTLE
       Device:
       - MKV44F256xxx16
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KVxx_DFP.1.6.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MKV44F256xxx16$Device/Include/MKV46F16.h
       SFDFile:

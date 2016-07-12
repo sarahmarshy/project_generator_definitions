@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - lpc824m201jdh20
+  - LPC824M201JDH20
   vendor:
   - NXP
 tool_specific:
@@ -20,7 +20,8 @@ tool_specific:
         ELITTLE
       Device:
       - LPC824M201JDH20
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC824M201JDH20$SVD\LPC82x.svd
       Vendor:
@@ -32,9 +33,12 @@ tool_specific:
         ELITTLE
       Device:
       - LPC824M201JDH20
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC800_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC824M201JDH20$Device\Include\LPC82x.h
       SFDFile:

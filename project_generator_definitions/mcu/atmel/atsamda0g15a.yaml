@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - atsamda0g15a
+  - ATSAMDA0G15A
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAMDA0G15A
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAMDA0G15A$SVD\SAMDA0\ATSAMDA0G15A.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAMDA0G15A
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAMDA0_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAMDA0G15A$Device\SAMDA0\Include\samda0.h
       SFDFile:

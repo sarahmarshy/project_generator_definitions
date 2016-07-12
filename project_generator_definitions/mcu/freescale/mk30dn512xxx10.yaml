@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - mk30dn512xxx10
+  - MK30DN512xxx10
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
       Device:
       - MK30DN512xxx10
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MK30DN512xxx10$SVD\MK30D10.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
       Device:
       - MK30DN512xxx10
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_K30_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MK30DN512xxx10$Device\Include\MK30D10.h
       SFDFile:

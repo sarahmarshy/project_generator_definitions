@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - efm32tg232f16
+  - EFM32TG232F16
   vendor:
   - Silicon Labs
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(32000000) ELITTLE
       Device:
       - EFM32TG232F16
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:EFM32TG232F16$SVD/EFM32TG/EFM32TG232F16.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(32000000) ELITTLE
       Device:
       - EFM32TG232F16
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.EFM32TGxxx_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:EFM32TG232F16$Device/EFM32TG/Include/em_device.h
       SFDFile:

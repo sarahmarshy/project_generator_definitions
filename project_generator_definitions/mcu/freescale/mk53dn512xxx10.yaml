@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - mk53dn512xxx10
+  - MK53DN512xxx10
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
       Device:
       - MK53DN512xxx10
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MK53DN512xxx10$SVD\MK53D10.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
       Device:
       - MK53DN512xxx10
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_K50_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MK53DN512xxx10$Device\Include\MK53D10.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - efm32hg309f64
+  - EFM32HG309F64
   vendor:
   - Silicon Labs
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(24000000) ELITTLE
       Device:
       - EFM32HG309F64
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:EFM32HG309F64$SVD/EFM32HG/EFM32HG309F64.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(24000000) ELITTLE
       Device:
       - EFM32HG309F64
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.EFM32HGxxx_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:EFM32HG309F64$Device/EFM32HG/Include/em_device.h
       SFDFile:

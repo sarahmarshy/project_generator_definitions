@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - atsamd10c14a
+  - ATSAMD10C14A
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAMD10C14A
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAMD10C14A$SVD\SAMD10\ATSAMD10C14A.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAMD10C14A
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAMD10_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAMD10C14A$Device\SAMD10\Include\samd10.h
       SFDFile:

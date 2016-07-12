@@ -1,11 +1,61 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - mkl25z128xxx4
+  - MKL25Z128xxx4
   vendor:
   - Freescale
 tool_specific:
+  coide:
+    DebugOption:
+      defaultAlgorithm:
+      - KLxx_128_PRG_NO_CFG.elf
+    Device:
+      chipId:
+      - 86
+      chipName:
+      - MKL25Z128VLK4
+      manufacturerId:
+      - 4
+      manufacturerName:
+      - Freescale
+    MemoryAreas:
+      IRAM1:
+        name:
+        - IRAM1
+        size:
+        - 4096
+        startValue:
+        - 536866816
+        type:
+        - ReadWrite
+      IRAM2:
+        name:
+        - IRAM2
+        size:
+        - 0
+        startValue:
+        - 0
+        type:
+        - ReadWrite
+      IROM1:
+        name:
+        - IROM1
+        size:
+        - 131072
+        startValue:
+        - 0
+        type:
+        - ReadOnly
+      IROM2:
+        name:
+        - IROM2
+        size:
+        - 0
+        startValue:
+        - 0
+        type:
+        - ReadOnly
   iar:
     OGChipSelectEditMenu:
       state:
@@ -20,7 +70,8 @@ tool_specific:
         ELITTLE
       Device:
       - MKL25Z128xxx4
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MKL25Z128xxx4$SVD/MKL25Z4.svd
       Vendor:
@@ -32,9 +83,12 @@ tool_specific:
         ELITTLE
       Device:
       - MKL25Z128xxx4
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KLxx_DFP.1.9.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MKL25Z128xxx4$Device/Include/MKL28Z7.h
       SFDFile:

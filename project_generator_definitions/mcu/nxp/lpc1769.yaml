@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - lpc1769
+  - LPC1769
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M3") CLOCK(120000000) ELITTLE
       Device:
       - LPC1769
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC1769$SVD/LPC176x5x.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M3") CLOCK(120000000) ELITTLE
       Device:
       - LPC1769
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC1700_DFP.2.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC1769$Device/Include/LPC17xx.h
       SFDFile:

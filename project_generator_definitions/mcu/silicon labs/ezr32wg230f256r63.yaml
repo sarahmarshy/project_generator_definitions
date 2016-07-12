@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - ezr32wg230f256r63
+  - EZR32WG230F256R63
   vendor:
   - Silicon Labs
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         FPU2 CLOCK(48000000) ELITTLE
       Device:
       - EZR32WG230F256R63
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:EZR32WG230F256R63$SVD/EZR32WG/EZR32WG230F256R63.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         FPU2 CLOCK(48000000) ELITTLE
       Device:
       - EZR32WG230F256R63
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.EZR32WG_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:EZR32WG230F256R63$Device/EZR32WG/Include/em_device.h
       SFDFile:

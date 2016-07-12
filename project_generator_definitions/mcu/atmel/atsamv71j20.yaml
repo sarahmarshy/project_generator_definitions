@@ -1,19 +1,20 @@
 mcu:
   core:
-  - cortex-m7
+  - Cortex-M7
   name:
-  - atsamv71j20
+  - ATSAMV71J20
   vendor:
   - Atmel
 tool_specific:
   uvision:
     TargetOption:
       Cpu:
-      - IROM(0x00400000,0x00100000) IRAM(0x20400000,0x00060000) CPUTYPE("Cortex-M7")
-        FPU2 CLOCK(300000000) ELITTLE
+      - IROM(0x00400000,0x00100000) IROM2(0x00800000,0x00004000) IRAM(0x20400000,0x00060000)
+        CPUTYPE("Cortex-M7") FPU2 CLOCK(300000000) ELITTLE
       Device:
       - ATSAMV71J20
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAMV71J20$svd/ATSAMV71J20.svd
       Vendor:
@@ -21,13 +22,16 @@ tool_specific:
   uvision5:
     TargetOption:
       Cpu:
-      - IROM(0x00400000,0x00100000) IRAM(0x20400000,0x00060000) CPUTYPE("Cortex-M7")
-        FPU2 CLOCK(300000000) ELITTLE
+      - IROM(0x00400000,0x00100000) IROM2(0x00800000,0x00004000) IRAM(0x20400000,0x00060000)
+        CPUTYPE("Cortex-M7") FPU2 CLOCK(300000000) ELITTLE
       Device:
       - ATSAMV71J20
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAM-V_DFP.2.3.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAMV71J20$SAMV71/include/sam.h
       SFDFile:

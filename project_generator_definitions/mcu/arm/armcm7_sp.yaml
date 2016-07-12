@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0
+  - Cortex-M0
   name:
-  - armcm7_sp
+  - ARMCM7_SP
   vendor:
   - ARM
 tool_specific:
@@ -12,7 +12,8 @@ tool_specific:
       - CPUTYPE("Cortex-M0") FPU2 CLOCK(10000000)
       Device:
       - ARMCM7_SP
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ARMCM7_SP$Device/ARM/SVD/ARMCM7.svd
       Vendor:
@@ -23,9 +24,12 @@ tool_specific:
       - CPUTYPE("Cortex-M0") FPU2 CLOCK(10000000)
       Device:
       - ARMCM7_SP
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - ARM.CMSIS.5.0.0-Beta4.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ARMCM7_SP$Device/ARM/ARMCM7/Include/ARMCM7_DP.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - atsam3n1c
+  - ATSAM3N1C
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAM3N1C
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAM3N1C$SVD/SAM3N/ATSAM3N1C.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAM3N1C
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAM3_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAM3N1C$Device/SAM3N/Include/sam3n.h
       SFDFile:

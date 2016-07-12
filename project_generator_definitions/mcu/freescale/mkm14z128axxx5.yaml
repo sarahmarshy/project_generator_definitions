@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - mkm14z128axxx5
+  - MKM14Z128Axxx5
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - MKM14Z128Axxx5
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MKM14Z128Axxx5$SVD\MKM14ZA5.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - MKM14Z128Axxx5
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KMxx_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MKM14Z128Axxx5$Device\Include\MKM14ZA5.h
       SFDFile:

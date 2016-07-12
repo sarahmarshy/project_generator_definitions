@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - tm4c1299nczad
+  - TM4C1299NCZAD
   vendor:
   - Texas Instruments
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(120000000) ELITTLE
       Device:
       - TM4C1299NCZAD
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:TM4C1299NCZAD$SVD/TM4C129/TM4C1299NCZAD.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(120000000) ELITTLE
       Device:
       - TM4C1299NCZAD
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.TM4C_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:TM4C1299NCZAD$Device/Include/TM4C129/TM4C129.h
       SFDFile:

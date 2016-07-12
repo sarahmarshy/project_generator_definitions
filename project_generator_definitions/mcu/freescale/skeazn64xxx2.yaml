@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - skeazn64xxx2
+  - SKEAZN64xxx2
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - SKEAZN64xxx2
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:SKEAZN64xxx2$SVD\SKEAZN642.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - SKEAZN64xxx2
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KEAxx_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:SKEAZN64xxx2$Device\Include\SKEAZN642.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0
+  - Cortex-M0
   name:
-  - cmsdk_armv8mml
+  - CMSDK_ARMv8MML
   vendor:
   - ARM
 tool_specific:
@@ -12,7 +12,8 @@ tool_specific:
       - CPUTYPE("Cortex-M0") CLOCK(25000000) ELITTLE
       Device:
       - CMSDK_ARMv8MML
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:CMSDK_ARMv8MML$SVD/ARM_v8MBL.svd
       Vendor:
@@ -23,9 +24,12 @@ tool_specific:
       - CPUTYPE("Cortex-M0") CLOCK(25000000) ELITTLE
       Device:
       - CMSDK_ARMv8MML
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.V2M-MPS2_CMx_BSP.1.3.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:CMSDK_ARMv8MML$Device/CMSDK_ARMv8MML/Include/CMSDK_ARMv8MML_DP.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - tm4c123bh6pge
+  - TM4C123BH6PGE
   vendor:
   - Texas Instruments
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(80000000) ELITTLE
       Device:
       - TM4C123BH6PGE
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:TM4C123BH6PGE$SVD/TM4C123/TM4C123BH6PGE.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(80000000) ELITTLE
       Device:
       - TM4C123BH6PGE
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.TM4C_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:TM4C123BH6PGE$Device/Include/TM4C123/TM4C123.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - mks22fn256xxx12
+  - MKS22FN256xxx12
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         FPU2 CLOCK(120000000) ELITTLE
       Device:
       - MKS22FN256xxx12
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MKS22FN256xxx12$SVD\MKS22F25612.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         FPU2 CLOCK(120000000) ELITTLE
       Device:
       - MKS22FN256xxx12
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KSxx_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MKS22FN256xxx12$Device\Include\MKS22F25612.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - mk64fn1m0vll12
+  - MK64FN1M0VLL12
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
       Device:
       - MK64FN1M0VLL12
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MK64FN1M0VLL12$platform\devices\MK64F12\MK64F12.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
       Device:
       - MK64FN1M0VLL12
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_SDK_DFP.2.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MK64FN1M0VLL12$platform/devices/fsl_device_registers.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - lpc810m021fn8
+  - LPC810M021FN8
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - LPC810M021FN8
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC810M021FN8$SVD\LPC800.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - LPC810M021FN8
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC800_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC810M021FN8$Device\Include\LPC8xx.h
       SFDFile:

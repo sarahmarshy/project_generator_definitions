@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - atsam4s4a
+  - ATSAM4S4A
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - ATSAM4S4A
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAM4S4A$SVD\SAM4S\ATSAM4S4A.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - ATSAM4S4A
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAM4_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAM4S4A$Device\Include\SAM4S\sam4s.h
       SFDFile:

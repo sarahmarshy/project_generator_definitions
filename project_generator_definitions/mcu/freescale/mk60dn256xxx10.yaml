@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - mk60dn256xxx10
+  - MK60DN256xxx10
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
       Device:
       - MK60DN256xxx10
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MK60DN256xxx10$SVD\MK60D10.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
       Device:
       - MK60DN256xxx10
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_K60_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MK60DN256xxx10$Device\Include\MK66F18.h
       SFDFile:

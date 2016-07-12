@@ -1,19 +1,20 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - mk30dx128xxx7
+  - MK30DX128xxx7
   vendor:
   - Freescale
 tool_specific:
   uvision:
     TargetOption:
       Cpu:
-      - IROM(0x00000000,0x20000) IRAM(0x20000000,0x4000) IRAM2(0x1FFFC000,0x4000)
-        CPUTYPE("Cortex-M4") CLOCK(72000000) ELITTLE
+      - IROM(0x00000000,0x20000) IROM2(0x10000000,0x8000) IRAM(0x20000000,0x4000)
+        IRAM2(0x1FFFC000,0x4000) CPUTYPE("Cortex-M4") CLOCK(72000000) ELITTLE
       Device:
       - MK30DX128xxx7
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MK30DX128xxx7$SVD\MK30D7.svd
       Vendor:
@@ -21,13 +22,16 @@ tool_specific:
   uvision5:
     TargetOption:
       Cpu:
-      - IROM(0x00000000,0x20000) IRAM(0x20000000,0x4000) IRAM2(0x1FFFC000,0x4000)
-        CPUTYPE("Cortex-M4") CLOCK(72000000) ELITTLE
+      - IROM(0x00000000,0x20000) IROM2(0x10000000,0x8000) IRAM(0x20000000,0x4000)
+        IRAM2(0x1FFFC000,0x4000) CPUTYPE("Cortex-M4") CLOCK(72000000) ELITTLE
       Device:
       - MK30DX128xxx7
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_K30_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MK30DX128xxx7$Device\Include\MK30D10.h
       SFDFile:

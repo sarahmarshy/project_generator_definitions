@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - lpc811m001jdh16
+  - LPC811M001JDH16
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - LPC811M001JDH16
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC811M001JDH16$SVD\LPC800.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - LPC811M001JDH16
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC800_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC811M001JDH16$Device\Include\LPC8xx.h
       SFDFile:

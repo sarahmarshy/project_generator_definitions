@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - mkv11z64xxx7
+  - MKV11Z64xxx7
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - MKV11Z64xxx7
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MKV11Z64xxx7$SVD/MKV11Z7.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - MKV11Z64xxx7
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KVxx_DFP.1.6.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MKV11Z64xxx7$Device/Include/MKV11Z7.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - aducm360
+  - ADuCM360
   vendor:
   - Analog Devices
 tool_specific:
@@ -12,7 +12,8 @@ tool_specific:
       - CPUTYPE("Cortex-M3") CLOCK(16000000) ELITTLE
       Device:
       - ADuCM360
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ADuCM360$SVD\ADuCM360.svd
       Vendor:
@@ -23,9 +24,12 @@ tool_specific:
       - CPUTYPE("Cortex-M3") CLOCK(16000000) ELITTLE
       Device:
       - ADuCM360
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - AnalogDevices.ADuCM36x_DFP.1.0.1.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ADuCM360$Device\Include\ADuCM361.h
       SFDFile:

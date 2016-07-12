@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0
+  - Cortex-M0
   name:
-  - nrf51422_xxab
+  - nRF51422_xxAB
   vendor:
   - Nordic Semiconductor
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - nRF51422_xxAB
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:nRF51422_xxAB$SVD\nrf51.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - nRF51422_xxAB
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - NordicSemiconductor.nRF_DeviceFamilyPack.8.6.1.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:nRF51422_xxAB$Device\Include\nrf.h
       SFDFile:

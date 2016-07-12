@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - atsam4cms16c
+  - ATSAM4CMS16C
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(120000000) ELITTLE
       Device:
       - ATSAM4CMS16C
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAM4CMS16C$SVD\SAM4CM\ATSAM4CMS16C_0.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(120000000) ELITTLE
       Device:
       - ATSAM4CMS16C
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAM4_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAM4CMS16C$Device\SAM4CM\Include\sam4cm.h
       SFDFile:

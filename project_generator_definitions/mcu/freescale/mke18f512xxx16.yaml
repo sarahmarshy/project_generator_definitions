@@ -1,19 +1,20 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - mke18f512xxx16
+  - MKE18F512xxx16
   vendor:
   - Freescale
 tool_specific:
   uvision:
     TargetOption:
       Cpu:
-      - IROM(0x00000000,0x00080000) IRAM(0x1FFF8000,0x00010000) CPUTYPE("Cortex-M0+")
-        FPU2 CLOCK(160000000) ELITTLE
+      - IROM(0x00000000,0x00080000) IROM2(0x10000000,0x00010000) IRAM(0x1FFF8000,0x00010000)
+        CPUTYPE("Cortex-M0+") FPU2 CLOCK(160000000) ELITTLE
       Device:
       - MKE18F512xxx16
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MKE18F512xxx16$SVD/MKE18F16.svd
       Vendor:
@@ -21,13 +22,16 @@ tool_specific:
   uvision5:
     TargetOption:
       Cpu:
-      - IROM(0x00000000,0x00080000) IRAM(0x1FFF8000,0x00010000) CPUTYPE("Cortex-M0+")
-        FPU2 CLOCK(160000000) ELITTLE
+      - IROM(0x00000000,0x00080000) IROM2(0x10000000,0x00010000) IRAM(0x1FFF8000,0x00010000)
+        CPUTYPE("Cortex-M0+") FPU2 CLOCK(160000000) ELITTLE
       Device:
       - MKE18F512xxx16
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KExx_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MKE18F512xxx16$Device/Include/MKE18F16.h
       SFDFile:

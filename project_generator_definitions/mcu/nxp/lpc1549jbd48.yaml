@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - lpc1549jbd48
+  - LPC1549JBD48
   vendor:
   - NXP
 tool_specific:
@@ -20,7 +20,8 @@ tool_specific:
         ELITTLE
       Device:
       - LPC1549JBD48
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC1549JBD48$SVD/LPC15xx.svd
       Vendor:
@@ -32,9 +33,12 @@ tool_specific:
         ELITTLE
       Device:
       - LPC1549JBD48
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC1500_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC1549JBD48$LPCOpen/software/lpc_core/lpc_chip/chip_15xx/chip.h
       SFDFile:

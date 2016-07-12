@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - lm3s2918
+  - LM3S2918
   vendor:
   - Texas Instruments
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(50000000) ELITTLE
       Device:
       - LM3S2918
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LM3S2918$SVD\lm3s2918.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(50000000) ELITTLE
       Device:
       - LM3S2918
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LM3S_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LM3S2918$Device\Include\lm3s2u93.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - atsaml22j16a
+  - ATSAML22J16A
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - ATSAML22J16A
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAML22J16A$SVD\SAML22\ATSAML22J16A.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - ATSAML22J16A
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAM-L_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAML22J16A$Device\SAML22\Include\saml22.h
       SFDFile:

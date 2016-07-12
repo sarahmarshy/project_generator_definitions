@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - lm3s2432
+  - LM3S2432
   vendor:
   - Texas Instruments
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(50000000) ELITTLE
       Device:
       - LM3S2432
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LM3S2432$SVD\lm3s2432.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(50000000) ELITTLE
       Device:
       - LM3S2432
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LM3S_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LM3S2432$Device\Include\lm3s2u93.h
       SFDFile:

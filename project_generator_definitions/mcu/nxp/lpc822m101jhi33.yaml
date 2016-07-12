@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - lpc822m101jhi33
+  - LPC822M101JHI33
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - LPC822M101JHI33
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC822M101JHI33$SVD\LPC82x.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - LPC822M101JHI33
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC800_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC822M101JHI33$Device\Include\LPC82x.h
       SFDFile:

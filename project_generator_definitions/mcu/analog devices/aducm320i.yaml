@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - aducm320i
+  - ADuCM320i
   vendor:
   - Analog Devices
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - ADuCM320i
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ADuCM320i$SVD\ADuCM320i.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - ADuCM320i
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - AnalogDevices.ADuCM320_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ADuCM320i$ADuCM322\common\ADuCM322.h
       SFDFile:

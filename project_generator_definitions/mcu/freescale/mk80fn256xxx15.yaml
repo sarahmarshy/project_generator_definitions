@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - mk80fn256xxx15
+  - MK80FN256xxx15
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M4") FPU2 CLOCK(150000000) ELITTLE
       Device:
       - MK80FN256xxx15
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MK80FN256xxx15$SVD\MK80F25615.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M4") FPU2 CLOCK(150000000) ELITTLE
       Device:
       - MK80FN256xxx15
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_K80_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MK80FN256xxx15$Device\Include\MK82F25615.h
       SFDFile:

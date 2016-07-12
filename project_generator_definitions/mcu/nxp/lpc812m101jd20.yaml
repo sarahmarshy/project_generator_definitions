@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - lpc812m101jd20
+  - LPC812M101JD20
   vendor:
   - NXP
 tool_specific:
@@ -20,7 +20,8 @@ tool_specific:
         ELITTLE
       Device:
       - LPC812M101JD20
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC812M101JD20$SVD\LPC800.svd
       Vendor:
@@ -32,9 +33,12 @@ tool_specific:
         ELITTLE
       Device:
       - LPC812M101JD20
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC800_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC812M101JD20$Device\Include\LPC8xx.h
       SFDFile:

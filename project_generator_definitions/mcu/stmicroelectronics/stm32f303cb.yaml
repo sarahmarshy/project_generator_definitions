@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - stm32f303cb
+  - STM32F303CB
   vendor:
   - STMicroelectronics
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M4") FPU2 CLOCK(72000000) ELITTLE
       Device:
       - STM32F303CB
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:STM32F303CB$SVD\STM32F30x.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M4") FPU2 CLOCK(72000000) ELITTLE
       Device:
       - STM32F303CB
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.STM32F3xx_DFP.1.3.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:STM32F303CB$Device\Include\stm32f3xx.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0
+  - Cortex-M0
   name:
-  - armv8mbl
+  - ARMv8MBL
   vendor:
   - ARM
 tool_specific:
@@ -12,7 +12,8 @@ tool_specific:
       - CPUTYPE("Cortex-M0") CLOCK(10000000) ELITTLE
       Device:
       - ARMv8MBL
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ARMv8MBL$Device/ARM/SVD/ARMv8MBL.svd
       Vendor:
@@ -23,9 +24,12 @@ tool_specific:
       - CPUTYPE("Cortex-M0") CLOCK(10000000) ELITTLE
       Device:
       - ARMv8MBL
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - ARM.CMSIS.5.0.0-Beta4.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ARMv8MBL$Device/ARM/ARMv8MBL/Include/ARMv8MBL.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - atsaml21e17a
+  - ATSAML21E17A
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
       Device:
       - ATSAML21E17A
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAML21E17A$SVD\SAML21\ATSAML21E17A.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M0+") CLOCK(48000000) ELITTLE
       Device:
       - ATSAML21E17A
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAM-L_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAML21E17A$Device\SAML21\Include\saml21.h
       SFDFile:

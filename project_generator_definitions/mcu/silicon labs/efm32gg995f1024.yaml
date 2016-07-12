@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - efm32gg995f1024
+  - EFM32GG995F1024
   vendor:
   - Silicon Labs
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - EFM32GG995F1024
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:EFM32GG995F1024$SVD/EFM32GG/EFM32GG995F1024.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - EFM32GG995F1024
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.EFM32GGxxx_DFP.2.3.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:EFM32GG995F1024$Device/EFM32GG/Include/em_device.h
       SFDFile:

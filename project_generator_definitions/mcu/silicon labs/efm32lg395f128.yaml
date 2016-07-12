@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - efm32lg395f128
+  - EFM32LG395F128
   vendor:
   - Silicon Labs
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - EFM32LG395F128
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:EFM32LG395F128$SVD/EFM32LG/EFM32LG395F128.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - EFM32LG395F128
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.EFM32LGxxx_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:EFM32LG395F128$Device/EFM32LG/Include/em_device.h
       SFDFile:

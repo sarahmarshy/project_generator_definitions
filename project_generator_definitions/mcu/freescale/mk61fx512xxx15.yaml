@@ -1,19 +1,20 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - mk61fx512xxx15
+  - MK61FX512xxx15
   vendor:
   - Freescale
 tool_specific:
   uvision:
     TargetOption:
       Cpu:
-      - IROM(0x00000000,0x80000) IRAM(0x20000000,0x10000) IRAM2(0x1FFF0000,0x10000)
-        CPUTYPE("Cortex-M4") FPU2 CLOCK(150000000) ELITTLE
+      - IROM(0x00000000,0x80000) IROM2(0x10000000,0x80000) IRAM(0x20000000,0x10000)
+        IRAM2(0x1FFF0000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(150000000) ELITTLE
       Device:
       - MK61FX512xxx15
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MK61FX512xxx15$SVD\MK61F15.svd
       Vendor:
@@ -21,13 +22,16 @@ tool_specific:
   uvision5:
     TargetOption:
       Cpu:
-      - IROM(0x00000000,0x80000) IRAM(0x20000000,0x10000) IRAM2(0x1FFF0000,0x10000)
-        CPUTYPE("Cortex-M4") FPU2 CLOCK(150000000) ELITTLE
+      - IROM(0x00000000,0x80000) IROM2(0x10000000,0x80000) IRAM(0x20000000,0x10000)
+        IRAM2(0x1FFF0000,0x10000) CPUTYPE("Cortex-M4") FPU2 CLOCK(150000000) ELITTLE
       Device:
       - MK61FX512xxx15
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_K60_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MK61FX512xxx15$Device\Include\MK66F18.h
       SFDFile:

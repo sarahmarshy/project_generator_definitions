@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - atsamc20g16a
+  - ATSAMC20G16A
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - ATSAMC20G16A
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAMC20G16A$SVD\SAMC20\ATSAMC20G16A.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - ATSAMC20G16A
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAM-C_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAMC20G16A$Device\SAMC20\Include\samc20.h
       SFDFile:

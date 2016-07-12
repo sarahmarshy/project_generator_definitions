@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - efm32pg1b200f256gm48
+  - EFM32PG1B200F256GM48
   vendor:
   - Silicon Labs
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         FPU2 CLOCK(38400000) ELITTLE
       Device:
       - EFM32PG1B200F256GM48
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:EFM32PG1B200F256GM48$SVD/EFM32PG1B/EFM32PG1B200F256GM48.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         FPU2 CLOCK(38400000) ELITTLE
       Device:
       - EFM32PG1B200F256GM48
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.EFM32PG1B_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:EFM32PG1B200F256GM48$Device/EFM32PG1B/Include/em_device.h
       SFDFile:

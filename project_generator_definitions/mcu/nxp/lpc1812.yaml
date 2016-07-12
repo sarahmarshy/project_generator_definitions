@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - lpc1812
+  - LPC1812
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M3") CLOCK(180000000) ELITTLE
       Device:
       - LPC1812
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC1812$SVD/LPC18xx.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M3") CLOCK(180000000) ELITTLE
       Device:
       - LPC1812
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC1800_DFP.2.6.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC1812$Device/Include/LPC18xx.h
       SFDFile:

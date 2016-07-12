@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0
+  - Cortex-M0
   name:
-  - armcm3
+  - ARMCM3
   vendor:
   - ARM
 tool_specific:
@@ -12,7 +12,8 @@ tool_specific:
       - CPUTYPE("Cortex-M0") CLOCK(10000000)
       Device:
       - ARMCM3
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ARMCM3$Device/ARM/SVD/ARMCM3.svd
       Vendor:
@@ -23,9 +24,12 @@ tool_specific:
       - CPUTYPE("Cortex-M0") CLOCK(10000000)
       Device:
       - ARMCM3
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - ARM.CMSIS.5.0.0-Beta4.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ARMCM3$Device/ARM/ARMCM3/Include/ARMCM3.h
       SFDFile:

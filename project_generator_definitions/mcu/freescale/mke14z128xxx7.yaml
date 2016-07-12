@@ -1,19 +1,20 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - mke14z128xxx7
+  - MKE14Z128xxx7
   vendor:
   - Freescale
 tool_specific:
   uvision:
     TargetOption:
       Cpu:
-      - IROM(0x00000000,0x20000) IRAM(0x1FFFF000,0x04000) CPUTYPE("Cortex-M0+") CLOCK(72000000)
-        ELITTLE
+      - IROM(0x00000000,0x20000) IROM2(0x10000000,0x08000) IRAM(0x1FFFF000,0x04000)
+        CPUTYPE("Cortex-M0+") CLOCK(72000000) ELITTLE
       Device:
       - MKE14Z128xxx7
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MKE14Z128xxx7$SVD/MKE14Z7.svd
       Vendor:
@@ -21,13 +22,16 @@ tool_specific:
   uvision5:
     TargetOption:
       Cpu:
-      - IROM(0x00000000,0x20000) IRAM(0x1FFFF000,0x04000) CPUTYPE("Cortex-M0+") CLOCK(72000000)
-        ELITTLE
+      - IROM(0x00000000,0x20000) IROM2(0x10000000,0x08000) IRAM(0x1FFFF000,0x04000)
+        CPUTYPE("Cortex-M0+") CLOCK(72000000) ELITTLE
       Device:
       - MKE14Z128xxx7
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KExx_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MKE14Z128xxx7$Device/Include/MKE15Z7.h
       SFDFile:

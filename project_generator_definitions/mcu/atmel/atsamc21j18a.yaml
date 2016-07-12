@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - atsamc21j18a
+  - ATSAMC21J18A
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - ATSAMC21J18A
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAMC21J18A$SVD\SAMC21\ATSAMC21J18A.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - ATSAMC21J18A
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAM-C_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAMC21J18A$Device\SAMC21\Include\samc21.h
       SFDFile:

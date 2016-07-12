@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - ezr32hg320f32r63
+  - EZR32HG320F32R63
   vendor:
   - Silicon Labs
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(24000000) ELITTLE
       Device:
       - EZR32HG320F32R63
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:EZR32HG320F32R63$SVD/EZR32HG/EZR32HG320F32R63.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(24000000) ELITTLE
       Device:
       - EZR32HG320F32R63
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.EZR32HG_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:EZR32HG320F32R63$Device/EZR32HG/Include/em_device.h
       SFDFile:

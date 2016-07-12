@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - lpc4078fbd144
+  - LPC4078FBD144
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
       Device:
       - LPC4078FBD144
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC4078FBD144$SVD/LPC408x_7x.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CPUTYPE("Cortex-M4") FPU2 CLOCK(120000000) ELITTLE
       Device:
       - LPC4078FBD144
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC4000_DFP.2.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC4078FBD144$Device/Include/LPC407x_8x_177x_8x.h
       SFDFile:

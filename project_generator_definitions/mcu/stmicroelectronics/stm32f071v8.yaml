@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0
+  - Cortex-M0
   name:
-  - stm32f071v8
+  - STM32F071V8
   vendor:
   - STMicroelectronics
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - STM32F071V8
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:STM32F071V8$SVD/STM32F0x1.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - STM32F071V8
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.STM32F0xx_DFP.1.5.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:STM32F071V8$Device/Include/stm32f0xx.h
       SFDFile:

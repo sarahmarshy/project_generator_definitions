@@ -1,19 +1,20 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - atsam3a8c
+  - ATSAM3A8C
   vendor:
   - Atmel
 tool_specific:
   uvision:
     TargetOption:
       Cpu:
-      - IROM(0x00080000,0x00040000) IRAM(0x20000000,0x00010000) IRAM2(0x20080000,0x00008000)
-        CPUTYPE("Cortex-M3") CLOCK(84000000) ELITTLE
+      - IROM(0x00080000,0x00040000) IROM2(0x000C0000,0x00040000) IRAM(0x20000000,0x00010000)
+        IRAM2(0x20080000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(84000000) ELITTLE
       Device:
       - ATSAM3A8C
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAM3A8C$SVD/SAM3XA/ATSAM3A8C.svd
       Vendor:
@@ -21,13 +22,16 @@ tool_specific:
   uvision5:
     TargetOption:
       Cpu:
-      - IROM(0x00080000,0x00040000) IRAM(0x20000000,0x00010000) IRAM2(0x20080000,0x00008000)
-        CPUTYPE("Cortex-M3") CLOCK(84000000) ELITTLE
+      - IROM(0x00080000,0x00040000) IROM2(0x000C0000,0x00040000) IRAM(0x20000000,0x00010000)
+        IRAM2(0x20080000,0x00008000) CPUTYPE("Cortex-M3") CLOCK(84000000) ELITTLE
       Device:
       - ATSAM3A8C
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAM3_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAM3A8C$Device/SAM3XA/Include/sam3xa.h
       SFDFile:

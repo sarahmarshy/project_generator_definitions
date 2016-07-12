@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - atsamd21e15bu
+  - ATSAMD21E15BU
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAMD21E15BU
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAMD21E15BU$SVD\SAMD21\ATSAMD21E15BU.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAMD21E15BU
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAMD21_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAMD21E15BU$Device\SAMD21\Include\samd21.h
       SFDFile:

@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - efm32gg895f512
+  - EFM32GG895F512
   vendor:
   - Silicon Labs
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - EFM32GG895F512
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:EFM32GG895F512$SVD/EFM32GG/EFM32GG895F512.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - EFM32GG895F512
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.EFM32GGxxx_DFP.2.3.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:EFM32GG895F512$Device/EFM32GG/Include/em_device.h
       SFDFile:

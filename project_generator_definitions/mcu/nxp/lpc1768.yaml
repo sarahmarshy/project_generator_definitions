@@ -1,11 +1,61 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - lpc1768
+  - LPC1768
   vendor:
   - NXP
 tool_specific:
+  coide:
+    DebugOption:
+      defaultAlgorithm:
+      - lpc17xx_512.elf
+    Device:
+      chipId:
+      - 165
+      chipName:
+      - LPC1768
+      manufacturerId:
+      - 7
+      manufacturerName:
+      - NXP
+    MemoryAreas:
+      IRAM1:
+        name:
+        - IRAM1
+        size:
+        - 32768
+        startValue:
+        - 268435456
+        type:
+        - ReadWrite
+      IRAM2:
+        name:
+        - IROM2
+        size:
+        - 32768
+        startValue:
+        - 537378816
+        type:
+        - ReadWrite
+      IROM1:
+        name:
+        - IROM1
+        size:
+        - 524288
+        startValue:
+        - 0
+        type:
+        - ReadOnly
+      IROM2:
+        name:
+        - IROM2
+        size:
+        - 0
+        startValue:
+        - 0
+        type:
+        - ReadOnly
   iar:
     OGChipSelectEditMenu:
       state:
@@ -20,7 +70,8 @@ tool_specific:
         CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
       Device:
       - LPC1768
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC1768$SVD/LPC176x5x.svd
       Vendor:
@@ -32,9 +83,12 @@ tool_specific:
         CPUTYPE("Cortex-M3") CLOCK(100000000) ELITTLE
       Device:
       - LPC1768
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC1700_DFP.2.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC1768$Device/Include/LPC17xx.h
       SFDFile:

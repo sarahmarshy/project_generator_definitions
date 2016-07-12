@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - stm32l071vz
+  - STM32L071VZ
   vendor:
   - STMicroelectronics
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(32000000) ELITTLE
       Device:
       - STM32L071VZ
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:STM32L071VZ$SVD/STM32L0x1.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(32000000) ELITTLE
       Device:
       - STM32L071VZ
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.STM32L0xx_DFP.1.6.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:STM32L071VZ$Device/Include/stm32l0xx.h
       SFDFile:

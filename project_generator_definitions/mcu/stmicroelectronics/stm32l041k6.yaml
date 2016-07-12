@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - stm32l041k6
+  - STM32L041K6
   vendor:
   - STMicroelectronics
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(32000000) ELITTLE
       Device:
       - STM32L041K6
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:STM32L041K6$SVD/STM32L0x1.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(32000000) ELITTLE
       Device:
       - STM32L041K6
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.STM32L0xx_DFP.1.6.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:STM32L041K6$Device/Include/stm32l0xx.h
       SFDFile:

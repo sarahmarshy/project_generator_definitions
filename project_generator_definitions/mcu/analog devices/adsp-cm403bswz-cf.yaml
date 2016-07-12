@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - adsp-cm403bswz-cf
+  - ADSP-CM403BSWZ-CF
   vendor:
   - Analog Devices
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         FPU2 CLOCK(240000000) ELITTLE
       Device:
       - ADSP-CM403BSWZ-CF
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ADSP-CM403BSWZ-CF$addon_mdk/SVD/CM40x.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         FPU2 CLOCK(240000000) ELITTLE
       Device:
       - ADSP-CM403BSWZ-CF
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.CM4xx_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ADSP-CM403BSWZ-CF$inc/device.h
       SFDFile:

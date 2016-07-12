@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - lm4f110h5qr
+  - LM4F110H5QR
   vendor:
   - Texas Instruments
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(80000000) ELITTLE
       Device:
       - LM4F110H5QR
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LM4F110H5QR$SVD\LM4F110H5QR.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(80000000) ELITTLE
       Device:
       - LM4F110H5QR
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LM4F_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LM4F110H5QR$Device\Include\LM4F132H5QD.h
       SFDFile:

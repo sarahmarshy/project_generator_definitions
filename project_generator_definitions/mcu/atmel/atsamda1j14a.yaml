@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - atsamda1j14a
+  - ATSAMDA1J14A
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAMDA1J14A
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAMDA1J14A$SVD\SAMDA1\ATSAMDA1J14A.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(48000000) ELITTLE
       Device:
       - ATSAMDA1J14A
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAMDA1_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAMDA1J14A$Device\SAMDA1\Include\samda1.h
       SFDFile:

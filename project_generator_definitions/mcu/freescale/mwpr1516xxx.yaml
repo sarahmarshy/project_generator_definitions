@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - mwpr1516xxx
+  - MWPR1516xxx
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - MWPR1516xxx
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MWPR1516xxx$SVD\MWPR1516.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - MWPR1516xxx
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KWPR1516_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MWPR1516xxx$Device\Include\MWPR1516.h
       SFDFile:

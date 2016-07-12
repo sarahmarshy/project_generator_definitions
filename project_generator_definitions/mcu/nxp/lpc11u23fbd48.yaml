@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0
+  - Cortex-M0
   name:
-  - lpc11u23fbd48/301
+  - LPC11U23FBD48/301
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(50000000) ELITTLE
       Device:
       - LPC11U23FBD48/301
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC11U23FBD48/301$SVD\LPC11Uxx.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(50000000) ELITTLE
       Device:
       - LPC11U23FBD48/301
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC1100_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC11U23FBD48/301$Device\Include\LPC11Uxx\LPC11U6x.h
       SFDFile:

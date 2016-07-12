@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - lpc1316fbd48
+  - LPC1316FBD48
   vendor:
   - NXP
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - LPC1316FBD48
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC1316FBD48$SVD\LPC13Uxx.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - LPC1316FBD48
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC1300_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC1316FBD48$Device\Include\LPC13Uxx\LPC13Uxx.h
       SFDFile:

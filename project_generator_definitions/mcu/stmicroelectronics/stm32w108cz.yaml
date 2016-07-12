@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - stm32w108cz
+  - STM32W108CZ
   vendor:
   - STMicroelectronics
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - STM32W108CZ
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:STM32W108CZ$SVD\STM32W108.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - STM32W108CZ
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.STM32W1xx_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:STM32W108CZ$Device\Include\stm32w108xx.h
       SFDFile:

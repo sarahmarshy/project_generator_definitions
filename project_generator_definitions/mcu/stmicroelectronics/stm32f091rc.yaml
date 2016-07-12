@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0
+  - Cortex-M0
   name:
-  - stm32f091rc
+  - STM32F091RC
   vendor:
   - STMicroelectronics
 tool_specific:
@@ -20,7 +20,8 @@ tool_specific:
         ELITTLE
       Device:
       - STM32F091RC
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:STM32F091RC$SVD/STM32F0x1.svd
       Vendor:
@@ -32,9 +33,12 @@ tool_specific:
         ELITTLE
       Device:
       - STM32F091RC
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.STM32F0xx_DFP.1.5.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:STM32F091RC$Device/Include/stm32f0xx.h
       SFDFile:

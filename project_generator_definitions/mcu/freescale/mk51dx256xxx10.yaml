@@ -1,19 +1,20 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - mk51dx256xxx10
+  - MK51DX256xxx10
   vendor:
   - Freescale
 tool_specific:
   uvision:
     TargetOption:
       Cpu:
-      - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) IRAM2(0x1FFF8000,0x00008000)
-        CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
+      - IROM(0x00000000,0x00040000) IROM2(0x10000000,0x00040000) IRAM(0x20000000,0x00008000)
+        IRAM2(0x1FFF8000,0x00008000) CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
       Device:
       - MK51DX256xxx10
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MK51DX256xxx10$SVD\MK51D10.svd
       Vendor:
@@ -21,13 +22,16 @@ tool_specific:
   uvision5:
     TargetOption:
       Cpu:
-      - IROM(0x00000000,0x00040000) IRAM(0x20000000,0x00008000) IRAM2(0x1FFF8000,0x00008000)
-        CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
+      - IROM(0x00000000,0x00040000) IROM2(0x10000000,0x00040000) IRAM(0x20000000,0x00008000)
+        IRAM2(0x1FFF8000,0x00008000) CPUTYPE("Cortex-M4") CLOCK(100000000) ELITTLE
       Device:
       - MK51DX256xxx10
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_K50_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MK51DX256xxx10$Device\Include\MK53D10.h
       SFDFile:

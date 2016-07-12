@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - stm32f301r6
+  - STM32F301R6
   vendor:
   - STMicroelectronics
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         FPU2 CLOCK(72000000) ELITTLE
       Device:
       - STM32F301R6
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:STM32F301R6$SVD\STM32F301x.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         FPU2 CLOCK(72000000) ELITTLE
       Device:
       - STM32F301R6
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.STM32F3xx_DFP.1.3.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:STM32F301R6$Device\Include\stm32f3xx.h
       SFDFile:

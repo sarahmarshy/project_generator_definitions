@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - mke02z16xxx2
+  - MKE02Z16xxx2
   vendor:
   - Freescale
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - MKE02Z16xxx2
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:MKE02Z16xxx2$SVD/MKE02Z2.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - MKE02Z16xxx2
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.Kinetis_KExx_DFP.1.4.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MKE02Z16xxx2$Device/Include/MKE02Z4.h
       SFDFile:

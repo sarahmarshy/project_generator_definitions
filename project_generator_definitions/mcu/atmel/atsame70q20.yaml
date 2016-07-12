@@ -1,19 +1,20 @@
 mcu:
   core:
-  - cortex-m7
+  - Cortex-M7
   name:
-  - atsame70q20
+  - ATSAME70Q20
   vendor:
   - Atmel
 tool_specific:
   uvision:
     TargetOption:
       Cpu:
-      - IROM(0x00400000,0x00100000) IRAM(0x20400000,0x00060000) CPUTYPE("Cortex-M7")
-        FPU2 CLOCK(300000000) ELITTLE
+      - IROM(0x00400000,0x00100000) IROM2(0x00800000,0x00004000) IRAM(0x20400000,0x00060000)
+        CPUTYPE("Cortex-M7") FPU2 CLOCK(300000000) ELITTLE
       Device:
       - ATSAME70Q20
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAME70Q20$svd/ATSAME70Q20.svd
       Vendor:
@@ -21,13 +22,16 @@ tool_specific:
   uvision5:
     TargetOption:
       Cpu:
-      - IROM(0x00400000,0x00100000) IRAM(0x20400000,0x00060000) CPUTYPE("Cortex-M7")
-        FPU2 CLOCK(300000000) ELITTLE
+      - IROM(0x00400000,0x00100000) IROM2(0x00800000,0x00004000) IRAM(0x20400000,0x00060000)
+        CPUTYPE("Cortex-M7") FPU2 CLOCK(300000000) ELITTLE
       Device:
       - ATSAME70Q20
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAM-E_DFP.2.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAME70Q20$include/sam.h
       SFDFile:

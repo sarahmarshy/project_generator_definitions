@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - stm32f398ve
+  - STM32F398VE
   vendor:
   - STMicroelectronics
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         FPU2 CLOCK(72000000) ELITTLE
       Device:
       - STM32F398VE
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:STM32F398VE$SVD\STM32F37x.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         FPU2 CLOCK(72000000) ELITTLE
       Device:
       - STM32F398VE
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.STM32F3xx_DFP.1.3.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:STM32F398VE$Device\Include\stm32f3xx.h
       SFDFile:

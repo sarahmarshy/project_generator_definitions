@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - stm32f101zd
+  - STM32F101ZD
   vendor:
   - STMicroelectronics
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - STM32F101ZD
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:STM32F101ZD$SVD/STM32F101xx.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - STM32F101ZD
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.STM32F1xx_DFP.2.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:STM32F101ZD$Device/Include/stm32f10x.h
       SFDFile:

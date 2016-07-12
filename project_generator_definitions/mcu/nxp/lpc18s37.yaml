@@ -1,19 +1,20 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - lpc18s37
+  - LPC18S37
   vendor:
   - NXP
 tool_specific:
   uvision:
     TargetOption:
       Cpu:
-      - IROM(0x1A000000,0x80000) IRAM(0x10000000,0x8000) IRAM2(0x20000000,0x10000)
-        CPUTYPE("Cortex-M3") CLOCK(180000000) ELITTLE
+      - IROM(0x1A000000,0x80000) IROM2(0x1B000000,0x80000) IRAM(0x10000000,0x8000)
+        IRAM2(0x20000000,0x10000) CPUTYPE("Cortex-M3") CLOCK(180000000) ELITTLE
       Device:
       - LPC18S37
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC18S37$SVD/LPC18xx.svd
       Vendor:
@@ -21,13 +22,16 @@ tool_specific:
   uvision5:
     TargetOption:
       Cpu:
-      - IROM(0x1A000000,0x80000) IRAM(0x10000000,0x8000) IRAM2(0x20000000,0x10000)
-        CPUTYPE("Cortex-M3") CLOCK(180000000) ELITTLE
+      - IROM(0x1A000000,0x80000) IROM2(0x1B000000,0x80000) IRAM(0x10000000,0x8000)
+        IRAM2(0x20000000,0x10000) CPUTYPE("Cortex-M3") CLOCK(180000000) ELITTLE
       Device:
       - LPC18S37
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC1800_DFP.2.6.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC18S37$Device/Include/LPC18xx.h
       SFDFile:

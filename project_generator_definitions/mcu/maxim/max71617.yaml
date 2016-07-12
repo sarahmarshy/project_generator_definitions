@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - max71617
+  - MAX71617
   vendor:
   - Maxim
 tool_specific:
@@ -13,9 +13,10 @@ tool_specific:
         CPUTYPE("Cortex-M3") CLOCK(108000000) ELITTLE
       Device:
       - MAX71617
-      DeviceId: []
-      SFDFile:
+      DeviceId:
       - ''
+      SFDFile:
+      - null
       Vendor:
       - Maxim
   uvision5:
@@ -25,12 +26,15 @@ tool_specific:
         CPUTYPE("Cortex-M3") CLOCK(108000000) ELITTLE
       Device:
       - MAX71617
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.ZEUS_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:MAX71617$Device\Include\max716xx.h
       SFDFile:
-      - ''
+      - null
       Vendor:
       - Maxim

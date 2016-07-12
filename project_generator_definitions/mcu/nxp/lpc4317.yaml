@@ -1,19 +1,20 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - lpc4317
+  - LPC4317
   vendor:
   - NXP
 tool_specific:
   uvision:
     TargetOption:
       Cpu:
-      - IROM(0x1A000000,0x80000) IRAM(0x10000000,0x8000) IRAM2(0x20000000,0x10000)
-        CPUTYPE("Cortex-M4") CLOCK(204000000) ELITTLE
+      - IROM(0x1A000000,0x80000) IROM2(0x1B000000,0x80000) IRAM(0x10000000,0x8000)
+        IRAM2(0x20000000,0x10000) CPUTYPE("Cortex-M4") CLOCK(204000000) ELITTLE
       Device:
       - LPC4317
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:LPC4317$SVD/LPC43xx.svd
       Vendor:
@@ -21,13 +22,16 @@ tool_specific:
   uvision5:
     TargetOption:
       Cpu:
-      - IROM(0x1A000000,0x80000) IRAM(0x10000000,0x8000) IRAM2(0x20000000,0x10000)
-        CPUTYPE("Cortex-M4") CLOCK(204000000) ELITTLE
+      - IROM(0x1A000000,0x80000) IROM2(0x1B000000,0x80000) IRAM(0x10000000,0x8000)
+        IRAM2(0x20000000,0x10000) CPUTYPE("Cortex-M4") CLOCK(204000000) ELITTLE
       Device:
       - LPC4317
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.LPC4300_DFP.2.6.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:LPC4317$Device/Include/LPC43xx.h
       SFDFile:

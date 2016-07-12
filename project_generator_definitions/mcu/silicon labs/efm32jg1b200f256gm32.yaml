@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m3
+  - Cortex-M3
   name:
-  - efm32jg1b200f256gm32
+  - EFM32JG1B200F256GM32
   vendor:
   - Silicon Labs
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(38400000) ELITTLE
       Device:
       - EFM32JG1B200F256GM32
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:EFM32JG1B200F256GM32$SVD/EFM32JG1B/EFM32JG1B200F256GM32.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(38400000) ELITTLE
       Device:
       - EFM32JG1B200F256GM32
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.EFM32JG1B_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:EFM32JG1B200F256GM32$Device/EFM32JG1B/Include/em_device.h
       SFDFile:

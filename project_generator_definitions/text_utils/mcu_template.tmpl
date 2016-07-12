@@ -1,36 +1,38 @@
 mcu:
-    vendor:
-        - {{vendor}}
-    name:
-        - {{device.lower()}}
-    core:
-        - {{core.lower()}}
+  core:
+  - {{core}}
+  name:
+  - {{device}}
+  vendor:
+  - {{vendor}}
 tool_specific:
-    uvision:
-        TargetOption:
-            Device:
-                - {{device}}
-            Vendor:
-                - {{vendor}}
-            Cpu:
-                - {{cpu_string}}
-            DeviceId:
-                - None
-            SFDFile:
-                - {{debug}}
-    uvision5:
-        TargetOption:
-            Device:
-                - {{device}}
-            Vendor:
-                - {{vendor}}
-            Cpu:
-                - {{cpu_string}}
-            DeviceId:
-                - None
-            SFDFile:
-                - {{debug}}
-            RegisterFile:
-                - {{compile['header']}}
-            PackID:
-                - {{pack_file}}
+  uvision:
+    TargetOption:
+      Cpu:
+      - {{cpu_string}}
+      Device:
+      - {{device}}
+      DeviceId:
+      - ''
+      SFDFile:
+      - {{debug}}
+      Vendor:
+      - {{vendor}}
+  uvision5:
+    TargetOption:
+      Cpu:
+      - {{cpu_string}}
+      Device:
+      - {{device}}
+      DeviceId:
+      - ''
+      PackID:
+      - {{pack_file}}
+      PackURL:
+      - http://www.keil.com/pack/
+      RegisterFile:
+      - {{compile['header']}}
+      SFDFile:
+      - {{debug}}
+      Vendor:
+      - {{vendor}}

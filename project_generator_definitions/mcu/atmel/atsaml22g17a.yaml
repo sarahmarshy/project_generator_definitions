@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m0+
+  - Cortex-M0+
   name:
-  - atsaml22g17a
+  - ATSAML22G17A
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         ELITTLE
       Device:
       - ATSAML22G17A
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAML22G17A$SVD\SAML22\ATSAML22G17A.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         ELITTLE
       Device:
       - ATSAML22G17A
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAM-L_DFP.1.2.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAML22G17A$Device\SAML22\Include\saml22.h
       SFDFile:

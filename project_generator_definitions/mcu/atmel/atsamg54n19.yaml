@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - atsamg54n19
+  - ATSAMG54N19
   vendor:
   - Atmel
 tool_specific:
@@ -13,7 +13,8 @@ tool_specific:
         CLOCK(96000000) ELITTLE
       Device:
       - ATSAMG54N19
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:ATSAMG54N19$SVD\SAMG54\ATSAMG54N19.svd
       Vendor:
@@ -25,9 +26,12 @@ tool_specific:
         CLOCK(96000000) ELITTLE
       Device:
       - ATSAMG54N19
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.SAMG_DFP.1.1.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:ATSAMG54N19$Device\Include\SAMG54\samg54.h
       SFDFile:

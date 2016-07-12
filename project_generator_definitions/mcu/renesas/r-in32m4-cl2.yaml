@@ -1,8 +1,8 @@
 mcu:
   core:
-  - cortex-m4
+  - Cortex-M4
   name:
-  - r-in32m4-cl2
+  - R-IN32M4-CL2
   vendor:
   - Renesas
 tool_specific:
@@ -12,7 +12,8 @@ tool_specific:
       - IRAM(0x20000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(100000000) ELITTLE
       Device:
       - R-IN32M4-CL2
-      DeviceId: []
+      DeviceId:
+      - ''
       SFDFile:
       - $$Device:R-IN32M4-CL2$SVD/RIN32M4_CL2.svd
       Vendor:
@@ -23,9 +24,12 @@ tool_specific:
       - IRAM(0x20000000,0x80000) CPUTYPE("Cortex-M4") FPU2 CLOCK(100000000) ELITTLE
       Device:
       - R-IN32M4-CL2
-      DeviceId: []
+      DeviceId:
+      - ''
       PackID:
       - Keil.R-IN32M4_DFP.1.0.0.pack
+      PackURL:
+      - http://www.keil.com/pack/
       RegisterFile:
       - $$Device:R-IN32M4-CL2$Device/Include/RIN32M4.h
       SFDFile:
